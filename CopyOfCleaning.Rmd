@@ -1,0 +1,326 @@
+---
+title: "American Dream"
+author: "Pony Ameri"
+date: "3/21/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Cleaning
+```{r}
+library(readr)
+library(mosaic)
+library(dplyr)
+library(plyr)
+usa <- read_csv("~/ImmigrationDUR/Josh_files/usa_00003.csv")
+#View(usa_00003)
+
+usa1 <- usa[usa$BPLD == 60012 | usa$BPLD == 52200 | usa$BPLD == 60013 | usa$BPLD == 54400 | usa$BPLD == 60015 | usa$BPLD == 53200 | usa$BPLD == 60028 | usa$BPLD == 50210 | usa$BPLD == 60053 | usa$BPLD == 54100,]
+
+usa1 <-usa1[usa$YRIMMIG >2004,] #REMOVES 41760 datapoints
+usa1 <- usa1 %>% mutate(Birthplace = ifelse(BPLD == 60012,"Egypt",
+                                    ifelse(BPLD == 52200, "Iran",
+                                    ifelse(BPLD == 60013, "Libya",
+                                    ifelse(BPLD == 54400, "Yemen",
+                                    ifelse(BPLD == 60015, "Sudan",
+                                    ifelse(BPLD == 53200, "Iraq",
+                                    ifelse(BPLD == 60028, "Mali",
+                                    ifelse(BPLD == 50210, "North Korea",                                                         ifelse(BPLD == 60053, "Somalia",
+                                    ifelse(BPLD == 54100, "Syria",NA)))))))))))
+
+
+usa1 <- usa1 %>% mutate(Education = ifelse(GRADEATT == 0,"NA",
+                                    ifelse(GRADEATT == 1, "Nursury/Preschool",
+                                    ifelse(GRADEATT == 2, "Kindergarten",
+                                    ifelse(GRADEATT == 3, "Grade 1-4",
+                                    ifelse(GRADEATT == 4, "Grade 5-8",
+                                    ifelse(GRADEATT == 5, "Grade 9-12",
+                                    ifelse(GRADEATT == 6, "College Undergrad",
+                                    ifelse(GRADEATT == 7, "Graduate or Professional",NA)))))))))
+
+usa1 <- usa1 %>% mutate(Migrate = ifelse(MIGRATE1 == 0,"NA",
+                                    ifelse(MIGRATE1 == 1, "Same House",
+                                    ifelse(MIGRATE1 == 2, "Moved Within State",
+                                    ifelse(MIGRATE1 == 3, "Moved Between States",
+                                    ifelse(MIGRATE1 == 4, "Abroad 1 Year",
+                                    ifelse(MIGRATE1 == 9, "Unknown" , "Other")))))))
+
+
+
+```
+
+
+Education
+```{r}
+usa_education <- usa1[usa1$Education != "NA",] #REMOVES 11640 Observations, 1625834 Individuals
+
+#usa_education <- usa1
+
+
+expanded <- data.frame(Education = rep(usa_education$Education, usa_education$PERWT),
+                       Birthplace = rep(usa_education$Birthplace, usa_education$PERWT),
+                       GRADEATT = rep(usa_education$GRADEATT, usa_education$PERWT))
+
+plyr::count(expanded, "Education")
+
+library(ggplot2)
+library(plotly)
+#ZIP??
+ggplot(expanded, aes(GRADEATT)) + geom_bar()
+
+g <- ggplot(expanded, aes(GRADEATT, fill= Birthplace)) + geom_bar()
+
+ggplotly(g)
+plyr::count(expanded, "Birthplace")
+
+plyr::count(expanded, "Education")
+ctable <- table(expanded[,1:2])
+ctable
+
+
+```
+
+Education cont.
+```{r}
+g_density <- ggplot(expanded, aes(GRADEATT, fill = Birthplace, colour = Birthplace)) + geom_density(alpha=.5)
+ggplotly(g_density)
+
+aggregate(expanded[, 3], list(expanded$Birthplace), mean)
+aggregate(expanded[, 3], list(expanded$Birthplace), median)
+
+g_box <- ggplot(expanded, aes(x=Birthplace, y=GRADEATT)) + geom_boxplot()
+ggplotly(g_box)
+```
+Need to look at age as well.
+
+
+Migrate
+```{r}
+usa_migrate <- usa1[usa1$Migrate != "NA",] #REMOVES 57 Observations, 7348 Individuals
+
+#usa_migrate <- usa1
+
+
+migrate_expanded <- data.frame(Migrate = rep(usa_migrate$Migrate, usa_migrate$PERWT),
+                       Birthplace = rep(usa_migrate$Birthplace, usa_migrate$PERWT),
+                       MIGRATE1 = rep(usa_migrate$MIGRATE1, usa_migrate$PERWT))
+
+plyr::count(migrate_expanded, "Migrate")
+
+library(plotly)
+
+#ZIP BUT WITH 1?
+ggplot(migrate_expanded, aes(MIGRATE1)) + geom_bar()
+
+g <- ggplot(migrate_expanded, aes(MIGRATE1, fill= Birthplace)) + geom_bar()
+
+ggplotly(g)
+
+plyr::count(migrate_expanded, "Birthplace")
+plyr::count(migrate_expanded, "Migrate")
+
+ctable <- table(migrate_expanded[,1:2])
+ctable
+
+
+```
+
+Migrate cont.
+```{r}
+g_density <- ggplot(migrate_expanded, aes(MIGRATE1, fill = Birthplace, colour = Birthplace)) + geom_density(alpha=.5)
+ggplotly(g_density)
+
+aggregate(migrate_expanded[, 3], list(migrate_expanded$Birthplace), mean)
+aggregate(migrate_expanded[, 3], list(migrate_expanded$Birthplace), median)
+
+g_box <- ggplot(migrate_expanded, aes(x=Birthplace, y=MIGRATE1)) + geom_boxplot()
+g_box
+```
+
+One reason that it does not appear that there is a lot of migration, is because migrants may not have come in at the same time, and many might have come in later (after 2011). Migrants may not have had "time" to move to a different area. Explore the years next. 
+
+Maybe use # of years a person is in the US
+
+
+```{r}
+usa_year <- usa1[!is.na(usa1$YRIMMIG),] #REMOVES 41760 Observations, 1625834 Individuals
+
+#usa_year <- usa1
+
+
+year_expanded <- data.frame(Year = rep(usa_year$YRIMMIG, usa_year$PERWT),
+                       Birthplace = rep(usa_year$Birthplace, usa_year$PERWT))
+
+plyr::count(year_expanded, "Year")
+
+library(ggplot2)
+library(plotly)
+#ZIP??
+ggplot(year_expanded, aes(Year)) + geom_bar()
+
+g <- ggplot(year_expanded, aes(Year, fill= Birthplace)) + geom_bar()
+
+ggplotly(g)
+plyr::count(year_expanded, "Birthplace")
+
+plyr::count(year_expanded, "Year")
+ctable <- table(year_expanded[,1:2])
+ctable
+
+
+g_density <- ggplot(year_expanded, aes(Year, fill = Birthplace, colour = Birthplace)) + geom_density(alpha=.5)
+g_density
+
+aggregate(year_expanded[, 1], list(year_expanded$Birthplace), mean)
+aggregate(year_expanded[, 1], list(year_expanded$Birthplace), median)
+
+g_box <- ggplot(year_expanded, aes(x=Birthplace, y=Year)) + geom_boxplot()
+g_box
+```
+
+
+```{r }
+library(car)
+library(dplyr)
+library(readr)
+library(ipumsr)
+library(labelled)
+library(ggplot2)
+
+ddi1 <- read_ipums_ddi("/home/pelayo1/ImmigrationDUR/American Dream/cps_00005.xml")
+cps1 <- read_ipums_micro(ddi1, verbose = FALSE)
+
+```
+
+
+###
+datas1$NATIVE1<-recode_factor(datas1$NATIVE1,'Foreign born'= "Native",'Both parents native-born'="Native", 'Mother foreign, father native'= "ForeignNative",'Father foreign, mother native'= "ForeignNative",'Both parents foreign'="Foreign")
+ipums_val_labels(datas1$EMPSTAT)
+```{r, Data Cleaning}
+
+datas1 <- datas %>%
+  mutate(STATE_factor = droplevels(as_factor(STATEFIP)), BIRTHPLACE_factor= droplevels(as_factor(BPL)),NATIVE1= droplevels(as_factor(NATIVITY)), LABFORCE1= droplevels(as_factor(LABFORCE)), GENDER= droplevels(as_factor(SEX)), MOMBP =droplevels(as_factor(MBPL)), DADBP =droplevels(as_factor(FBPL)))
+
+datas1$LABFORCE1<-recode_factor(datas1$LABFORCE1,'Yes, in the labor force'= "Yes",'No, not in the labor force'="No", 'NIU'= "Armed Forces") # recoding labor force 
+
+datas1$CITIZEN <- lbl_relabel(datas1$CITIZEN,
+  lbl(0, "NIU") ~ .val %in% c(0, 9, 1),
+  lbl(1, "Citizen") ~ .val %in% 2,
+  lbl(2, "NonCitizen") ~ .val %in% 3)
+datas1$CITIZEN1 <- droplevels(as_factor(datas1$CITIZEN))
+datas1$RACE <- lbl_relabel(datas1$RACE,
+  lbl(1, "White") ~ .val %in% c(100,816,817,801,802,803,804,810,811,812,813,814,819),
+  lbl(2, "Black") ~ .val %in% c(200,818,805,806,807),
+  lbl(3, "Asian") ~ .val %in% c(650,651,809),
+  lbl(4, "IndianAmerican") ~ .val %in% c(300,815,808),
+  lbl(6, "Other") ~ .val %in% c(700,820,830,999),
+  lbl(5,"PacificIslander")~ .val%in% 652)
+datas1$RACE1 <- droplevels(as_factor(datas1$RACE))
+datas1$FAMINC <- lbl_relabel(datas1$FAMINC,
+  lbl(100, "Under $5,000") ~ .val %in% c(100,995,996,997,999))
+datas1$METRO1 <- lbl_relabel(datas1$METRO,
+  lbl(0, "Unknown") ~ .val %in% c(0,4,9),
+  lbl(1, "Metropolitan") ~ .val %in% c(2, 3),
+  lbl(2, "Non-Metropolitan") ~ .val %in% 1)
+datas1$METRO1<- droplevels(as_factor(datas1$METRO1))
+datas1$EMPSTAT1 <- lbl_relabel(datas1$EMPSTAT,
+  lbl(1, "Armed Forces") ~ .val %in% c(0,1),
+  lbl(2, "Employed") ~ .val %in% c(10,12),
+  lbl(3, "Unemployed") ~ .val %in% c(20,21,22),
+  lbl(4, "NILF") ~ .val %in% c(31,32,33,34,35,36))
+datas1$EMPSTAT1 <- droplevels(as_factor(datas1$EMPSTAT1))
+datas1$HISPAN1<-droplevels(as_factor(datas1$HISPAN))
+datas1$WKSTAT1 <- lbl_relabel(datas1$WKSTAT,
+  lbl(1, "Full-Time") ~ .val %in% c(10,11,12,13,14,15),
+  lbl(2, "Part-Time") ~ .val %in% c(20,21,22,40,41,42),
+  lbl(3, "Unemployed") ~ .val %in% c(50,60),
+  lbl(4, "NILF") ~ .val %in% 99)
+datas1$WKSTAT1<-droplevels(as_factor(datas1$WKSTAT1))
+datas1$CLASSWKR1 <- lbl_relabel(datas1$CLASSWKR,
+  lbl(1, "Self-employed") ~ .val %in% c(10,13,14),
+  lbl(2, "Wages/Salary") ~ .val %in% c(20,21,24),
+  lbl(3, "Private") ~ .val %in% c(22,23),
+  lbl(4, "Government") ~ .val %in% c(25,50,60,27,28),
+  lbl(5, "Armed Forces") ~ .val %in% c(0,26),
+  lbl(6, "Unpaid") ~ .val %in% c(29,99))
+datas1$CLASSWKR1 <- droplevels(as_factor(datas1$CLASSWKR1))
+datas1$FAMINC_FACTOR <- as.numeric(droplevels(as_factor(datas1$FAMINC)))
+View(datas1)
+
+
+```
+
+
+
+```{r}
+employment2<- table(datas1$EMPSTAT1, datas1$NATIVE1)
+employment1B<-prop.table(employment2)
+employment1B
+barplot(employment2,legend=T,beside=T,main='Employment Status by citizenship')
+barplot(employment1B,legend=T,beside=T,main='Smoking Status by Employment Status')
+mosaicplot(employment2,main="Employment",xlab="Citizenship",ylab="Economic Status")
+summary(employment2)
+```
+
+```{r}
+employment3 <- table(datas1$EMPSTAT1, datas1$RACE1)
+employment1C<-prop.table(employment3)
+employment1C
+barplot(employment3,legend=T,beside=T,main='Employment Status by Race')
+barplot(employment1C,legend=T,beside=T,main='Smoking Status by Employment Status')
+mosaicplot(employment3,main="Employment",xlab="Citizenship",ylab="Economic Status")
+
+
+```
+
+
+
+```{r}
+datas2<-select( filter(datas1, NATIVITY == 4 |NATIVITY ==5) 
+                 , c(YEAR,MONTH, CPSID, STATE_factor, AGE, GENDER,WKSTAT1,HISPAN1,CLASSWKR1,FAMINC_FACTOR,EMPSTAT1,METRO1,RACE1,LABFORCE1,MOMBP,DADBP,NATIVITY,BPL))
+datas2$NATIVITY1 <- droplevels(as_factor(datas2$NATIVITY))
+datas2$NATIVITY1 <- recode_factor(datas2$NATIVITY1, 'Both parents foreign' = "Foreign born Parents")
+
+View(datas2)
+```
+
+```{R}
+mosaicplot(table(datas2$EMPSTAT1, datas2$NATIVITY1),main="Employment",xlab="Citizenship",ylab="Economic Status")
+barplot(table(datas2$EMPSTAT1, datas2$NATIVITY1),legend=T,beside=T,main='Employment Status by citizenship')
+mosaicplot(table(datas2$WKSTAT1, datas2$NATIVITY1),main="Employment",xlab="Citizenship",ylab="Economic Status")
+barplot(table(datas2$WKSTAT1, datas2$NATIVITY1),legend=T,beside=T,main='Employment Status by citizenship')
+```
+
+
+```{r}
+datas3<-select( filter(datas2, BPL == 53200| BPL == 53000| BPL == 54400| BPL == 54100| BPL == 60500| BPL == 60019| BPL == 60018| BPL == 60012) , c(YEAR,MONTH, CPSID, STATE_factor, AGE, GENDER,WKSTAT1,HISPAN1,CLASSWKR1,NATIVITY1,FAMINC_FACTOR,EMPSTAT1,METRO1,RACE1,LABFORCE1,MOMBP,DADBP,NATIVITY,BPL))
+datas3$BPL1 <- droplevels(as_factor(datas3$BPL))
+datas3$BPL1 <-recode_factor(datas3$BPL1, 'Egypt/United Arab Rep.' = "Egypt/UAE")
+View(datas3)
+```
+
+
+
+```{r}
+employment4 <- table(datas3$EMPSTAT1, datas3$BPL1)
+employment4
+barplot(employment4,legend=T,beside=T,main='Employment Status by citizenship')
+```
+
+```{r}
+employment5 <- table(datas3$WKSTAT1, datas3$BPL1)
+employment5
+barplot(employment5,legend=T,beside=T,main='Working Status by Birth Place')
+```
+
+```{r}
+employment6 <- table(datas3$CLASSWKR1, datas3$BPL1)
+employment6
+barplot(employment6,legend=T,beside=T,main='Class work by Birth place')
+
+```
+
+

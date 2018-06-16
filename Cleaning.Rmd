@@ -1,0 +1,318 @@
+---
+title: "American Dream"
+author: "Pony Ameri"
+date: "3/21/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Cleaning
+```{r}
+library(readr)
+library(dplyr)
+library(plyr)
+library(car)
+library(ipumsr)
+library(labelled)
+library(ggplot2)
+library(mosaic)
+
+
+
+usa_ddi <- read_ipums_ddi("/home/pelayo1/ImmigrationDUR/Josh_files/usa_00008.xml")
+usa_data <- read_ipums_micro(usa_ddi, verbose = FALSE)
+usa_data <- usa_data %>%
+  mutate(METRO = droplevels(as_factor(METRO)), BIRTHPLACE_factor= droplevels(as_factor(BPL)), LABFORCE1= droplevels(as_factor(LABFORCE)), SEX= droplevels(as_factor(SEX)),FOODSTMP= droplevels(as_factor(FOODSTMP)), RELATE= droplevels(as_factor(RELATE)),RELATED= droplevels(as_factor(RELATED)), MARST= droplevels(as_factor(MARST)), BPL = droplevels(as_factor(BPL)),BPLD = droplevels(as_factor(BPLD)), CITIZEN = droplevels(as_factor(CITIZEN)),RACESING=droplevels.factor(RACESING),RACESINGD=droplevels(as_factor(RACESINGD)),HCOVANY = droplevels(as_factor(HCOVANY)),HCOPRIV = droplevels(as_factor(HCOVPRIV)), EDUCATION = droplevels(as_factor(GRADEATT)),EDUCATIOND= droplevels(as_factor(GRADEATTD)),EMPLOYMENT = droplevels(as_factor(EMPSTAT)), EMPLOYMENTD = droplevels(as_factor(EMPSTATD)), LABFORCE = droplevels(as_factor(LABFORCE)), IND = droplevels(as_factor(IND)),
+ CLASSWKR = droplevels(as_factor(CLASSWKR)), CLASSWKRD = droplevels(as_factor(CLASSWKRD)), POVERTY = droplevels(as_factor(POVERTY)), MIGRATE1 = droplevels(as_factor(MIGRATE1)), MIGRATE1D = droplevels(as_factor(MIGRATE1D)), MIGPLAC1 = droplevels(as_factor(MIGPLAC1)), TRANWORK = droplevels(as_factor(TRANWORK)))
+usa_data$BPLD <-recode_factor(usa_data$BPLD, 'Egypt/United Arab Rep.' = "Egypt/UAE", 'Yemen Arab Republic (North)' = "Yemen")
+usa_data$EMPLOYMENT <-recode_factor(usa_data$EMPLOYMENT, 'N/A' = "Armed Forces")
+usa_data$LABFORCE1<-recode_factor(usa_data$LABFORCE1,'Yes, in the labor force'= "Yes",'No, not in the labor force'="No") 
+usa_data$METRO<-recode_factor(usa_data$METRO,'Central / Principal city status unknown' = " Metro area, central", 'In metro area, central / principal city' = " Metro area, central",'In metro area, outside central / principal city' ="Metro area, outside central")
+  
+usa_data <- usa_data %>% filter(YRIMMIG >1995,AGE >= 25)
+usa_data$YRSINUSA <- usa_data$YEAR - usa_data$YRIMMIG
+usa_data <- usa_data[usa_data$OWNERSHP != "0",]
+usa_data$POVERTY <- as.numeric(usa_data$POVERTY)
+
+usa_data <- usa_data %>% mutate(YRGROUP = ifelse(YRSINUSA <= 5,"0-5",
+                                    ifelse(YRSINUSA >5 & YRSINUSA <=10, "6-10",
+                                   ifelse(YRSINUSA >10 & YRSINUSA <=15, "11-15",
+                                    ifelse(YRSINUSA >15, ">15", "N/A")))),
+                                Employment = ifelse(EMPLOYMENT == "Employed", 1,0), 
+                              Laborforce = ifelse(LABFORCE1=="Yes",1,0),
+                              Residence = ifelse(METRO == "Metro area, outside  central",1,0), 
+                              Ownhome = ifelse(OWNERSHP==1, 1,0),  
+                              OWNERSHP = droplevels(as_factor(OWNERSHP)),
+                              Poverty = ifelse(POVERTY >100, 1,0))
+usa_data$OWNERSHP <-recode_factor(usa_data$OWNERSHP, 'Owned or being bought (loan)' = "Own", 'Rented' = "Rent")
+View(usa_data)
+table(usa_data$HCOVANY)
+
+```
+
+```{r}
+usa_education <- usa_data[usa_data$EDUCATIOND != "N/A",] #REMOVES 11640 Observations, 1625834 Individuals
+
+#usa_education <- usa1
+
+
+expanded <- data.frame(Education = rep(usa_education$EDUCATIOND, usa_education$PERWT),
+                       Birthplace = rep(usa_education$BPLD, usa_education$PERWT),
+                       GRADEATT = rep(usa_education$GRADEATT, usa_education$PERWT))
+
+plyr::count(expanded, "Education")
+
+#ZIP??
+ggplot(expanded, aes(GRADEATT)) + geom_bar()
+
+g <- ggplot(expanded, aes(GRADEATT, fill= Birthplace)) + geom_bar()
+g
+plyr::count(expanded, "Birthplace")
+
+plyr::count(expanded, "Education")
+ctable <- table(expanded[,1:2])
+ctable
+
+g_density <- ggplot(expanded, aes(GRADEATT, fill = Birthplace, colour = Birthplace)) + geom_density(alpha=.5)
+g_density
+
+aggregate(expanded[, 3], list(expanded$Birthplace), mean)
+aggregate(expanded[, 3], list(expanded$Birthplace), median)
+
+g_box <- ggplot(expanded, aes(x=Birthplace, y=GRADEATT)) + geom_boxplot()
+g_box
+```
+This is for age >25. Education is not a great predictor. 
+
+Migrate
+```{r}
+usa1 <- usa_data
+usa_migrate <- usa1[usa1$Migrate != "N/A",] #REMOVES 57 Observations, 7348 Individuals
+
+#usa_migrate <- usa1
+
+
+migrate_expanded <- data.frame(Migrate = rep(usa_migrate$MIGRATE1, usa_migrate$PERWT),
+                       Birthplace = rep(usa_migrate$Birthplace, usa_migrate$PERWT),
+                       MIGRATE1 = rep(usa_migrate$MIGRATE1, usa_migrate$PERWT))
+
+plyr::count(migrate_expanded, "Migrate")
+
+library(plotly)
+
+#ZIP BUT WITH 1?
+ggplot(migrate_expanded, aes(MIGRATE1)) + geom_bar()
+
+g <- ggplot(migrate_expanded, aes(MIGRATE1, fill= Birthplace)) + geom_bar()
+
+ggplotly(g)
+
+plyr::count(migrate_expanded, "Birthplace")
+plyr::count(migrate_expanded, "Migrate")
+
+ctable <- table(migrate_expanded[,1:2])
+ctable
+
+
+```
+
+Migrate cont.
+```{r}
+g_density <- ggplot(migrate_expanded, aes(MIGRATE1, fill = Birthplace, colour = Birthplace)) + geom_density(alpha=.5)
+ggplotly(g_density)
+
+aggregate(migrate_expanded[, 3], list(migrate_expanded$Birthplace), mean)
+aggregate(migrate_expanded[, 3], list(migrate_expanded$Birthplace), median)
+
+g_box <- ggplot(migrate_expanded, aes(x=Birthplace, y=MIGRATE1)) + geom_boxplot()
+g_box
+```
+
+One reason that it does not appear that there is a lot of migration, is because migrants may not have come in at the same time, and many might have come in later (after 2011). Migrants may not have had "time" to move to a different area. Explore the years next. 
+
+Maybe use # of years a person is in the US
+
+
+```{r}
+usa1 <- usa_data
+usa_year <- usa1[!is.na(usa1$YRIMMIG),] #REMOVES 41760 Observations, 1625834 Individuals
+
+#usa_year <- usa1
+
+
+year_expanded <- data.frame(Year = rep(usa_year$YRIMMIG, usa_year$PERWT),
+                       Birthplace = rep(usa_year$BPLD, usa_year$PERWT))
+
+plyr::count(year_expanded, "Year")
+
+library(ggplot2)
+library(plotly)
+#ZIP??
+ggplot(year_expanded, aes(Year)) + geom_bar()
+
+g <- ggplot(year_expanded, aes(Year, fill= Birthplace)) + geom_bar()
+
+ggplotly(g)
+plyr::count(year_expanded, "Birthplace")
+plyr::count(year_expanded, "Year")
+ctable <- table(year_expanded[,1:2])
+ctable
+
+
+g_density <- ggplot(year_expanded, aes(Year, fill = Birthplace, colour = Birthplace)) + geom_density(alpha=.5)
+g_density
+ggplotly(g_density)
+
+aggregate(year_expanded[, 1], list(year_expanded$Birthplace), mean)
+aggregate(year_expanded[, 1], list(year_expanded$Birthplace), median)
+
+g_box <- ggplot(year_expanded, aes(x=Birthplace, y=Year)) + geom_boxplot()
+g_box
+```
+
+
+```{r, employment status}
+#usa_year <- usa1
+usa1<-usa_data
+
+employ_expanded <- data.frame(Country = rep(usa1$BPLD, usa1$PERWT),
+                       Employment = rep(usa1$EMPLOYMENT, usa1$PERWT),Year=rep(usa1$YEAR, usa1$PERWT), Gender=rep(usa1$SEX, usa1$PERWT), Time = rep(usa1$YRSINUSA, usa1$PERWT))
+ggplot(employ_expanded, aes(Country, fill= Employment)) + geom_bar()
+ggplot(employ_expanded, aes(Country, fill= Employment)) + geom_density(alpha=.5)
+table(employ_expanded[,1:2])
+
+
+ggplot(employ_expanded, aes(Time, fill=Employment)) + 
+  geom_bar() +labs(title="Yearly Time Series",subtitle ="Employment over time", x = "Year", y ="Count")  + theme(plot.title = element_text(lineheight=.8, face="bold", 
+                                          size = 15)) +
+           theme(text = element_text(size=12))
+
+ggplot(employ_expanded, aes(Country, fill=Employment)) + 
+  geom_bar() +facet_wrap(~Time)+ labs(title="Yearly Time Series",subtitle ="Employment over time", x = "Year", y ="Count")  + theme(plot.title = element_text(lineheight=.8, face="bold", 
+                                          size = 15)) +
+           theme(text = element_text(size=12))
+
+```
+
+```{r, labor force}
+#usa_year <- usa1
+usa1<-usa_data
+lbf_expanded <- data.frame(Country = rep(usa1$BPLD, usa1$PERWT),
+                       Laborforce = rep(usa1$LABFORCE1, usa1$PERWT), Year=rep(usa1$YEAR, usa1$PERWT), Time = rep(usa1$YRSINUSA, usa1$PERWT) )
+ggplot(lbf_expanded, aes(Country, fill= Laborforce)) + geom_bar()
+
+ggplot(lbf_expanded, aes(Time, fill= Laborforce)) + 
+  geom_bar(position = position_dodge(0.9), width = 0.9) +labs(title= "Labor Force Status over Time", x = "Year", y ="Count")  + theme(plot.title = element_text(lineheight=.8, face="bold", 
+                                          size = 15)) +
+           theme(text = element_text(size=12))
+```
+
+```{r}
+usa1<-usa_data
+CW_expanded <- data.frame(Country = rep(usa1$BPLD, usa1$PERWT),
+                       Classwork = rep(usa1$CLASSWKR, usa1$PERWT), Year=rep(usa1$YEAR, usa1$PERWT), Time = rep(usa1$YRSINUSA, usa1$PERWT) )
+ggplot(CW_expanded, aes(Country, fill= Classwork)) + geom_bar()
+ggplot(CW_expanded, aes(Classwork, fill= Country)) + geom_bar()
+ggplot(CW_expanded, aes(Country, fill= Classwork)) + geom_density(alpha=.5)
+
+ggplot(CW_expanded, aes(Time, fill= Classwork)) + 
+  geom_bar() +labs(title= "Class of worker over Time", x = "Year", y ="Count")  + theme(plot.title = element_text(lineheight=.8, face="bold", 
+                                          size = 15)) +
+           theme(text = element_text(size=12))
+```
+
+ggplot(home, aes(Year,fill =City)) + geom_bar ()+facet_wrap(~Country)
+```{r}
+usa1<-usa_data
+home <- data.frame(Country = rep(usa1$BPLD, usa1$PERWT),
+                       Area = rep(usa1$METRO, usa1$PERWT), Year=rep(usa1$YEAR, usa1$PERWT), Time= rep(usa1$YRSINUSA, usa1$PERWT))
+ggplot(home, aes(Country, fill= Area)) + geom_bar(position = position_dodge(0.8))
+ggplot(home, aes(Country, fill= Area)) + geom_density(alpha=.5)
+plyr::count(home, "Area")
+
+ggplot(home, aes(Time, fill= Area)) + 
+  geom_bar(position = position_dodge(0.9), width = 0.9) +labs(title= "Area of Residence over time", x = "Year", y ="Count")  + theme(plot.title = element_text(lineheight=.8, face="bold", 
+                                          size = 15)) +
+           theme(text = element_text(size=12))
+```
+
+```{r, Income}
+usa1<-usa_data
+
+cps_data %>% 
+  filter(FOODSTMP %in% c(1,2)) %>% 
+  group_by((EMPSTAT)) %>% 
+  summarize(fs_pct = weighted.mean(FOODSTMP == 2, ASECWT))
+  
+Income <- data.frame(Country = rep(usa1$BPLD, usa1$PERWT),
+                       income = rep(usa1$FTOTINC, usa1$PERWT), Year=rep(usa1$YEAR, usa1$PERWT),Time= rep(usa1$YRSINUSA, usa1$PERWT))
+
+Income3 <- aggregate( Income[,2], list(country=Income$Country, time= Income$Time,year =Income$Year),mean)
+Income3$meanincome <- Income3$x
+
+head(Income3)
+ggplot(Income3, aes(x=year,y=meanincome)) + 
+  geom_line(aes(color = country), size = 1) +labs(title="Yearly Time Series",subtitle ="Income over time by country", x = "Year", y ="Income")  + theme(plot.title = element_text(lineheight=.8, face="bold", 
+                                          size = 15)) +
+           theme(text = element_text(size=12))
+
+# Area plot
+ggplot(Income3, aes(time,y=meanincome)) + 
+  geom_area(aes(color = country, fill = country), 
+            alpha = 0.5, position = position_dodge(0.8))+labs(title="Yearly Time Series",subtitle ="Income over time by country", x = "Year", y ="Income")  + theme(plot.title = element_text(lineheight=.8, face="bold", 
+                                          size = 15)) +
+           theme(text = element_text(size=12))
+```
+
+Health Care
+
+```{r}
+
+usa1 <- usa_data
+usa_health <- usa1[!is.na(usa1$HCOVANY),] #REMOVES 842 Observations, 1625834 Individuals
+
+#usa_education <- usa1
+
+
+health_expanded <- data.frame(Health = rep(usa_health$HCOVANY, usa_health$PERWT),
+                       Birthplace = rep(usa_health$BPLD, usa_health$PERWT),
+                       Private = rep(usa_health$HCOPRIV, usa_health$PERWT))
+
+plyr::count(health_expanded, "Health") #4431 without insurance, 12693-4941 = 7752 with public health insurance
+plyr::count(health_expanded, "Private") #17124 total; 4941 with private health insurance
+
+
+
+#ZIP??
+ggplot(health_expanded, aes(Health)) + geom_bar()
+
+g <- ggplot(health_expanded, aes(Health, fill= Private)) + geom_bar()
+g
+
+ctable <- table(health_expanded[,1:2])
+
+ctable
+
+require(ggplot2)
+require(scales)
+
+ggplot(health_expanded, aes(x= Birthplace,  group=Health)) + 
+    geom_bar(aes(y = ..prop.., fill = factor(..x..)), stat="count") +
+    geom_text(aes( label = scales::percent(..prop..),
+                   y= ..prop.. ), stat= "count", vjust = -.5) +
+    labs(y = "Percent", fill="day") +
+    facet_grid(~Health) +
+    scale_y_continuous(labels = scales::percent)
+
+aggregate(expanded[, 3], list(expanded$Birthplace), mean)
+aggregate(expanded[, 3], list(expanded$Birthplace), median)
+```
+
+```{r}
+
+
+```
+
