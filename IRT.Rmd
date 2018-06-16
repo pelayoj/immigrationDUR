@@ -1,0 +1,373 @@
+---
+title: "IRT"
+output: html_document
+---
+
+IRT
+```{r}
+library(readr)
+library(dplyr)
+
+library(car)
+library(plyr)
+library(ipumsr)
+library(labelled)
+library(ggplot2)
+library(mosaic)
+
+
+usa_ddi <- read_ipums_ddi("/home/pelayo1/ImmigrationDUR/American Dream/usa_00008.xml")
+usa_data <- read_ipums_micro(usa_ddi, verbose = FALSE)
+usa_data <- usa_data %>%
+  mutate(METRO = droplevels(as_factor(METRO)), BIRTHPLACE_factor= droplevels(as_factor(BPL)), LABFORCE1= droplevels(as_factor(LABFORCE)), SEX= droplevels(as_factor(SEX)),FOODSTMP= droplevels(as_factor(FOODSTMP)), RELATE= droplevels(as_factor(RELATE)),RELATED= droplevels(as_factor(RELATED)), MARST= droplevels(as_factor(MARST)), BPL = droplevels(as_factor(BPL)),BPLD = droplevels(as_factor(BPLD)), CITIZEN = droplevels(as_factor(CITIZEN)),RACESING=droplevels.factor(RACESING),RACESINGD=droplevels(as_factor(RACESINGD)),HCOVANY = droplevels(as_factor(HCOVANY)),HCOPRIV = droplevels(as_factor(HCOVPRIV)), EDUCATION = droplevels(as_factor(GRADEATT)),EDUCATIOND= droplevels(as_factor(GRADEATTD)),EMPLOYMENT = droplevels(as_factor(EMPSTAT)), EMPLOYMENTD = droplevels(as_factor(EMPSTATD)), LABFORCE = droplevels(as_factor(LABFORCE)), IND = droplevels(as_factor(IND)),
+ CLASSWKR = droplevels(as_factor(CLASSWKR)), CLASSWKRD = droplevels(as_factor(CLASSWKRD)), POVERTY = droplevels(as_factor(POVERTY)), MIGRATE1 = droplevels(as_factor(MIGRATE1)), MIGRATE1D = droplevels(as_factor(MIGRATE1D)), MIGPLAC1 = droplevels(as_factor(MIGPLAC1)), TRANWORK = droplevels(as_factor(TRANWORK)), OWNERSHP  = droplevels(as_factor(OWNERSHP)), HCOVPRIV1 = droplevels(as_factor(HCOVPRIV)), RACE= droplevels(as_factor(RACESING)))
+usa_data$BPLD <-recode_factor(usa_data$BPLD, 'Egypt/United Arab Rep.' = "Egypt/UAE", 'Yemen Arab Republic (North)' = "Yemen")
+usa_data$EMPLOYMENT <-recode_factor(usa_data$EMPLOYMENT, 'N/A' = "Armed Forces")
+usa_data$LABFORCE1<-recode_factor(usa_data$LABFORCE1,'Yes, in the labor force'= "Yes",'No, not in the labor force'="No") 
+usa_data$METRO<-recode_factor(usa_data$METRO,'Central / Principal city status unknown' = " Metro area, central", 'In metro area, central / principal city' = " Metro area, central",'In metro area, outside central / principal city' ="Metro area, outside central")
+usa_data$OWNERSHP <-recode_factor(usa_data$OWNERSHP, 'Owned or being bought (loan)' = "Own", 'Rented' = "Rent")
+usa_data <- usa_data %>% filter(YRIMMIG >1995,AGE >= 25)
+usa_data$YRSINUSA <- usa_data$YEAR - usa_data$YRIMMIG
+usa_data <- usa_data[usa_data$OWNERSHP != "0",]
+usa_data$POVERTY <- as.numeric(usa_data$POVERTY)
+usa_data <- usa_data[!is.na(usa_data$HCOVANY),]
+usa_data <- usa_data %>% mutate(YRGROUP = ifelse(YRSINUSA <= 5,"0-5",
+                                    ifelse(YRSINUSA >5 & YRSINUSA <=10, "6-10",
+                                   ifelse(YRSINUSA >10 & YRSINUSA <=15, "11-15",
+                                    ifelse(YRSINUSA >15, ">15", "N/A")))),
+                                Employment = ifelse(EMPLOYMENT == "Employed", 1,0), 
+                              Laborforce = ifelse(LABFORCE1=="Yes",1,0),
+                              Residence = ifelse(METRO == "Metro area, outside central",1,0), 
+                              Ownhome = ifelse(OWNERSHP=="Own",1,0),
+                              Poverty = ifelse(POVERTY >150, 1,0),
+                              Health = ifelse(HCOVPRIV1 == "With private health insurance coverage", 1, 0),
+                              Foodstamp = ifelse(FOODSTMP=="No",1,0),
+                              White = ifelse(RACE==1,1,0),
+                              Citizen = ifelse(CITIZEN == ' Not a citizen', 0, 1))
+
+```
+                 
+                 
+                 
+```{r}
+library(readr)
+library(dplyr)
+library(car)
+library(plyr)
+library(ipumsr)
+library(labelled)
+library(ggplot2)
+library(mosaic)
+
+usa_ddi1 <- read_ipums_ddi("/home/pelayo1/ImmigrationDUR/American Dream/usa_00013.xml")
+usadata <- read_ipums_micro(usa_ddi1, verbose = FALSE)
+usadata <-usadata %>% filter(AGE > 25)
+usadata <- na.omit(usadata)
+
+usadata <- usadata %>%
+  mutate(METRO = droplevels(as_factor(METRO)), BIRTHPLACE_factor= droplevels(as_factor(BPL)), LABFORCE1= droplevels(as_factor(LABFORCE)), SEX= droplevels(as_factor(SEX)),FOODSTMP= droplevels(as_factor(FOODSTMP)), RELATE= droplevels(as_factor(RELATE)),RELATED= droplevels(as_factor(RELATED)), MARST= droplevels(as_factor(MARST)), BPL = droplevels(as_factor(BPL)),BPLD = droplevels(as_factor(BPLD)), CITIZEN = droplevels(as_factor(CITIZEN)),RACESING=droplevels.factor(RACESING),RACESINGD=droplevels(as_factor(RACESINGD)),HCOVANY = droplevels(as_factor(HCOVANY)),HCOPRIV = droplevels(as_factor(HCOVPRIV)), EDUCATION = droplevels(as_factor(GRADEATT)),EDUCATIOND= droplevels(as_factor(GRADEATTD)),EMPLOYMENT = droplevels(as_factor(EMPSTAT)), EMPLOYMENTD = droplevels(as_factor(EMPSTATD)), LABFORCE = droplevels(as_factor(LABFORCE)), IND = droplevels(as_factor(IND)),
+ CLASSWKR = droplevels(as_factor(CLASSWKR)), CLASSWKRD = droplevels(as_factor(CLASSWKRD)), MIGRATE1 = droplevels(as_factor(MIGRATE1)), MIGRATE1D = droplevels(as_factor(MIGRATE1D)), MIGPLAC1 = droplevels(as_factor(MIGPLAC1)), TRANWORK = droplevels(as_factor(TRANWORK)), OWNERSHP  = droplevels(as_factor(OWNERSHP)), HCOVPRIV1 = droplevels(as_factor(HCOVPRIV)), RACE= droplevels(as_factor(RACESING)))
+
+usadata$POVERTY = as.numeric(usadata$POVERTY)
+usadata <- usadata[!is.na(usadata$HCOVPRIV1),]
+usadata <- usadata[usadata$OWNERSHP != "N/A",]
+usadata$LABFORCE1<-recode_factor(usadata$LABFORCE1,'Yes, in the labor force'= "Yes",'No, not in the labor force'="No") 
+usadata$OWNERSHP <-recode_factor(usadata$OWNERSHP, 'Owned or being bought (loan)' = "Own", 'Rented' = "Rent")
+usadata$YRSINUSA <- usadata$YEAR - usadata$YRIMMIG
+usadata <- usadata %>% mutate(YRGROUP = ifelse(YRSINUSA <= 5,"0-5",
+                                    ifelse(YRSINUSA >5 & YRSINUSA <=10, "6-10",
+                                   ifelse(YRSINUSA >10 & YRSINUSA <=15, "11-15",
+                                    ifelse(YRSINUSA >15, ">15", "N/A")))),
+                              Employment1 = ifelse(EMPLOYMENT == "Employed", 1,0), 
+                              Laborforce1 = ifelse(LABFORCE1=="Yes",1,0),
+                              Residence1 = ifelse(METRO == "Metro area, outside central",1,0), 
+                              Ownhome1 = ifelse(OWNERSHP=="Own",1,0),
+                              Poverty1 = ifelse(POVERTY > 150, 1,0),
+                              Health1 = ifelse(HCOVPRIV1 == "With private health insurance coverage", 1, 0),
+                              Foodstamp1 = ifelse(FOODSTMP=="No",1,0),
+                              White1 = ifelse(RACE==1,1,0),
+                              Citizen1 = ifelse(CITIZEN == ' Not a citizen', 0, 1))
+
+
+```
+
+
+
+```{r}
+######### IRT ########
+View(usadata)
+#### Immigrants
+par(mfrow=c(2,2))
+immigus <- data.frame(Emp= rep(usa_data$Employment, usa_data$PERWT),
+                 Pov = rep(usa_data$Poverty, usa_data$PERWT),
+                 Fs = rep(usa_data$Foodstamp, usa_data$PERWT),
+                Home = rep(usa_data$Ownhome,usa_data$PERWT),
+                Hlth = rep(usa_data$Health, usa_data$PERWT),
+                Years = rep(usa_data$YRGROUP,usa_data$PERWT))
+View(immigus)
+library(ltm)
+library(msm)
+descript(immigus)
+ADmodel <- ltm(immigus[,1:5]~z1, IRT.param = T)
+plot(ADmodel, main = "Immigrant Success Score", type="ICC")
+plot(ADmodel, type="IIC",main = "Immigrant Item Information Curve")
+
+
+##### Non-Immigrants
+library(data.table)
+set.seed(57)
+samp <- data.table(usadata)
+nonimm<-samp[sample(nrow(samp), 10000)]
+nonimm.subset <- data.frame(Emp= rep(nonimm$Employment1, nonimm$PERWT),
+                 Pov = rep(nonimm$Poverty1, nonimm$PERWT),
+                 Fs = rep(nonimm$Foodstamp1, nonimm$PERWT),
+                Home = rep(nonimm$Ownhome1,nonimm$PERWT),
+                Hlth = rep(nonimm$Health1, nonimm$PERWT))
+
+library(ltm)
+library(msm)
+descript(nonimm.subset)
+ADmodel.a <- ltm(nonimm.subset~z1, IRT.param = T)
+plot(ADmodel.a, main = "Non- immigrant Success Score", type="ICC")
+plot(ADmodel.a, type="IIC",main = "Immigrant Item Information Curve")
+
+```
+
+The Item characteristic curve illustrates that owning a home, being above the poverty level and not being recipients of food stamps are in general very difficult to attain. 
+
+A high discrimination parameter value suggests an item that has a high ability to differentiate subjects.
+In practice, a high discrimination parameter value means that the probability of a correct response increases more rapidly as the ability (latent trait) increases.
+
+The discrimination parameter for the employment, Poverty, Food stamp recipiency, Owning a home and having private health insurance is 0.9, 2.89, 1.86, 0.92 and 2.11 respectively.
+
+This means that the probability of an immigrant from these countries to be above the poverty level, not require assistance purchasing food, and have private health insurance coverage increases more rapidly as the ability increases, compared to the probability of being employed and owning a home.
+
+```{r}
+#### Success score over time for immigrants
+par(mfrow = c(2,2))
+immigus1 <- immigus %>% filter(Years=="0-5")
+AD <- ltm(immigus1[,1:5]~z1, IRT.param = T)
+plot(AD, main = "Immigrant Success Score for first 5 years", type="ICC")
+plot(AD, type="IIC",main = "Immigrant Item Information Curve for first 5 years")
+
+immigus2 <- immigus %>% filter(Years=="6-10")
+AD1 <- ltm(immigus2[,1:5]~z1, IRT.param = T)
+plot(AD1, main = "Immigrant Success Score from 6-10 years", type="ICC")
+plot(AD1, type="IIC",main = "Immigrant Item Information Curve from 6-10 years")
+
+immigus3 <- immigus %>% filter(Years=="11-15")
+AD2 <- ltm(immigus3[,1:5]~z1, IRT.param = T)
+plot(AD2, main = "Immigrant Success Score from 11-15 years", type="ICC")
+plot(AD2, type="IIC",main = "Immigrant Item Information Curve from 11-15 years")
+
+immigus4 <- immigus %>% filter(Years==">15")
+AD3 <- ltm(immigus4[,1:5]~z1, IRT.param = T)
+plot(AD3, main = "Immigrant Success Score for over 15 years", type="ICC")
+plot(AD3, type="IIC",main = "Immigrant Item Information Curve for over 15 years")
+```
+
+
+```{r}
+
+par(mfrow = c(2,2))
+us1 <-usa_data%>% filter(BPLD == "Yemen")
+
+usYemen <- data.frame(Emp= rep(us1$Employment, us1$PERWT),
+                 Pov = rep(us1$Poverty, us1$PERWT),
+                 Fs = rep(us1$Foodstamp, us1$PERWT),
+                Home = rep(us1$Ownhome,us1$PERWT),
+                Hlth = rep(us1$Health, us1$PERWT))
+
+descript(usYemen)
+ADmodel1 <- ltm(usYemen~z1, IRT.param = T)
+summary(ADmodel1)
+plot(ADmodel1, main = "Success Score for Yemen", type="ICC")
+plot(ADmodel1, type="IIC",main = "Yemen Item Information Curve")
+
+#Iran
+us2 <-usa_data%>% filter(BPLD == "Iran")
+
+usIran<- data.frame(Emp= rep(us2$Employment, us2$PERWT),
+                 Pov = rep(us2$Poverty, us2$PERWT),
+                 Fs = rep(us2$Foodstamp, us2$PERWT),
+                Home = rep(us2$Ownhome,us2$PERWT),
+                Hlth = rep(us2$Health, us2$PERWT))
+
+descript(usIran)
+ADmodel2 <- ltm(usIran~z1, IRT.param = T)
+summary(ADmodel2)
+plot(ADmodel2, main = "Success Score for Iran", type="ICC")
+plot(ADmodel2, type="IIC",main = "Iran Item Information Curve")
+
+#Egypt/UAE
+us3 <-usa_data%>% filter(BPLD == "Egypt/UAE")
+
+usEgypt<- data.frame(Emp= rep(us3$Employment, us3$PERWT),
+                 Pov = rep(us3$Poverty,us3$PERWT),
+                 Fs = rep(us3$Foodstamp,us3$PERWT),
+                Home = rep(us3$Ownhome,us3$PERWT),
+                Hlth = rep(us3$Health, us3$PERWT))
+
+descript(usEgypt)
+ADmodel3 <- ltm(usEgypt~z1, IRT.param = T)
+summary(ADmodel3)
+plot(ADmodel3, main = "Success Score for Egypt", type="ICC")
+plot(ADmodel3, type="IIC",main = "Egypt Item Information Curve")
+
+
+#Iraq
+us4 <-usa_data%>% filter(BPLD == "Iraq")
+
+usIraq<- data.frame(Emp= rep(us4$Employment, us4$PERWT),
+                 Pov = rep(us4$Poverty,us4$PERWT),
+                 Fs = rep(us4$Foodstamp, us4$PERWT),
+                Home = rep(us4$Ownhome,us4$PERWT),
+                Hlth = rep(us4$Health, us4$PERWT))
+
+descript(usIraq)
+ADmodel4 <- ltm(usIraq~z1, IRT.param = T)
+summary(ADmodel4)
+plot(ADmodel4, main = "Success Score for Iraq", type="ICC")
+plot(ADmodel4, type="IIC",main = "Iraq Item Information Curve")
+
+#Somalia
+us5 <-usa_data%>% filter(BPLD == "Somalia")
+
+usSomalia<- data.frame(Emp= rep(us5 $Employment, us5 $PERWT),
+                 Pov = rep(us5 $Poverty,us5 $PERWT),
+                 Fs = rep(us5 $Foodstamp,us5 $PERWT),
+                Home = rep(us5 $Ownhome,us5 $PERWT),
+                Hlth = rep(us5 $Health, us5 $PERWT))
+
+descript(usSomalia)
+ADmodel5 <- ltm(usSomalia~z1, IRT.param = T)
+summary(ADmodel5)
+plot(ADmodel5, main = "Success Score for Somalia", type="ICC")
+plot(ADmodel5, type="IIC",main = "Somalia Item Information Curve")
+
+#Syria
+us6 <-usa_data%>% filter(BPLD == "Syria")
+
+usSyria<- data.frame(Emp= rep(us6$Employment, us6$PERWT),
+                 Pov = rep(us6$Poverty,us6$PERWT),
+                 Fs = rep(us6$Foodstamp,us6$PERWT),
+                Home = rep(us6$Ownhome,us6$PERWT),
+                Hlth = rep(us6$Health,us6$PERWT))
+
+descript(usSyria)
+ADmodel6 <- ltm(usSyria~z1, IRT.param = T)
+summary(ADmodel6)
+plot(ADmodel6, main = "Success Score for Syria", type="ICC")
+plot(ADmodel6, type="IIC",main = "Syria Item Information Curve")
+
+#Libya
+us7 <-usa_data%>% filter(BPLD == "Libya")
+
+usLibya<- data.frame(Emp= rep(us7$Employment, us7$PERWT),
+                 Pov = rep(us7$Poverty,us7$PERWT),
+                 Fs = rep(us7$Foodstamp, us7$PERWT),
+                Home = rep(us7$Ownhome,us7$PERWT),
+                Hlth = rep(us7$Health,us7$PERWT))
+
+descript(usLibya)
+ADmodel7 <- ltm(usLibya~z1, IRT.param = T)
+summary(ADmodel7)
+plot(ADmodel7, main = "Success Score for Libya", type="ICC")
+plot(ADmodel7, type="IIC",main = "Libya Item Information Curve")
+
+#Sudan
+us8 <-usa_data%>% filter(BPLD == "Sudan")
+
+usSudan<- data.frame(Emp= rep(us8 $Employment, us8 $PERWT),
+                 Pov = rep(us8 $Poverty,us8 $PERWT),
+                 Fs = rep(us8 $Foodstamp, us8 $PERWT),
+                Home = rep(us8 $Ownhome,us8 $PERWT),
+                Hlth = rep(us8 $Health, us8 $PERWT))
+
+descript(usSudan)
+ADmodel8 <- ltm(usSudan~z1, IRT.param = T)
+summary(ADmodel8)
+plot(ADmodel8, main = "Success Score for Sudan", type="ICC")
+plot(ADmodel8, type="IIC",main = "Sudan Item Information Curve")
+
+table(usa_data$BPLD)
+```
+
+
+successscore - dependent variable 
+
+compare from country to country 
+year
+how do success scores differ for the countries in question and the US
+
+
+```{r}
+# z-score extraction
+Dream1<-factor.scores(ADmodel)$score.dat
+Dream1$Employment <-Dream1$Emp
+Dream1$Poverty <-Dream1$Pov
+Dream1$Foodstamp <-Dream1$Fs
+Dream1$Ownhome <-Dream1$Home
+Dream1$Health <-Dream1$Hlth
+use<-merge(usa_data, Dream1, by= c("Employment","Poverty","Foodstamp","Ownhome","Health")) #new dataset
+
+View(usa_data)
+dats<-use$success <-use$z1
+
+# modelling
+
+library(leaps)
+
+bestss <- regsubsets(success ~ FAMSIZE + SEX + AGE + MARST + CITIZEN + YRIMMIG + HCOVANY + LABFORCE +INCTOT  + MIGRATE1 + YRSINUSA, data = use, method = "exhaustive", nbest = 3)
+summary.bestss <- summary(bestss, matrix.logical = TRUE) # matrix.logical term makes table of included terms more readable
+summary.bestss
+coef(bestss, 1:15)
+
+plot(bestss, scale = "adjr2", main = "Adjusted R^2")
+plot(bestss, scale = "Cp", main = "Mallow's Cp")
+
+# Which model has best adjusted R^2
+which.max(summary.bestss$adjr2)
+summary.bestss$which[7,]
+
+# Which model has best Mallow's Cp
+which.min(summary.bestss$cp)
+summary.bestss$which[7,]
+
+```
+
+
+
+```{r}
+# z-score extraction
+Dream2<-factor.scores(ADmodel1)$score.dat
+Dream2$Employment1 <-Dream2$Emp
+Dream2$Poverty1 <-Dream2$Pov
+Dream2$Foodstamp1 <-Dream2$Fs
+Dream2$Ownhome1 <-Dream2$Home
+Dream2$Health1 <-Dream2$Hlth
+
+use1<-merge(nonimm, Dream2, by= c("Employment1","Poverty1","Foodstamp1","Ownhome1","Health1")) #new dataset
+use1$success <-use1$z1
+
+# modelling
+
+bestss1 <- regsubsets(success ~ FAMSIZE + SEX + AGE + MARST + HCOVANY + LABFORCE +INCTOT  + MIGRATE1, data = use1, method = "exhaustive", nbest = 3)
+summary.bestss1 <- summary(bestss1, matrix.logical = TRUE) # matrix.logical term makes table of included terms more readable
+summary.bestss1
+coef(bestss1, 1:15)
+
+plot(bestss1, scale = "adjr2", main = "Adjusted R^2")
+plot(bestss1, scale = "Cp", main = "Mallow's Cp")
+
+# Which model has best adjusted R^2
+which.max(summary.bestss1$adjr2)
+summary.bestss1$which[7,]
+
+# Which model has best Mallow's Cp
+which.min(summary.bestss1$cp)
+summary.bestss1$which[7,]
+
+```
+
+

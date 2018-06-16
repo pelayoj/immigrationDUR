@@ -1,0 +1,103 @@
+---
+title: "Non-immigrant"
+author: "Pony Ameri"
+date: "4/29/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(readr)
+library(dplyr)
+
+library(car)
+library(plyr)
+library(ipumsr)
+library(labelled)
+library(ggplot2)
+library(mosaic)
+
+usa_ddi1 <- read_ipums_ddi("/home/pelayo1/ImmigrationDUR/American Dream/usa_00013.xml")
+usadata <- read_ipums_micro(usa_ddi1, verbose = FALSE)
+usadata <-usadata %>% filter(AGE > 25)
+usadata <- na.omit(usadata)
+
+usadata <- usadata %>%
+  mutate(METRO = droplevels(as_factor(METRO)), BIRTHPLACE_factor= droplevels(as_factor(BPL)), LABFORCE1= droplevels(as_factor(LABFORCE)), SEX= droplevels(as_factor(SEX)),FOODSTMP= droplevels(as_factor(FOODSTMP)), RELATE= droplevels(as_factor(RELATE)),RELATED= droplevels(as_factor(RELATED)), MARST= droplevels(as_factor(MARST)), BPL = droplevels(as_factor(BPL)),BPLD = droplevels(as_factor(BPLD)), CITIZEN = droplevels(as_factor(CITIZEN)),RACESING=droplevels.factor(RACESING),RACESINGD=droplevels(as_factor(RACESINGD)),HCOVANY = droplevels(as_factor(HCOVANY)),HCOPRIV = droplevels(as_factor(HCOVPRIV)), EDUCATION = droplevels(as_factor(GRADEATT)),EDUCATIOND= droplevels(as_factor(GRADEATTD)),EMPLOYMENT = droplevels(as_factor(EMPSTAT)), EMPLOYMENTD = droplevels(as_factor(EMPSTATD)), LABFORCE = droplevels(as_factor(LABFORCE)), IND = droplevels(as_factor(IND)),
+ CLASSWKR = droplevels(as_factor(CLASSWKR)), CLASSWKRD = droplevels(as_factor(CLASSWKRD)), MIGRATE1 = droplevels(as_factor(MIGRATE1)), MIGRATE1D = droplevels(as_factor(MIGRATE1D)), MIGPLAC1 = droplevels(as_factor(MIGPLAC1)), TRANWORK = droplevels(as_factor(TRANWORK)), OWNERSHP  = droplevels(as_factor(OWNERSHP)), HCOVPRIV1 = droplevels(as_factor(HCOVPRIV)), RACE= droplevels(as_factor(RACESING)))
+
+usadata$POVERTY = as.numeric(usadata$POVERTY)
+usadata <- usadata[!is.na(usadata$HCOVPRIV1),]
+usadata <- usadata[usadata$OWNERSHP != "N/A",]
+usadata$LABFORCE1<-recode_factor(usadata$LABFORCE1,'Yes, in the labor force'= "Yes",'No, not in the labor force'="No") 
+usadata$OWNERSHP <-recode_factor(usadata$OWNERSHP, 'Owned or being bought (loan)' = "Own", 'Rented' = "Rent")
+usadata <- usadata %>% mutate(Employment1 = ifelse(EMPLOYMENT == "Employed", 1,0), 
+                              Laborforce1 = ifelse(LABFORCE1=="Yes",1,0),
+                              Residence1 = ifelse(METRO == "Metro area, outside central",1,0), 
+                              Ownhome1 = ifelse(OWNERSHP=="Own",1,0),
+                              Poverty1 = ifelse(POVERTY > 150, 1,0),
+                              Health1 = ifelse(HCOVPRIV1 == "With private health insurance coverage", 1, 0),
+                              Foodstamp1 = ifelse(FOODSTMP=="No",1,0),
+                              White1 = ifelse(RACE==1,1,0),
+                              Citizen1 = ifelse(CITIZEN == ' Not a citizen', 0, 1))
+library(data.table)
+set.seed(57)
+samp <- data.table(usadata)
+nonimm<-samp[sample(nrow(samp), 10000)]
+
+View(nonimm.subset)
+nonimm.subset <- data.frame(Emp= rep(nonimm$Employment1, nonimm$PERWT),
+                 Pov = rep(nonimm$Poverty1, nonimm$PERWT),
+                 Fs = rep(nonimm$Foodstamp1, nonimm$PERWT),
+                Home = rep(nonimm$Ownhome1,nonimm$PERWT),
+                Hlth = rep(nonimm$Health1, nonimm$PERWT))
+
+######### IRT ########
+ # data to be used 
+
+library(ltm)
+library(msm)
+descript(nonimm.subset)
+ADmodel1 <- ltm(nonimm.subset~z1, IRT.param = T)
+plot(ADmodel1, main = "Success Score", type="ICC")#all items at once  # black is employment and red is laborforce
+plot(ADmodel1, type="IIC")
+
+```
+
+```{r}
+# z-score extraction
+Dream2<-factor.scores(ADmodel1)$score.dat
+Dream2$Employment1 <-Dream2$Emp
+Dream2$Poverty1 <-Dream2$Pov
+Dream2$Foodstamp1 <-Dream2$Fs
+Dream2$Ownhome1 <-Dream2$Home
+Dream2$Health1 <-Dream2$Hlth
+
+use1<-merge(nonimm, Dream2, by= c("Employment1","Poverty1","Foodstamp1","Ownhome1","Health1")) #new dataset
+use1$success <-use1$z1
+
+# modelling
+
+library(leaps)
+
+bestss1 <- regsubsets(success ~ FAMSIZE + SEX + AGE + MARST + HCOVANY + LABFORCE +INCTOT  + MIGRATE1, data = use1, method = "exhaustive", nbest = 3)
+summary.bestss1 <- summary(bestss1, matrix.logical = TRUE) # matrix.logical term makes table of included terms more readable
+summary.bestss1
+coef(bestss1, 1:15)
+
+plot(bestss1, scale = "adjr2", main = "Adjusted R^2")
+plot(bestss1, scale = "Cp", main = "Mallow's Cp")
+
+# Which model has best adjusted R^2
+which.max(summary.bestss1$adjr2)
+summary.bestss1$which[7,]
+
+# Which model has best Mallow's Cp
+which.min(summary.bestss1$cp)
+summary.bestss1$which[7,]
+
+```
