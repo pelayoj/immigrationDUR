@@ -6,28 +6,32 @@ output: html_document
 IRT
 ```{r}
 library(readr)
-library(data.table)
-library(dplyr)
-
+library(mosaic)
 library(car)
+library(dplyr)
+library(data.table)
 library(plyr)
 library(ipumsr)
 library(labelled)
 library(ggplot2)
-library(mosaic)
 
 
-usa_ddi <- read_ipums_ddi("/home/pelayo1/ImmigrationDUR/American Dream/usa_00008.xml")
+
+usa_ddi <- read_ipums_ddi("usa_00008.xml")
 usa_data <- read_ipums_micro(usa_ddi, verbose = FALSE)
 usa_data <- usa_data %>%
   mutate(METRO = droplevels(as_factor(METRO)), BIRTHPLACE_factor= droplevels(as_factor(BPL)), LABFORCE1= droplevels(as_factor(LABFORCE)), SEX= droplevels(as_factor(SEX)),FOODSTMP= droplevels(as_factor(FOODSTMP)), RELATE= droplevels(as_factor(RELATE)),RELATED= droplevels(as_factor(RELATED)), MARST= droplevels(as_factor(MARST)), BPL = droplevels(as_factor(BPL)),BPLD = droplevels(as_factor(BPLD)), CITIZEN = droplevels(as_factor(CITIZEN)),RACESING=droplevels.factor(RACESING),RACESINGD=droplevels(as_factor(RACESINGD)),HCOVANY = droplevels(as_factor(HCOVANY)),HCOPRIV = droplevels(as_factor(HCOVPRIV)), EDUCATION = droplevels(as_factor(GRADEATT)),EDUCATIOND= droplevels(as_factor(GRADEATTD)),EMPLOYMENT = droplevels(as_factor(EMPSTAT)), EMPLOYMENTD = droplevels(as_factor(EMPSTATD)), LABFORCE = droplevels(as_factor(LABFORCE)), IND = droplevels(as_factor(IND)),
  CLASSWKR = droplevels(as_factor(CLASSWKR)), CLASSWKRD = droplevels(as_factor(CLASSWKRD)), POVERTY = droplevels(as_factor(POVERTY)), MIGRATE1 = droplevels(as_factor(MIGRATE1)), MIGRATE1D = droplevels(as_factor(MIGRATE1D)), MIGPLAC1 = droplevels(as_factor(MIGPLAC1)), TRANWORK = droplevels(as_factor(TRANWORK)), OWNERSHP  = droplevels(as_factor(OWNERSHP)), HCOVPRIV1 = droplevels(as_factor(HCOVPRIV)), RACE= droplevels(as_factor(RACESING)))
-usa_data$BPLD <-recode_factor(usa_data$BPLD, 'Egypt/United Arab Rep.' = "Egypt/UAE", 'Yemen Arab Republic (North)' = "Yemen")
+usa_data$BPLD <-recode_factor(usa_data$BPLD, 'Yemen Arab Republic (North)' = "Yemen")
 usa_data$EMPLOYMENT <-recode_factor(usa_data$EMPLOYMENT, 'N/A' = "Armed Forces")
 usa_data$LABFORCE1<-recode_factor(usa_data$LABFORCE1,'Yes, in the labor force'= "Yes",'No, not in the labor force'="No") 
 usa_data$METRO<-recode_factor(usa_data$METRO,'Central / Principal city status unknown' = " Metro area, central", 'In metro area, central / principal city' = " Metro area, central",'In metro area, outside central / principal city' ="Metro area, outside central")
 usa_data$OWNERSHP <-recode_factor(usa_data$OWNERSHP, 'Owned or being bought (loan)' = "Own", 'Rented' = "Rent")
-usa_data <- usa_data %>% filter(YRIMMIG >1995,AGE >= 25,BPLD !="Egypt/UAE")
+usa_data <- usa_data %>% filter(YRIMMIG >1995,AGE >= 25)
+usa_data <- usa_data %>% filter(BPLD !="Egypt/United Arab Rep.", BPLD !="Iraq", BPLD !="Sudan")
+
+
+
 usa_data$YRSINUSA <- usa_data$YEAR - usa_data$YRIMMIG
 usa_data <- usa_data[usa_data$OWNERSHP != "0",]
 usa_data$POVERTY <- as.numeric(usa_data$POVERTY)
@@ -47,11 +51,12 @@ usa_data <- usa_data %>% mutate(YRGROUP = ifelse(YRSINUSA <= 5,"0-5",
                               Citizen = ifelse(CITIZEN == ' Not a citizen', 0, 1))
 BP = 0
 usa_data <- cbind(usa_data,BP)
+table(usa_data$BPLD)
 ```
                  
 ```{r}
 
-usa_ddi1 <- read_ipums_ddi("/home/pelayo1/ImmigrationDUR/American Dream/usa_00013.xml")
+usa_ddi1 <- read_ipums_ddi("usa_00013.xml")
 usadata <- read_ipums_micro(usa_ddi1, verbose = FALSE)
 usadata <-usadata %>% filter(AGE > 25)
 usadata <- na.omit(usadata)
@@ -168,8 +173,6 @@ summary.bestss$which[7,]
 
 ```{r}
 #write.csv(data_bestss, file = "data_bestss.csv")
-
-
 median(data_bestss$z1)
 
 median(data_bestss[BP==1]$z1)
