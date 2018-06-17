@@ -52,6 +52,8 @@ usa_data <- usa_data %>% mutate(YRGROUP = ifelse(YRSINUSA <= 5,"0-5",
                               White = ifelse(RACE==1,1,0),
                               Citizen = ifelse(CITIZEN == ' Not a citizen', 0, 1))
 BP = 0
+
+#final dataset 
 usa_data <- cbind(usa_data,BP)
 ```
                  
