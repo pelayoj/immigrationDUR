@@ -30,19 +30,23 @@ usa_data$METRO<-recode_factor(usa_data$METRO,'Central / Principal city status un
 usa_data$OWNERSHP <-recode_factor(usa_data$OWNERSHP, 'Owned or being bought (loan)' = "Own", 'Rented' = "Rent")
 usa_data <- usa_data[usa_data$OWNERSHP != "0",]
 
-###new variable, number of years spent in the US
-usa_data$YRSINUSA <- usa_data$YEAR - usa_data$YRIMMIG 
-
-usa_data <- usa_data %>% filter(YRIMMIG >1995,AGE >= 25, BPLD !="Egypt/United Arab Rep.", BPLD !="Iraq", BPLD !="Sudan")
-
-
 usa_data$POVERTY <- as.numeric(usa_data$POVERTY)
 usa_data <- usa_data[!is.na(usa_data$HCOVANY),]
+
+###new variable, number of years spent in the US
+usa_data$YRSINUSA <- usa_data$YEAR - usa_data$YRIMMIG 
 usa_data <- usa_data %>% mutate(YRGROUP = ifelse(YRSINUSA <= 5,"0-5",
                                     ifelse(YRSINUSA >5 & YRSINUSA <=10, "6-10",
                                    ifelse(YRSINUSA >10 & YRSINUSA <=15, "11-15",
-                                    ifelse(YRSINUSA >15, ">15", "N/A")))),
-                                Employment = ifelse(EMPLOYMENT == "Employed", 1,0), 
+                                    ifelse(YRSINUSA >15, ">15", "N/A")))))
+
+###filter by age and country
+usa_data <- usa_data %>% filter(YRIMMIG >1995,AGE >= 25, 
+                                BPLD !="Egypt/United Arab Rep.", 
+                                BPLD !="Iraq", BPLD !="Sudan")
+
+###Indicator variables 
+usa_data <- usa_data %>% mutate(Employment = ifelse(EMPLOYMENT == "Employed", 1,0), 
                               Laborforce = ifelse(LABFORCE1=="Yes",1,0),
                               Residence = ifelse(METRO == "Metro area, outside central",1,0), 
                               Ownhome = ifelse(OWNERSHP=="Own",1,0),
@@ -51,6 +55,8 @@ usa_data <- usa_data %>% mutate(YRGROUP = ifelse(YRSINUSA <= 5,"0-5",
                               Foodstamp = ifelse(FOODSTMP=="No",1,0),
                               White = ifelse(RACE==1,1,0),
                               Citizen = ifelse(CITIZEN == ' Not a citizen', 0, 1))
+
+# Indicator for whether one is an immigrant
 BP = 0
 
 #final dataset 
