@@ -1,0 +1,460 @@
+﻿Country,Immigrant,State,Year
+Egypt,30,Alabama,2006
+Iran,48,Alabama,2006
+Iraq,6,Alabama,2006
+Libya,D,Alabama,2006
+Mali,3,Alabama,2006
+Somalia,-,Alabama,2006
+Sudan,20,Alabama,2006
+Syria,14,Alabama,2006
+Yemen,14,Alabama,2006
+Egypt,-,Alaska,2006
+Iran,D,Alaska,2006
+Iraq,-,Alaska,2006
+Libya,-,Alaska,2006
+Mali,D,Alaska,2006
+Somalia,-,Alaska,2006
+Sudan,-,Alaska,2006
+Syria,-,Alaska,2006
+Yemen,D,Alaska,2006
+Egypt,72,Arizona,2006
+Iran,234,Arizona,2006
+Iraq,181,Arizona,2006
+Libya,5,Arizona,2006
+Mali,8,Arizona,2006
+Somalia,210,Arizona,2006
+Sudan,236,Arizona,2006
+Syria,47,Arizona,2006
+Yemen,5,Arizona,2006
+Egypt,4,Arkansas,2006
+Iran,13,Arkansas,2006
+Iraq,-,Arkansas,2006
+Libya,-,Arkansas,2006
+Mali,D,Arkansas,2006
+Somalia,-,Arkansas,2006
+Sudan,4,Arkansas,2006
+Syria,9,Arkansas,2006
+Yemen,D,Arkansas,2006
+Egypt,1690,California,2006
+Iran,7190,California,2006
+Iraq,1021,California,2006
+Libya,51,California,2006
+Mali,10,California,2006
+Somalia,550,California,2006
+Sudan,309,California,2006
+Syria,802,California,2006
+Yemen,671,California,2006
+Egypt,36,Colorado,2006
+Iran,143,Colorado,2006
+Iraq,39,Colorado,2006
+Libya,6,Colorado,2006
+Mali,23,Colorado,2006
+Somalia,96,Colorado,2006
+Sudan,130,Colorado,2006
+Syria,18,Colorado,2006
+Yemen,3,Colorado,2006
+Egypt,113,Connecticut,2006
+Iran,58,Connecticut,2006
+Iraq,30,Connecticut,2006
+Libya,D,Connecticut,2006
+Mali,D,Connecticut,2006
+Somalia,31,Connecticut,2006
+Sudan,42,Connecticut,2006
+Syria,41,Connecticut,2006
+Yemen,61,Connecticut,2006
+Egypt,39,Delaware,2006
+Iran,15,Delaware,2006
+Iraq,-,Delaware,2006
+Libya,-,Delaware,2006
+Mali,D,Delaware,2006
+Somalia,D,Delaware,2006
+Sudan,3,Delaware,2006
+Syria,4,Delaware,2006
+Yemen,17,Delaware,2006
+Egypt,11,District of Columbia,2006
+Iran,13,District of Columbia,2006
+Iraq,6,District of Columbia,2006
+Libya,3,District of Columbia,2006
+Mali,4,District of Columbia,2006
+Somalia,6,District of Columbia,2006
+Sudan,29,District of Columbia,2006
+Syria,10,District of Columbia,2006
+Yemen,D,District of Columbia,2006
+Egypt,515,Florida,2006
+Iran,412,Florida,2006
+Iraq,42,Florida,2006
+Libya,11,Florida,2006
+Mali,D,Florida,2006
+Somalia,20,Florida,2006
+Sudan,161,Florida,2006
+Syria,183,Florida,2006
+Yemen,7,Florida,2006
+Egypt,115,Georgia,2006
+Iran,375,Georgia,2006
+Iraq,56,Georgia,2006
+Libya,11,Georgia,2006
+Mali,34,Georgia,2006
+Somalia,385,Georgia,2006
+Sudan,198,Georgia,2006
+Syria,29,Georgia,2006
+Yemen,15,Georgia,2006
+Egypt,7,Hawaii,2006
+Iran,4,Hawaii,2006
+Iraq,D,Hawaii,2006
+Libya,D,Hawaii,2006
+Mali,-,Hawaii,2006
+Somalia,-,Hawaii,2006
+Sudan,-,Hawaii,2006
+Syria,D,Hawaii,2006
+Yemen,-,Hawaii,2006
+Egypt,6,Idaho,2006
+Iran,22,Idaho,2006
+Iraq,D,Idaho,2006
+Libya,-,Idaho,2006
+Mali,-,Idaho,2006
+Somalia,30,Idaho,2006
+Sudan,20,Idaho,2006
+Syria,D,Idaho,2006
+Yemen,D,Idaho,2006
+Egypt,235,Illinois,2006
+Iran,310,Illinois,2006
+Iraq,329,Illinois,2006
+Libya,12,Illinois,2006
+Mali,7,Illinois,2006
+Somalia,144,Illinois,2006
+Sudan,143,Illinois,2006
+Syria,240,Illinois,2006
+Yemen,180,Illinois,2006
+Egypt,71,Indiana,2006
+Iran,52,Indiana,2006
+Iraq,14,Indiana,2006
+Libya,D,Indiana,2006
+Mali,8,Indiana,2006
+Somalia,36,Indiana,2006
+Sudan,53,Indiana,2006
+Syria,27,Indiana,2006
+Yemen,45,Indiana,2006
+Egypt,35,Iowa,2006
+Iran,12,Iowa,2006
+Iraq,5,Iowa,2006
+Libya,D,Iowa,2006
+Mali,4,Iowa,2006
+Somalia,29,Iowa,2006
+Sudan,242,Iowa,2006
+Syria,7,Iowa,2006
+Yemen,3,Iowa,2006
+Egypt,14,Kansas,2006
+Iran,66,Kansas,2006
+Iraq,9,Kansas,2006
+Libya,-,Kansas,2006
+Mali,-,Kansas,2006
+Somalia,21,Kansas,2006
+Sudan,38,Kansas,2006
+Syria,8,Kansas,2006
+Yemen,D,Kansas,2006
+Egypt,30,Kentucky,2006
+Iran,41,Kentucky,2006
+Iraq,35,Kentucky,2006
+Libya,6,Kentucky,2006
+Mali,3,Kentucky,2006
+Somalia,98,Kentucky,2006
+Sudan,64,Kentucky,2006
+Syria,15,Kentucky,2006
+Yemen,-,Kentucky,2006
+Egypt,23,Louisiana,2006
+Iran,39,Louisiana,2006
+Iraq,14,Louisiana,2006
+Libya,D,Louisiana,2006
+Mali,-,Louisiana,2006
+Somalia,D,Louisiana,2006
+Sudan,7,Louisiana,2006
+Syria,11,Louisiana,2006
+Yemen,24,Louisiana,2006
+Egypt,20,Maine,2006
+Iran,15,Maine,2006
+Iraq,D,Maine,2006
+Libya,-,Maine,2006
+Mali,-,Maine,2006
+Somalia,198,Maine,2006
+Sudan,122,Maine,2006
+Syria,-,Maine,2006
+Yemen,D,Maine,2006
+Egypt,174,Maryland,2006
+Iran,485,Maryland,2006
+Iraq,16,Maryland,2006
+Libya,4,Maryland,2006
+Mali,36,Maryland,2006
+Somalia,83,Maryland,2006
+Sudan,152,Maryland,2006
+Syria,56,Maryland,2006
+Yemen,12,Maryland,2006
+Egypt,295,Massachusetts,2006
+Iran,174,Massachusetts,2006
+Iraq,15,Massachusetts,2006
+Libya,7,Massachusetts,2006
+Mali,D,Massachusetts,2006
+Somalia,230,Massachusetts,2006
+Sudan,73,Massachusetts,2006
+Syria,96,Massachusetts,2006
+Yemen,7,Massachusetts,2006
+Egypt,192,Michigan,2006
+Iran,108,Michigan,2006
+Iraq,1541,Michigan,2006
+Libya,7,Michigan,2006
+Mali,5,Michigan,2006
+Somalia,175,Michigan,2006
+Sudan,119,Michigan,2006
+Syria,160,Michigan,2006
+Yemen,1028,Michigan,2006
+Egypt,103,Minnesota,2006
+Iran,55,Minnesota,2006
+Iraq,44,Minnesota,2006
+Libya,9,Minnesota,2006
+Mali,5,Minnesota,2006
+Somalia,2844,Minnesota,2006
+Sudan,162,Minnesota,2006
+Syria,19,Minnesota,2006
+Yemen,23,Minnesota,2006
+Egypt,5,Mississippi,2006
+Iran,8,Mississippi,2006
+Iraq,D,Mississippi,2006
+Libya,-,Mississippi,2006
+Mali,D,Mississippi,2006
+Somalia,D,Mississippi,2006
+Sudan,7,Mississippi,2006
+Syria,3,Mississippi,2006
+Yemen,27,Mississippi,2006
+Egypt,40,Missouri,2006
+Iran,101,Missouri,2006
+Iraq,55,Missouri,2006
+Libya,D,Missouri,2006
+Mali,-,Missouri,2006
+Somalia,209,Missouri,2006
+Sudan,113,Missouri,2006
+Syria,14,Missouri,2006
+Yemen,5,Missouri,2006
+Egypt,-,Montana,2006
+Iran,D,Montana,2006
+Iraq,-,Montana,2006
+Libya,D,Montana,2006
+Mali,-,Montana,2006
+Somalia,-,Montana,2006
+Sudan,-,Montana,2006
+Syria,-,Montana,2006
+Yemen,-,Montana,2006
+Egypt,32,Nebraska,2006
+Iran,13,Nebraska,2006
+Iraq,63,Nebraska,2006
+Libya,D,Nebraska,2006
+Mali,-,Nebraska,2006
+Somalia,111,Nebraska,2006
+Sudan,300,Nebraska,2006
+Syria,8,Nebraska,2006
+Yemen,-,Nebraska,2006
+Egypt,31,Nevada,2006
+Iran,120,Nevada,2006
+Iraq,18,Nevada,2006
+Libya,D,Nevada,2006
+Mali,D,Nevada,2006
+Somalia,56,Nevada,2006
+Sudan,20,Nevada,2006
+Syria,11,Nevada,2006
+Yemen,-,Nevada,2006
+Egypt,30,New Hampshire,2006
+Iran,16,New Hampshire,2006
+Iraq,3,New Hampshire,2006
+Libya,D,New Hampshire,2006
+Mali,D,New Hampshire,2006
+Somalia,15,New Hampshire,2006
+Sudan,82,New Hampshire,2006
+Syria,D,New Hampshire,2006
+Yemen,-,New Hampshire,2006
+Egypt,2205,New Jersey,2006
+Iran,182,New Jersey,2006
+Iraq,31,New Jersey,2006
+Libya,14,New Jersey,2006
+Mali,12,New Jersey,2006
+Somalia,8,New Jersey,2006
+Sudan,77,New Jersey,2006
+Syria,166,New Jersey,2006
+Yemen,21,New Jersey,2006
+Egypt,5,New Mexico,2006
+Iran,23,New Mexico,2006
+Iraq,10,New Mexico,2006
+Libya,-,New Mexico,2006
+Mali,-,New Mexico,2006
+Somalia,-,New Mexico,2006
+Sudan,D,New Mexico,2006
+Syria,8,New Mexico,2006
+Yemen,D,New Mexico,2006
+Egypt,1609,New York,2006
+Iran,419,New York,2006
+Iraq,88,New York,2006
+Libya,22,New York,2006
+Mali,121,New York,2006
+Somalia,285,New York,2006
+Sudan,370,New York,2006
+Syria,227,New York,2006
+Yemen,1833,New York,2006
+Egypt,185,North Carolina,2006
+Iran,161,North Carolina,2006
+Iraq,21,North Carolina,2006
+Libya,5,North Carolina,2006
+Mali,10,North Carolina,2006
+Somalia,112,North Carolina,2006
+Sudan,184,North Carolina,2006
+Syria,27,North Carolina,2006
+Yemen,97,North Carolina,2006
+Egypt,7,North Dakota,2006
+Iran,8,North Dakota,2006
+Iraq,D,North Dakota,2006
+Libya,-,North Dakota,2006
+Mali,D,North Dakota,2006
+Somalia,45,North Dakota,2006
+Sudan,63,North Dakota,2006
+Syria,-,North Dakota,2006
+Yemen,-,North Dakota,2006
+Egypt,186,Ohio,2006
+Iran,108,Ohio,2006
+Iraq,45,Ohio,2006
+Libya,11,Ohio,2006
+Mali,12,Ohio,2006
+Somalia,1115,Ohio,2006
+Sudan,83,Ohio,2006
+Syria,115,Ohio,2006
+Yemen,25,Ohio,2006
+Egypt,10,Oklahoma,2006
+Iran,94,Oklahoma,2006
+Iraq,5,Oklahoma,2006
+Libya,-,Oklahoma,2006
+Mali,-,Oklahoma,2006
+Somalia,D,Oklahoma,2006
+Sudan,5,Oklahoma,2006
+Syria,17,Oklahoma,2006
+Yemen,-,Oklahoma,2006
+Egypt,36,Oregon,2006
+Iran,129,Oregon,2006
+Iraq,24,Oregon,2006
+Libya,5,Oregon,2006
+Mali,-,Oregon,2006
+Somalia,133,Oregon,2006
+Sudan,19,Oregon,2006
+Syria,6,Oregon,2006
+Yemen,5,Oregon,2006
+Egypt,419,Pennsylvania,2006
+Iran,120,Pennsylvania,2006
+Iraq,59,Pennsylvania,2006
+Libya,6,Pennsylvania,2006
+Mali,49,Pennsylvania,2006
+Somalia,49,Pennsylvania,2006
+Sudan,194,Pennsylvania,2006
+Syria,205,Pennsylvania,2006
+Yemen,6,Pennsylvania,2006
+Egypt,18,Rhode Island,2006
+Iran,7,Rhode Island,2006
+Iraq,10,Rhode Island,2006
+Libya,-,Rhode Island,2006
+Mali,7,Rhode Island,2006
+Somalia,3,Rhode Island,2006
+Sudan,D,Rhode Island,2006
+Syria,19,Rhode Island,2006
+Yemen,D,Rhode Island,2006
+Egypt,96,South Carolina,2006
+Iran,32,South Carolina,2006
+Iraq,D,South Carolina,2006
+Libya,D,South Carolina,2006
+Mali,-,South Carolina,2006
+Somalia,-,South Carolina,2006
+Sudan,13,South Carolina,2006
+Syria,8,South Carolina,2006
+Yemen,4,South Carolina,2006
+Egypt,10,South Dakota,2006
+Iran,3,South Dakota,2006
+Iraq,5,South Dakota,2006
+Libya,-,South Dakota,2006
+Mali,-,South Dakota,2006
+Somalia,33,South Dakota,2006
+Sudan,86,South Dakota,2006
+Syria,D,South Dakota,2006
+Yemen,-,South Dakota,2006
+Egypt,646,Tennessee,2006
+Iran,171,Tennessee,2006
+Iraq,119,Tennessee,2006
+Libya,D,Tennessee,2006
+Mali,3,Tennessee,2006
+Somalia,427,Tennessee,2006
+Sudan,284,Tennessee,2006
+Syria,21,Tennessee,2006
+Yemen,51,Tennessee,2006
+Egypt,354,Texas,2006
+Iran,1138,Texas,2006
+Iraq,160,Texas,2006
+Libya,21,Texas,2006
+Mali,13,Texas,2006
+Somalia,387,Texas,2006
+Sudan,474,Texas,2006
+Syria,146,Texas,2006
+Yemen,18,Texas,2006
+Egypt,8,Utah,2006
+Iran,110,Utah,2006
+Iraq,9,Utah,2006
+Libya,-,Utah,2006
+Mali,D,Utah,2006
+Somalia,138,Utah,2006
+Sudan,86,Utah,2006
+Syria,4,Utah,2006
+Yemen,D,Utah,2006
+Egypt,5,Vermont,2006
+Iran,4,Vermont,2006
+Iraq,-,Vermont,2006
+Libya,-,Vermont,2006
+Mali,-,Vermont,2006
+Somalia,40,Vermont,2006
+Sudan,31,Vermont,2006
+Syria,D,Vermont,2006
+Yemen,-,Vermont,2006
+Egypt,584,Virginia,2006
+Iran,759,Virginia,2006
+Iraq,135,Virginia,2006
+Libya,20,Virginia,2006
+Mali,8,Virginia,2006
+Somalia,361,Virginia,2006
+Sudan,511,Virginia,2006
+Syria,60,Virginia,2006
+Yemen,52,Virginia,2006
+Egypt,103,Washington,2006
+Iran,276,Washington,2006
+Iraq,45,Washington,2006
+Libya,7,Washington,2006
+Mali,3,Washington,2006
+Somalia,646,Washington,2006
+Sudan,145,Washington,2006
+Syria,20,Washington,2006
+Yemen,38,Washington,2006
+Egypt,11,West Virginia,2006
+Iran,14,West Virginia,2006
+Iraq,3,West Virginia,2006
+Libya,D,West Virginia,2006
+Mali,-,West Virginia,2006
+Somalia,-,West Virginia,2006
+Sudan,3,West Virginia,2006
+Syria,13,West Virginia,2006
+Yemen,-,West Virginia,2006
+Egypt,32,Wisconsin,2006
+Iran,38,Wisconsin,2006
+Iraq,17,Wisconsin,2006
+Libya,3,Wisconsin,2006
+Mali,6,Wisconsin,2006
+Somalia,97,Wisconsin,2006
+Sudan,23,Wisconsin,2006
+Syria,12,Wisconsin,2006
+Yemen,-,Wisconsin,2006
+Egypt,D,Wyoming,2006
+Iran,-,Wyoming,2006
+Iraq,-,Wyoming,2006
+Libya,D,Wyoming,2006
+Mali,-,Wyoming,2006
+Somalia,D,Wyoming,2006
+Sudan,-,Wyoming,2006
+Syria,-,Wyoming,2006
+Yemen,-,Wyoming,2006

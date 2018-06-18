@@ -1,0 +1,469 @@
+﻿Country,Immigrant,State,Year
+Egypt,28,Alabama,2010
+Iran,51,Alabama,2010
+Iraq,104,Alabama,2010
+Libya,D,Alabama,2010
+Mali,-,Alabama,2010
+Somalia,7,Alabama,2010
+Sudan,15,Alabama,2010
+Syria,9,Alabama,2010
+Yemen,31,Alabama,2010
+Egypt,D,Alaska,2010
+Iran,3,Alaska,2010
+Iraq,D,Alaska,2010
+Libya,-,Alaska,2010
+Mali,D,Alaska,2010
+Somalia,8,Alaska,2010
+Sudan,22,Alaska,2010
+Syria,D,Alaska,2010
+Yemen,-,Alaska,2010
+Egypt,62,Arizona,2010
+Iran,207,Arizona,2010
+Iraq,1221,Arizona,2010
+Libya,D,Arizona,2010
+Mali,5,Arizona,2010
+Somalia,149,Arizona,2010
+Sudan,95,Arizona,2010
+Syria,49,Arizona,2010
+Yemen,15,Arizona,2010
+Egypt,8,Arkansas,2010
+Iran,14,Arkansas,2010
+Iraq,14,Arkansas,2010
+Libya,D,Arkansas,2010
+Mali,-,Arkansas,2010
+Somalia,-,Arkansas,2010
+Sudan,D,Arkansas,2010
+Syria,9,Arkansas,2010
+Yemen,17,Arkansas,2010
+Egypt,1253,California,2010
+Iran,7840,California,2010
+Iraq,4691,California,2010
+Libya,51,California,2010
+Mali,10,California,2010
+Somalia,152,California,2010
+Sudan,119,California,2010
+Syria,720,California,2010
+Yemen,570,California,2010
+Egypt,30,Colorado,2010
+Iran,113,Colorado,2010
+Iraq,323,Colorado,2010
+Libya,14,Colorado,2010
+Mali,15,Colorado,2010
+Somalia,188,Colorado,2010
+Sudan,109,Colorado,2010
+Syria,12,Colorado,2010
+Yemen,5,Colorado,2010
+Egypt,65,Connecticut,2010
+Iran,78,Connecticut,2010
+Iraq,72,Connecticut,2010
+Libya,8,Connecticut,2010
+Mali,-,Connecticut,2010
+Somalia,10,Connecticut,2010
+Sudan,35,Connecticut,2010
+Syria,26,Connecticut,2010
+Yemen,23,Connecticut,2010
+Egypt,33,Delaware,2010
+Iran,11,Delaware,2010
+Iraq,D,Delaware,2010
+Libya,D,Delaware,2010
+Mali,-,Delaware,2010
+Somalia,-,Delaware,2010
+Sudan,-,Delaware,2010
+Syria,D,Delaware,2010
+Yemen,5,Delaware,2010
+Egypt,9,District of Columbia,2010
+Iran,56,District of Columbia,2010
+Iraq,31,District of Columbia,2010
+Libya,3,District of Columbia,2010
+Mali,5,District of Columbia,2010
+Somalia,D,District of Columbia,2010
+Sudan,11,District of Columbia,2010
+Syria,3,District of Columbia,2010
+Yemen,D,District of Columbia,2010
+Egypt,381,Florida,2010
+Iran,356,Florida,2010
+Iraq,325,Florida,2010
+Libya,16,Florida,2010
+Mali,D,Florida,2010
+Somalia,4,Florida,2010
+Sudan,57,Florida,2010
+Syria,107,Florida,2010
+Yemen,4,Florida,2010
+Egypt,87,Georgia,2010
+Iran,336,Georgia,2010
+Iraq,365,Georgia,2010
+Libya,10,Georgia,2010
+Mali,23,Georgia,2010
+Somalia,86,Georgia,2010
+Sudan,56,Georgia,2010
+Syria,30,Georgia,2010
+Yemen,11,Georgia,2010
+Egypt,D,Hawaii,2010
+Iran,18,Hawaii,2010
+Iraq,8,Hawaii,2010
+Libya,-,Hawaii,2010
+Mali,-,Hawaii,2010
+Somalia,-,Hawaii,2010
+Sudan,-,Hawaii,2010
+Syria,-,Hawaii,2010
+Yemen,-,Hawaii,2010
+Egypt,4,Idaho,2010
+Iran,26,Idaho,2010
+Iraq,243,Idaho,2010
+Libya,D,Idaho,2010
+Mali,-,Idaho,2010
+Somalia,20,Idaho,2010
+Sudan,4,Idaho,2010
+Syria,9,Idaho,2010
+Yemen,D,Idaho,2010
+Egypt,215,Illinois,2010
+Iran,294,Illinois,2010
+Iraq,1142,Illinois,2010
+Libya,9,Illinois,2010
+Mali,3,Illinois,2010
+Somalia,69,Illinois,2010
+Sudan,81,Illinois,2010
+Syria,249,Illinois,2010
+Yemen,149,Illinois,2010
+Egypt,43,Indiana,2010
+Iran,50,Indiana,2010
+Iraq,52,Indiana,2010
+Libya,D,Indiana,2010
+Mali,14,Indiana,2010
+Somalia,14,Indiana,2010
+Sudan,23,Indiana,2010
+Syria,21,Indiana,2010
+Yemen,25,Indiana,2010
+Egypt,25,Iowa,2010
+Iran,9,Iowa,2010
+Iraq,121,Iowa,2010
+Libya,D,Iowa,2010
+Mali,D,Iowa,2010
+Somalia,30,Iowa,2010
+Sudan,118,Iowa,2010
+Syria,12,Iowa,2010
+Yemen,D,Iowa,2010
+Egypt,17,Kansas,2010
+Iran,69,Kansas,2010
+Iraq,84,Kansas,2010
+Libya,D,Kansas,2010
+Mali,D,Kansas,2010
+Somalia,73,Kansas,2010
+Sudan,5,Kansas,2010
+Syria,17,Kansas,2010
+Yemen,6,Kansas,2010
+Egypt,20,Kentucky,2010
+Iran,61,Kentucky,2010
+Iraq,261,Kentucky,2010
+Libya,3,Kentucky,2010
+Mali,D,Kentucky,2010
+Somalia,101,Kentucky,2010
+Sudan,28,Kentucky,2010
+Syria,14,Kentucky,2010
+Yemen,-,Kentucky,2010
+Egypt,36,Louisiana,2010
+Iran,31,Louisiana,2010
+Iraq,60,Louisiana,2010
+Libya,9,Louisiana,2010
+Mali,8,Louisiana,2010
+Somalia,5,Louisiana,2010
+Sudan,16,Louisiana,2010
+Syria,19,Louisiana,2010
+Yemen,29,Louisiana,2010
+Egypt,D,Maine,2010
+Iran,18,Maine,2010
+Iraq,88,Maine,2010
+Libya,D,Maine,2010
+Mali,D,Maine,2010
+Somalia,166,Maine,2010
+Sudan,24,Maine,2010
+Syria,D,Maine,2010
+Yemen,D,Maine,2010
+Egypt,120,Maryland,2010
+Iran,472,Maryland,2010
+Iraq,248,Maryland,2010
+Libya,D,Maryland,2010
+Mali,31,Maryland,2010
+Somalia,16,Maryland,2010
+Sudan,78,Maryland,2010
+Syria,23,Maryland,2010
+Yemen,D,Maryland,2010
+Egypt,262,Massachusetts,2010
+Iran,223,Massachusetts,2010
+Iraq,492,Massachusetts,2010
+Libya,6,Massachusetts,2010
+Mali,D,Massachusetts,2010
+Somalia,87,Massachusetts,2010
+Sudan,44,Massachusetts,2010
+Syria,85,Massachusetts,2010
+Yemen,5,Massachusetts,2010
+Egypt,124,Michigan,2010
+Iran,139,Michigan,2010
+Iraq,3591,Michigan,2010
+Libya,19,Michigan,2010
+Mali,8,Michigan,2010
+Somalia,53,Michigan,2010
+Sudan,37,Michigan,2010
+Syria,143,Michigan,2010
+Yemen,738,Michigan,2010
+Egypt,131,Minnesota,2010
+Iran,60,Minnesota,2010
+Iraq,144,Minnesota,2010
+Libya,8,Minnesota,2010
+Mali,D,Minnesota,2010
+Somalia,1188,Minnesota,2010
+Sudan,78,Minnesota,2010
+Syria,19,Minnesota,2010
+Yemen,39,Minnesota,2010
+Egypt,10,Mississippi,2010
+Iran,10,Mississippi,2010
+Iraq,21,Mississippi,2010
+Libya,-,Mississippi,2010
+Mali,D,Mississippi,2010
+Somalia,-,Mississippi,2010
+Sudan,6,Mississippi,2010
+Syria,D,Mississippi,2010
+Yemen,26,Mississippi,2010
+Egypt,33,Missouri,2010
+Iran,58,Missouri,2010
+Iraq,304,Missouri,2010
+Libya,11,Missouri,2010
+Mali,D,Missouri,2010
+Somalia,120,Missouri,2010
+Sudan,43,Missouri,2010
+Syria,12,Missouri,2010
+Yemen,9,Missouri,2010
+Egypt,D,Montana,2010
+Iran,D,Montana,2010
+Iraq,5,Montana,2010
+Libya,-,Montana,2010
+Mali,D,Montana,2010
+Somalia,-,Montana,2010
+Sudan,-,Montana,2010
+Syria,D,Montana,2010
+Yemen,-,Montana,2010
+Egypt,15,Nebraska,2010
+Iran,16,Nebraska,2010
+Iraq,116,Nebraska,2010
+Libya,-,Nebraska,2010
+Mali,D,Nebraska,2010
+Somalia,208,Nebraska,2010
+Sudan,132,Nebraska,2010
+Syria,3,Nebraska,2010
+Yemen,-,Nebraska,2010
+Egypt,19,Nevada,2010
+Iran,105,Nevada,2010
+Iraq,117,Nevada,2010
+Libya,6,Nevada,2010
+Mali,D,Nevada,2010
+Somalia,6,Nevada,2010
+Sudan,11,Nevada,2010
+Syria,13,Nevada,2010
+Yemen,6,Nevada,2010
+Egypt,22,New Hampshire,2010
+Iran,12,New Hampshire,2010
+Iraq,67,New Hampshire,2010
+Libya,-,New Hampshire,2010
+Mali,-,New Hampshire,2010
+Somalia,12,New Hampshire,2010
+Sudan,19,New Hampshire,2010
+Syria,3,New Hampshire,2010
+Yemen,-,New Hampshire,2010
+Egypt,1849,New Jersey,2010
+Iran,176,New Jersey,2010
+Iraq,157,New Jersey,2010
+Libya,11,New Jersey,2010
+Mali,15,New Jersey,2010
+Somalia,D,New Jersey,2010
+Sudan,37,New Jersey,2010
+Syria,146,New Jersey,2010
+Yemen,11,New Jersey,2010
+Egypt,12,New Mexico,2010
+Iran,31,New Mexico,2010
+Iraq,64,New Mexico,2010
+Libya,3,New Mexico,2010
+Mali,-,New Mexico,2010
+Somalia,-,New Mexico,2010
+Sudan,D,New Mexico,2010
+Syria,6,New Mexico,2010
+Yemen,5,New Mexico,2010
+Egypt,1556,New York,2010
+Iran,375,New York,2010
+Iraq,369,New York,2010
+Libya,31,New York,2010
+Mali,232,New York,2010
+Somalia,126,New York,2010
+Sudan,198,New York,2010
+Syria,139,New York,2010
+Yemen,1595,New York,2010
+Egypt,142,North Carolina,2010
+Iran,123,North Carolina,2010
+Iraq,291,North Carolina,2010
+Libya,3,North Carolina,2010
+Mali,8,North Carolina,2010
+Somalia,43,North Carolina,2010
+Sudan,105,North Carolina,2010
+Syria,26,North Carolina,2010
+Yemen,92,North Carolina,2010
+Egypt,D,North Dakota,2010
+Iran,17,North Dakota,2010
+Iraq,133,North Dakota,2010
+Libya,-,North Dakota,2010
+Mali,-,North Dakota,2010
+Somalia,55,North Dakota,2010
+Sudan,14,North Dakota,2010
+Syria,12,North Dakota,2010
+Yemen,D,North Dakota,2010
+Egypt,169,Ohio,2010
+Iran,105,Ohio,2010
+Iraq,320,Ohio,2010
+Libya,14,Ohio,2010
+Mali,29,Ohio,2010
+Somalia,441,Ohio,2010
+Sudan,76,Ohio,2010
+Syria,111,Ohio,2010
+Yemen,23,Ohio,2010
+Egypt,11,Oklahoma,2010
+Iran,79,Oklahoma,2010
+Iraq,58,Oklahoma,2010
+Libya,6,Oklahoma,2010
+Mali,D,Oklahoma,2010
+Somalia,-,Oklahoma,2010
+Sudan,D,Oklahoma,2010
+Syria,16,Oklahoma,2010
+Yemen,-,Oklahoma,2010
+Egypt,82,Oregon,2010
+Iran,103,Oregon,2010
+Iraq,161,Oregon,2010
+Libya,3,Oregon,2010
+Mali,-,Oregon,2010
+Somalia,65,Oregon,2010
+Sudan,11,Oregon,2010
+Syria,15,Oregon,2010
+Yemen,D,Oregon,2010
+Egypt,369,Pennsylvania,2010
+Iran,106,Pennsylvania,2010
+Iraq,326,Pennsylvania,2010
+Libya,8,Pennsylvania,2010
+Mali,44,Pennsylvania,2010
+Somalia,56,Pennsylvania,2010
+Sudan,101,Pennsylvania,2010
+Syria,184,Pennsylvania,2010
+Yemen,10,Pennsylvania,2010
+Egypt,4,Puerto Rico,2010
+Iran,6,Puerto Rico,2010
+Iraq,-,Puerto Rico,2010
+Libya,-,Puerto Rico,2010
+Mali,-,Puerto Rico,2010
+Somalia,-,Puerto Rico,2010
+Sudan,-,Puerto Rico,2010
+Syria,-,Puerto Rico,2010
+Yemen,-,Puerto Rico,2010
+Egypt,29,Rhode Island,2010
+Iran,11,Rhode Island,2010
+Iraq,40,Rhode Island,2010
+Libya,-,Rhode Island,2010
+Mali,8,Rhode Island,2010
+Somalia,3,Rhode Island,2010
+Sudan,D,Rhode Island,2010
+Syria,19,Rhode Island,2010
+Yemen,-,Rhode Island,2010
+Egypt,62,South Carolina,2010
+Iran,34,South Carolina,2010
+Iraq,49,South Carolina,2010
+Libya,-,South Carolina,2010
+Mali,D,South Carolina,2010
+Somalia,5,South Carolina,2010
+Sudan,8,South Carolina,2010
+Syria,10,South Carolina,2010
+Yemen,-,South Carolina,2010
+Egypt,3,South Dakota,2010
+Iran,3,South Dakota,2010
+Iraq,50,South Dakota,2010
+Libya,-,South Dakota,2010
+Mali,-,South Dakota,2010
+Somalia,12,South Dakota,2010
+Sudan,21,South Dakota,2010
+Syria,D,South Dakota,2010
+Yemen,4,South Dakota,2010
+Egypt,563,Tennessee,2010
+Iran,122,Tennessee,2010
+Iraq,423,Tennessee,2010
+Libya,12,Tennessee,2010
+Mali,6,Tennessee,2010
+Somalia,113,Tennessee,2010
+Sudan,45,Tennessee,2010
+Syria,19,Tennessee,2010
+Yemen,58,Tennessee,2010
+Egypt,379,Texas,2010
+Iran,1073,Texas,2010
+Iraq,1591,Texas,2010
+Libya,26,Texas,2010
+Mali,17,Texas,2010
+Somalia,224,Texas,2010
+Sudan,170,Texas,2010
+Syria,119,Texas,2010
+Yemen,23,Texas,2010
+Egypt,17,Utah,2010
+Iran,65,Utah,2010
+Iraq,193,Utah,2010
+Libya,D,Utah,2010
+Mali,D,Utah,2010
+Somalia,80,Utah,2010
+Sudan,28,Utah,2010
+Syria,9,Utah,2010
+Yemen,-,Utah,2010
+Egypt,D,Vermont,2010
+Iran,D,Vermont,2010
+Iraq,26,Vermont,2010
+Libya,-,Vermont,2010
+Mali,D,Vermont,2010
+Somalia,32,Vermont,2010
+Sudan,4,Vermont,2010
+Syria,D,Vermont,2010
+Yemen,3,Vermont,2010
+Egypt,531,Virginia,2010
+Iran,630,Virginia,2010
+Iraq,886,Virginia,2010
+Libya,16,Virginia,2010
+Mali,5,Virginia,2010
+Somalia,80,Virginia,2010
+Sudan,240,Virginia,2010
+Syria,56,Virginia,2010
+Yemen,29,Virginia,2010
+Egypt,88,Washington,2010
+Iran,298,Washington,2010
+Iraq,294,Washington,2010
+Libya,18,Washington,2010
+Mali,17,Washington,2010
+Somalia,381,Washington,2010
+Sudan,51,Washington,2010
+Syria,37,Washington,2010
+Yemen,13,Washington,2010
+Egypt,8,West Virginia,2010
+Iran,20,West Virginia,2010
+Iraq,8,West Virginia,2010
+Libya,8,West Virginia,2010
+Mali,-,West Virginia,2010
+Somalia,-,West Virginia,2010
+Sudan,D,West Virginia,2010
+Syria,9,West Virginia,2010
+Yemen,D,West Virginia,2010
+Egypt,37,Wisconsin,2010
+Iran,64,Wisconsin,2010
+Iraq,101,Wisconsin,2010
+Libya,6,Wisconsin,2010
+Mali,3,Wisconsin,2010
+Somalia,67,Wisconsin,2010
+Sudan,16,Wisconsin,2010
+Syria,6,Wisconsin,2010
+Yemen,D,Wisconsin,2010
+Egypt,D,Wyoming,2010
+Iran,D,Wyoming,2010
+Iraq,D,Wyoming,2010
+Libya,-,Wyoming,2010
+Mali,-,Wyoming,2010
+Somalia,-,Wyoming,2010
+Sudan,-,Wyoming,2010
+Syria,-,Wyoming,2010
+Yemen,-,Wyoming,2010

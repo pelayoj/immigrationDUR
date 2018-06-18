@@ -1,0 +1,521 @@
+﻿Country,Immigrant,State,Year
+Egypt,28,Alabama,2016
+Iran,28,Alabama,2016
+Iraq,34,Alabama,2016
+Libya,-,Alabama,2016
+Mali,D,Alabama,2016
+Somalia,D,Alabama,2016
+South Sudan,-,Alabama,2016
+Sudan,21,Alabama,2016
+Syria,11,Alabama,2016
+Yemen,122,Alabama,2016
+Egypt,D,Alaska,2016
+Iran,4,Alaska,2016
+Iraq,22,Alaska,2016
+Libya,D,Alaska,2016
+Mali,-,Alaska,2016
+Somalia,35,Alaska,2016
+South Sudan,D,Alaska,2016
+Sudan,9,Alaska,2016
+Syria,-,Alaska,2016
+Yemen,-,Alaska,2016
+Egypt,70,Arizona,2016
+Iran,217,Arizona,2016
+Iraq,954,Arizona,2016
+Libya,14,Arizona,2016
+Mali,3,Arizona,2016
+Somalia,89,Arizona,2016
+South Sudan,10,Arizona,2016
+Sudan,110,Arizona,2016
+Syria,97,Arizona,2016
+Yemen,10,Arizona,2016
+Egypt,14,Arkansas,2016
+Iran,18,Arkansas,2016
+Iraq,15,Arkansas,2016
+Libya,-,Arkansas,2016
+Mali,-,Arkansas,2016
+Somalia,3,Arkansas,2016
+South Sudan,-,Arkansas,2016
+Sudan,D,Arkansas,2016
+Syria,12,Arkansas,2016
+Yemen,53,Arkansas,2016
+Egypt,2183,California,2016
+Iran,6368,California,2016
+Iraq,3011,California,2016
+Libya,60,California,2016
+Mali,5,California,2016
+Somalia,144,California,2016
+South Sudan,7,California,2016
+Sudan,150,California,2016
+Syria,1450,California,2016
+Yemen,1689,California,2016
+Egypt,37,Colorado,2016
+Iran,106,Colorado,2016
+Iraq,347,Colorado,2016
+Libya,39,Colorado,2016
+Mali,18,Colorado,2016
+Somalia,252,Colorado,2016
+South Sudan,4,Colorado,2016
+Sudan,117,Colorado,2016
+Syria,16,Colorado,2016
+Yemen,D,Colorado,2016
+Egypt,104,Connecticut,2016
+Iran,74,Connecticut,2016
+Iraq,122,Connecticut,2016
+Libya,13,Connecticut,2016
+Mali,D,Connecticut,2016
+Somalia,4,Connecticut,2016
+South Sudan,-,Connecticut,2016
+Sudan,46,Connecticut,2016
+Syria,69,Connecticut,2016
+Yemen,57,Connecticut,2016
+Egypt,48,Delaware,2016
+Iran,12,Delaware,2016
+Iraq,D,Delaware,2016
+Libya,-,Delaware,2016
+Mali,-,Delaware,2016
+Somalia,-,Delaware,2016
+South Sudan,-,Delaware,2016
+Sudan,-,Delaware,2016
+Syria,13,Delaware,2016
+Yemen,34,Delaware,2016
+Egypt,18,District of Columbia,2016
+Iran,47,District of Columbia,2016
+Iraq,18,District of Columbia,2016
+Libya,-,District of Columbia,2016
+Mali,D,District of Columbia,2016
+Somalia,D,District of Columbia,2016
+South Sudan,-,District of Columbia,2016
+Sudan,10,District of Columbia,2016
+Syria,15,District of Columbia,2016
+Yemen,3,District of Columbia,2016
+Egypt,620,Florida,2016
+Iran,347,Florida,2016
+Iraq,411,Florida,2016
+Libya,42,Florida,2016
+Mali,D,Florida,2016
+Somalia,18,Florida,2016
+South Sudan,3,Florida,2016
+Sudan,81,Florida,2016
+Syria,303,Florida,2016
+Yemen,24,Florida,2016
+Egypt,131,Georgia,2016
+Iran,353,Georgia,2016
+Iraq,213,Georgia,2016
+Libya,36,Georgia,2016
+Mali,24,Georgia,2016
+Somalia,103,Georgia,2016
+South Sudan,-,Georgia,2016
+Sudan,54,Georgia,2016
+Syria,46,Georgia,2016
+Yemen,16,Georgia,2016
+Egypt,5,Hawaii,2016
+Iran,D,Hawaii,2016
+Iraq,4,Hawaii,2016
+Libya,-,Hawaii,2016
+Mali,-,Hawaii,2016
+Somalia,-,Hawaii,2016
+South Sudan,-,Hawaii,2016
+Sudan,3,Hawaii,2016
+Syria,3,Hawaii,2016
+Yemen,-,Hawaii,2016
+Egypt,5,Idaho,2016
+Iran,30,Idaho,2016
+Iraq,222,Idaho,2016
+Libya,D,Idaho,2016
+Mali,D,Idaho,2016
+Somalia,12,Idaho,2016
+South Sudan,D,Idaho,2016
+Sudan,39,Idaho,2016
+Syria,D,Idaho,2016
+Yemen,-,Idaho,2016
+Egypt,205,Illinois,2016
+Iran,296,Illinois,2016
+Iraq,836,Illinois,2016
+Libya,14,Illinois,2016
+Mali,14,Illinois,2016
+Somalia,63,Illinois,2016
+South Sudan,-,Illinois,2016
+Sudan,143,Illinois,2016
+Syria,284,Illinois,2016
+Yemen,360,Illinois,2016
+Egypt,84,Indiana,2016
+Iran,76,Indiana,2016
+Iraq,116,Indiana,2016
+Libya,11,Indiana,2016
+Mali,8,Indiana,2016
+Somalia,26,Indiana,2016
+South Sudan,-,Indiana,2016
+Sudan,45,Indiana,2016
+Syria,57,Indiana,2016
+Yemen,90,Indiana,2016
+Egypt,41,Iowa,2016
+Iran,18,Iowa,2016
+Iraq,84,Iowa,2016
+Libya,D,Iowa,2016
+Mali,3,Iowa,2016
+Somalia,80,Iowa,2016
+South Sudan,5,Iowa,2016
+Sudan,177,Iowa,2016
+Syria,11,Iowa,2016
+Yemen,6,Iowa,2016
+Egypt,18,Kansas,2016
+Iran,50,Kansas,2016
+Iraq,54,Kansas,2016
+Libya,4,Kansas,2016
+Mali,D,Kansas,2016
+Somalia,119,Kansas,2016
+South Sudan,-,Kansas,2016
+Sudan,23,Kansas,2016
+Syria,16,Kansas,2016
+Yemen,D,Kansas,2016
+Egypt,37,Kentucky,2016
+Iran,53,Kentucky,2016
+Iraq,354,Kentucky,2016
+Libya,17,Kentucky,2016
+Mali,D,Kentucky,2016
+Somalia,211,Kentucky,2016
+South Sudan,3,Kentucky,2016
+Sudan,19,Kentucky,2016
+Syria,48,Kentucky,2016
+Yemen,7,Kentucky,2016
+Egypt,27,Louisiana,2016
+Iran,59,Louisiana,2016
+Iraq,48,Louisiana,2016
+Libya,6,Louisiana,2016
+Mali,5,Louisiana,2016
+Somalia,6,Louisiana,2016
+South Sudan,-,Louisiana,2016
+Sudan,6,Louisiana,2016
+Syria,11,Louisiana,2016
+Yemen,172,Louisiana,2016
+Egypt,7,Maine,2016
+Iran,10,Maine,2016
+Iraq,253,Maine,2016
+Libya,D,Maine,2016
+Mali,D,Maine,2016
+Somalia,92,Maine,2016
+South Sudan,6,Maine,2016
+Sudan,16,Maine,2016
+Syria,19,Maine,2016
+Yemen,-,Maine,2016
+Egypt,168,Maryland,2016
+Iran,383,Maryland,2016
+Iraq,169,Maryland,2016
+Libya,4,Maryland,2016
+Mali,49,Maryland,2016
+Somalia,10,Maryland,2016
+South Sudan,D,Maryland,2016
+Sudan,155,Maryland,2016
+Syria,65,Maryland,2016
+Yemen,34,Maryland,2016
+Egypt,382,Massachusetts,2016
+Iran,307,Massachusetts,2016
+Iraq,505,Massachusetts,2016
+Libya,13,Massachusetts,2016
+Mali,4,Massachusetts,2016
+Somalia,101,Massachusetts,2016
+South Sudan,5,Massachusetts,2016
+Sudan,67,Massachusetts,2016
+Syria,125,Massachusetts,2016
+Yemen,9,Massachusetts,2016
+Egypt,213,Michigan,2016
+Iran,138,Michigan,2016
+Iraq,2435,Michigan,2016
+Libya,30,Michigan,2016
+Mali,7,Michigan,2016
+Somalia,66,Michigan,2016
+South Sudan,4,Michigan,2016
+Sudan,66,Michigan,2016
+Syria,313,Michigan,2016
+Yemen,3674,Michigan,2016
+Egypt,112,Minnesota,2016
+Iran,79,Minnesota,2016
+Iraq,246,Minnesota,2016
+Libya,D,Minnesota,2016
+Mali,6,Minnesota,2016
+Somalia,2455,Minnesota,2016
+South Sudan,10,Minnesota,2016
+Sudan,50,Minnesota,2016
+Syria,26,Minnesota,2016
+Yemen,32,Minnesota,2016
+Egypt,25,Mississippi,2016
+Iran,8,Mississippi,2016
+Iraq,5,Mississippi,2016
+Libya,6,Mississippi,2016
+Mali,-,Mississippi,2016
+Somalia,-,Mississippi,2016
+South Sudan,D,Mississippi,2016
+Sudan,5,Mississippi,2016
+Syria,4,Mississippi,2016
+Yemen,207,Mississippi,2016
+Egypt,46,Missouri,2016
+Iran,76,Missouri,2016
+Iraq,212,Missouri,2016
+Libya,31,Missouri,2016
+Mali,D,Missouri,2016
+Somalia,172,Missouri,2016
+South Sudan,5,Missouri,2016
+Sudan,49,Missouri,2016
+Syria,40,Missouri,2016
+Yemen,17,Missouri,2016
+Egypt,D,Montana,2016
+Iran,-,Montana,2016
+Iraq,-,Montana,2016
+Libya,-,Montana,2016
+Mali,-,Montana,2016
+Somalia,-,Montana,2016
+South Sudan,-,Montana,2016
+Sudan,-,Montana,2016
+Syria,D,Montana,2016
+Yemen,-,Montana,2016
+Egypt,21,Nebraska,2016
+Iran,21,Nebraska,2016
+Iraq,416,Nebraska,2016
+Libya,4,Nebraska,2016
+Mali,3,Nebraska,2016
+Somalia,305,Nebraska,2016
+South Sudan,10,Nebraska,2016
+Sudan,91,Nebraska,2016
+Syria,22,Nebraska,2016
+Yemen,-,Nebraska,2016
+Egypt,35,Nevada,2016
+Iran,156,Nevada,2016
+Iraq,81,Nevada,2016
+Libya,D,Nevada,2016
+Mali,3,Nevada,2016
+Somalia,3,Nevada,2016
+South Sudan,-,Nevada,2016
+Sudan,9,Nevada,2016
+Syria,32,Nevada,2016
+Yemen,D,Nevada,2016
+Egypt,33,New Hampshire,2016
+Iran,15,New Hampshire,2016
+Iraq,72,New Hampshire,2016
+Libya,4,New Hampshire,2016
+Mali,-,New Hampshire,2016
+Somalia,D,New Hampshire,2016
+South Sudan,D,New Hampshire,2016
+Sudan,17,New Hampshire,2016
+Syria,10,New Hampshire,2016
+Yemen,-,New Hampshire,2016
+Egypt,2042,New Jersey,2016
+Iran,176,New Jersey,2016
+Iraq,91,New Jersey,2016
+Libya,15,New Jersey,2016
+Mali,16,New Jersey,2016
+Somalia,D,New Jersey,2016
+South Sudan,-,New Jersey,2016
+Sudan,65,New Jersey,2016
+Syria,238,New Jersey,2016
+Yemen,52,New Jersey,2016
+Egypt,6,New Mexico,2016
+Iran,18,New Mexico,2016
+Iraq,71,New Mexico,2016
+Libya,-,New Mexico,2016
+Mali,-,New Mexico,2016
+Somalia,3,New Mexico,2016
+South Sudan,-,New Mexico,2016
+Sudan,D,New Mexico,2016
+Syria,7,New Mexico,2016
+Yemen,-,New Mexico,2016
+Egypt,1818,New York,2016
+Iran,425,New York,2016
+Iraq,568,New York,2016
+Libya,36,New York,2016
+Mali,243,New York,2016
+Somalia,223,New York,2016
+South Sudan,6,New York,2016
+Sudan,237,New York,2016
+Syria,214,New York,2016
+Yemen,5469,New York,2016
+Egypt,227,North Carolina,2016
+Iran,167,North Carolina,2016
+Iraq,258,North Carolina,2016
+Libya,12,North Carolina,2016
+Mali,16,North Carolina,2016
+Somalia,47,North Carolina,2016
+South Sudan,-,North Carolina,2016
+Sudan,203,North Carolina,2016
+Syria,45,North Carolina,2016
+Yemen,338,North Carolina,2016
+Egypt,D,North Dakota,2016
+Iran,9,North Dakota,2016
+Iraq,68,North Dakota,2016
+Libya,-,North Dakota,2016
+Mali,-,North Dakota,2016
+Somalia,164,North Dakota,2016
+South Sudan,-,North Dakota,2016
+Sudan,15,North Dakota,2016
+Syria,4,North Dakota,2016
+Yemen,-,North Dakota,2016
+Egypt,228,Ohio,2016
+Iran,160,Ohio,2016
+Iraq,533,Ohio,2016
+Libya,33,Ohio,2016
+Mali,37,Ohio,2016
+Somalia,728,Ohio,2016
+South Sudan,D,Ohio,2016
+Sudan,88,Ohio,2016
+Syria,181,Ohio,2016
+Yemen,34,Ohio,2016
+Egypt,17,Oklahoma,2016
+Iran,100,Oklahoma,2016
+Iraq,67,Oklahoma,2016
+Libya,13,Oklahoma,2016
+Mali,-,Oklahoma,2016
+Somalia,D,Oklahoma,2016
+South Sudan,4,Oklahoma,2016
+Sudan,6,Oklahoma,2016
+Syria,21,Oklahoma,2016
+Yemen,D,Oklahoma,2016
+Egypt,83,Oregon,2016
+Iran,120,Oregon,2016
+Iraq,241,Oregon,2016
+Libya,14,Oregon,2016
+Mali,-,Oregon,2016
+Somalia,125,Oregon,2016
+South Sudan,D,Oregon,2016
+Sudan,10,Oregon,2016
+Syria,45,Oregon,2016
+Yemen,8,Oregon,2016
+Egypt,465,Pennsylvania,2016
+Iran,148,Pennsylvania,2016
+Iraq,330,Pennsylvania,2016
+Libya,30,Pennsylvania,2016
+Mali,62,Pennsylvania,2016
+Somalia,77,Pennsylvania,2016
+South Sudan,7,Pennsylvania,2016
+Sudan,136,Pennsylvania,2016
+Syria,267,Pennsylvania,2016
+Yemen,58,Pennsylvania,2016
+Egypt,D,Puerto Rico,2016
+Iran,D,Puerto Rico,2016
+Iraq,4,Puerto Rico,2016
+Libya,-,Puerto Rico,2016
+Mali,-,Puerto Rico,2016
+Somalia,-,Puerto Rico,2016
+South Sudan,-,Puerto Rico,2016
+Sudan,-,Puerto Rico,2016
+Syria,D,Puerto Rico,2016
+Yemen,-,Puerto Rico,2016
+Egypt,22,Rhode Island,2016
+Iran,15,Rhode Island,2016
+Iraq,33,Rhode Island,2016
+Libya,-,Rhode Island,2016
+Mali,D,Rhode Island,2016
+Somalia,5,Rhode Island,2016
+South Sudan,-,Rhode Island,2016
+Sudan,D,Rhode Island,2016
+Syria,46,Rhode Island,2016
+Yemen,-,Rhode Island,2016
+Egypt,73,South Carolina,2016
+Iran,36,South Carolina,2016
+Iraq,26,South Carolina,2016
+Libya,5,South Carolina,2016
+Mali,-,South Carolina,2016
+Somalia,D,South Carolina,2016
+South Sudan,-,South Carolina,2016
+Sudan,10,South Carolina,2016
+Syria,20,South Carolina,2016
+Yemen,22,South Carolina,2016
+Egypt,3,South Dakota,2016
+Iran,6,South Dakota,2016
+Iraq,33,South Dakota,2016
+Libya,D,South Dakota,2016
+Mali,-,South Dakota,2016
+Somalia,33,South Dakota,2016
+South Sudan,5,South Dakota,2016
+Sudan,14,South Dakota,2016
+Syria,D,South Dakota,2016
+Yemen,-,South Dakota,2016
+Egypt,830,Tennessee,2016
+Iran,54,Tennessee,2016
+Iraq,445,Tennessee,2016
+Libya,3,Tennessee,2016
+Mali,4,Tennessee,2016
+Somalia,152,Tennessee,2016
+South Sudan,5,Tennessee,2016
+Sudan,46,Tennessee,2016
+Syria,37,Tennessee,2016
+Yemen,216,Tennessee,2016
+Egypt,690,Texas,2016
+Iran,1462,Texas,2016
+Iraq,2747,Texas,2016
+Libya,64,Texas,2016
+Mali,26,Texas,2016
+Somalia,264,Texas,2016
+South Sudan,6,Texas,2016
+Sudan,281,Texas,2016
+Syria,303,Texas,2016
+Yemen,40,Texas,2016
+Egypt,17,Utah,2016
+Iran,61,Utah,2016
+Iraq,209,Utah,2016
+Libya,D,Utah,2016
+Mali,5,Utah,2016
+Somalia,107,Utah,2016
+South Sudan,D,Utah,2016
+Sudan,51,Utah,2016
+Syria,16,Utah,2016
+Yemen,D,Utah,2016
+Egypt,4,Vermont,2016
+Iran,D,Vermont,2016
+Iraq,24,Vermont,2016
+Libya,-,Vermont,2016
+Mali,-,Vermont,2016
+Somalia,16,Vermont,2016
+South Sudan,-,Vermont,2016
+Sudan,-,Vermont,2016
+Syria,D,Vermont,2016
+Yemen,5,Vermont,2016
+Egypt,574,Virginia,2016
+Iran,569,Virginia,2016
+Iraq,772,Virginia,2016
+Libya,24,Virginia,2016
+Mali,7,Virginia,2016
+Somalia,50,Virginia,2016
+South Sudan,6,Virginia,2016
+Sudan,321,Virginia,2016
+Syria,112,Virginia,2016
+Yemen,101,Virginia,2016
+Egypt,170,Washington,2016
+Iran,333,Washington,2016
+Iraq,744,Washington,2016
+Libya,18,Washington,2016
+Mali,13,Washington,2016
+Somalia,390,Washington,2016
+South Sudan,4,Washington,2016
+Sudan,61,Washington,2016
+Syria,55,Washington,2016
+Yemen,51,Washington,2016
+Egypt,15,West Virginia,2016
+Iran,24,West Virginia,2016
+Iraq,12,West Virginia,2016
+Libya,7,West Virginia,2016
+Mali,-,West Virginia,2016
+Somalia,-,West Virginia,2016
+South Sudan,-,West Virginia,2016
+Sudan,-,West Virginia,2016
+Syria,23,West Virginia,2016
+Yemen,11,West Virginia,2016
+Egypt,31,Wisconsin,2016
+Iran,54,Wisconsin,2016
+Iraq,193,Wisconsin,2016
+Libya,7,Wisconsin,2016
+Mali,4,Wisconsin,2016
+Somalia,195,Wisconsin,2016
+South Sudan,-,Wisconsin,2016
+Sudan,26,Wisconsin,2016
+Syria,37,Wisconsin,2016
+Yemen,4,Wisconsin,2016
+Egypt,-,Wyoming,2016
+Iran,4,Wyoming,2016
+Iraq,D,Wyoming,2016
+Libya,-,Wyoming,2016
+Mali,-,Wyoming,2016
+Somalia,-,Wyoming,2016
+South Sudan,-,Wyoming,2016
+Sudan,-,Wyoming,2016
+Syria,-,Wyoming,2016
+Yemen,D,Wyoming,2016

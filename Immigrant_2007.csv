@@ -1,0 +1,460 @@
+﻿Country,Immigrant,State,Year
+Egypt,18,Alabama,2007
+Iran,39,Alabama,2007
+Iraq,26,Alabama,2007
+Libya,D,Alabama,2007
+Mali,-,Alabama,2007
+Somalia,-,Alabama,2007
+Sudan,12,Alabama,2007
+Syria,8,Alabama,2007
+Yemen,28,Alabama,2007
+Egypt,3,Alaska,2007
+Iran,-,Alaska,2007
+Iraq,-,Alaska,2007
+Libya,-,Alaska,2007
+Mali,D,Alaska,2007
+Somalia,-,Alaska,2007
+Sudan,D,Alaska,2007
+Syria,-,Alaska,2007
+Yemen,-,Alaska,2007
+Egypt,58,Arizona,2007
+Iran,153,Arizona,2007
+Iraq,126,Arizona,2007
+Libya,7,Arizona,2007
+Mali,5,Arizona,2007
+Somalia,198,Arizona,2007
+Sudan,113,Arizona,2007
+Syria,51,Arizona,2007
+Yemen,19,Arizona,2007
+Egypt,16,Arkansas,2007
+Iran,8,Arkansas,2007
+Iraq,6,Arkansas,2007
+Libya,-,Arkansas,2007
+Mali,-,Arkansas,2007
+Somalia,-,Arkansas,2007
+Sudan,D,Arkansas,2007
+Syria,6,Arkansas,2007
+Yemen,D,Arkansas,2007
+Egypt,1495,California,2007
+Iran,5252,California,2007
+Iraq,764,California,2007
+Libya,31,California,2007
+Mali,19,California,2007
+Somalia,293,California,2007
+Sudan,195,California,2007
+Syria,673,California,2007
+Yemen,258,California,2007
+Egypt,21,Colorado,2007
+Iran,98,Colorado,2007
+Iraq,32,Colorado,2007
+Libya,D,Colorado,2007
+Mali,17,Colorado,2007
+Somalia,97,Colorado,2007
+Sudan,110,Colorado,2007
+Syria,13,Colorado,2007
+Yemen,6,Colorado,2007
+Egypt,81,Connecticut,2007
+Iran,52,Connecticut,2007
+Iraq,11,Connecticut,2007
+Libya,D,Connecticut,2007
+Mali,-,Connecticut,2007
+Somalia,46,Connecticut,2007
+Sudan,27,Connecticut,2007
+Syria,39,Connecticut,2007
+Yemen,30,Connecticut,2007
+Egypt,31,Delaware,2007
+Iran,10,Delaware,2007
+Iraq,6,Delaware,2007
+Libya,-,Delaware,2007
+Mali,D,Delaware,2007
+Somalia,-,Delaware,2007
+Sudan,4,Delaware,2007
+Syria,-,Delaware,2007
+Yemen,D,Delaware,2007
+Egypt,23,District of Columbia,2007
+Iran,12,District of Columbia,2007
+Iraq,13,District of Columbia,2007
+Libya,-,District of Columbia,2007
+Mali,D,District of Columbia,2007
+Somalia,4,District of Columbia,2007
+Sudan,8,District of Columbia,2007
+Syria,-,District of Columbia,2007
+Yemen,D,District of Columbia,2007
+Egypt,521,Florida,2007
+Iran,344,Florida,2007
+Iraq,66,Florida,2007
+Libya,11,Florida,2007
+Mali,8,Florida,2007
+Somalia,19,Florida,2007
+Sudan,69,Florida,2007
+Syria,171,Florida,2007
+Yemen,12,Florida,2007
+Egypt,92,Georgia,2007
+Iran,267,Georgia,2007
+Iraq,39,Georgia,2007
+Libya,3,Georgia,2007
+Mali,16,Georgia,2007
+Somalia,201,Georgia,2007
+Sudan,87,Georgia,2007
+Syria,23,Georgia,2007
+Yemen,23,Georgia,2007
+Egypt,5,Hawaii,2007
+Iran,D,Hawaii,2007
+Iraq,7,Hawaii,2007
+Libya,-,Hawaii,2007
+Mali,-,Hawaii,2007
+Somalia,-,Hawaii,2007
+Sudan,-,Hawaii,2007
+Syria,-,Hawaii,2007
+Yemen,-,Hawaii,2007
+Egypt,13,Idaho,2007
+Iran,16,Idaho,2007
+Iraq,4,Idaho,2007
+Libya,D,Idaho,2007
+Mali,-,Idaho,2007
+Somalia,49,Idaho,2007
+Sudan,19,Idaho,2007
+Syria,-,Idaho,2007
+Yemen,D,Idaho,2007
+Egypt,199,Illinois,2007
+Iran,232,Illinois,2007
+Iraq,278,Illinois,2007
+Libya,6,Illinois,2007
+Mali,8,Illinois,2007
+Somalia,96,Illinois,2007
+Sudan,95,Illinois,2007
+Syria,219,Illinois,2007
+Yemen,90,Illinois,2007
+Egypt,42,Indiana,2007
+Iran,36,Indiana,2007
+Iraq,13,Indiana,2007
+Libya,3,Indiana,2007
+Mali,6,Indiana,2007
+Somalia,29,Indiana,2007
+Sudan,31,Indiana,2007
+Syria,15,Indiana,2007
+Yemen,35,Indiana,2007
+Egypt,8,Iowa,2007
+Iran,15,Iowa,2007
+Iraq,8,Iowa,2007
+Libya,D,Iowa,2007
+Mali,-,Iowa,2007
+Somalia,17,Iowa,2007
+Sudan,80,Iowa,2007
+Syria,D,Iowa,2007
+Yemen,-,Iowa,2007
+Egypt,37,Kansas,2007
+Iran,40,Kansas,2007
+Iraq,10,Kansas,2007
+Libya,D,Kansas,2007
+Mali,-,Kansas,2007
+Somalia,38,Kansas,2007
+Sudan,20,Kansas,2007
+Syria,7,Kansas,2007
+Yemen,D,Kansas,2007
+Egypt,26,Kentucky,2007
+Iran,40,Kentucky,2007
+Iraq,26,Kentucky,2007
+Libya,D,Kentucky,2007
+Mali,D,Kentucky,2007
+Somalia,81,Kentucky,2007
+Sudan,23,Kentucky,2007
+Syria,8,Kentucky,2007
+Yemen,D,Kentucky,2007
+Egypt,28,Louisiana,2007
+Iran,39,Louisiana,2007
+Iraq,7,Louisiana,2007
+Libya,-,Louisiana,2007
+Mali,D,Louisiana,2007
+Somalia,4,Louisiana,2007
+Sudan,5,Louisiana,2007
+Syria,6,Louisiana,2007
+Yemen,5,Louisiana,2007
+Egypt,12,Maine,2007
+Iran,13,Maine,2007
+Iraq,28,Maine,2007
+Libya,D,Maine,2007
+Mali,D,Maine,2007
+Somalia,199,Maine,2007
+Sudan,72,Maine,2007
+Syria,-,Maine,2007
+Yemen,-,Maine,2007
+Egypt,129,Maryland,2007
+Iran,319,Maryland,2007
+Iraq,29,Maryland,2007
+Libya,5,Maryland,2007
+Mali,31,Maryland,2007
+Somalia,54,Maryland,2007
+Sudan,101,Maryland,2007
+Syria,21,Maryland,2007
+Yemen,7,Maryland,2007
+Egypt,269,Massachusetts,2007
+Iran,152,Massachusetts,2007
+Iraq,19,Massachusetts,2007
+Libya,7,Massachusetts,2007
+Mali,4,Massachusetts,2007
+Somalia,170,Massachusetts,2007
+Sudan,49,Massachusetts,2007
+Syria,72,Massachusetts,2007
+Yemen,6,Massachusetts,2007
+Egypt,168,Michigan,2007
+Iran,109,Michigan,2007
+Iraq,1387,Michigan,2007
+Libya,11,Michigan,2007
+Mali,7,Michigan,2007
+Somalia,73,Michigan,2007
+Sudan,43,Michigan,2007
+Syria,122,Michigan,2007
+Yemen,704,Michigan,2007
+Egypt,104,Minnesota,2007
+Iran,65,Minnesota,2007
+Iraq,18,Minnesota,2007
+Libya,D,Minnesota,2007
+Mali,-,Minnesota,2007
+Somalia,1801,Minnesota,2007
+Sudan,92,Minnesota,2007
+Syria,19,Minnesota,2007
+Yemen,15,Minnesota,2007
+Egypt,9,Mississippi,2007
+Iran,7,Mississippi,2007
+Iraq,D,Mississippi,2007
+Libya,-,Mississippi,2007
+Mali,-,Mississippi,2007
+Somalia,D,Mississippi,2007
+Sudan,4,Mississippi,2007
+Syria,-,Mississippi,2007
+Yemen,17,Mississippi,2007
+Egypt,26,Missouri,2007
+Iran,77,Missouri,2007
+Iraq,45,Missouri,2007
+Libya,5,Missouri,2007
+Mali,D,Missouri,2007
+Somalia,120,Missouri,2007
+Sudan,43,Missouri,2007
+Syria,6,Missouri,2007
+Yemen,4,Missouri,2007
+Egypt,-,Montana,2007
+Iran,D,Montana,2007
+Iraq,-,Montana,2007
+Libya,-,Montana,2007
+Mali,-,Montana,2007
+Somalia,-,Montana,2007
+Sudan,-,Montana,2007
+Syria,-,Montana,2007
+Yemen,-,Montana,2007
+Egypt,15,Nebraska,2007
+Iran,11,Nebraska,2007
+Iraq,32,Nebraska,2007
+Libya,D,Nebraska,2007
+Mali,-,Nebraska,2007
+Somalia,87,Nebraska,2007
+Sudan,152,Nebraska,2007
+Syria,D,Nebraska,2007
+Yemen,-,Nebraska,2007
+Egypt,18,Nevada,2007
+Iran,101,Nevada,2007
+Iraq,26,Nevada,2007
+Libya,D,Nevada,2007
+Mali,3,Nevada,2007
+Somalia,49,Nevada,2007
+Sudan,15,Nevada,2007
+Syria,12,Nevada,2007
+Yemen,8,Nevada,2007
+Egypt,18,New Hampshire,2007
+Iran,7,New Hampshire,2007
+Iraq,D,New Hampshire,2007
+Libya,-,New Hampshire,2007
+Mali,-,New Hampshire,2007
+Somalia,26,New Hampshire,2007
+Sudan,41,New Hampshire,2007
+Syria,D,New Hampshire,2007
+Yemen,-,New Hampshire,2007
+Egypt,1798,New Jersey,2007
+Iran,172,New Jersey,2007
+Iraq,26,New Jersey,2007
+Libya,9,New Jersey,2007
+Mali,12,New Jersey,2007
+Somalia,6,New Jersey,2007
+Sudan,55,New Jersey,2007
+Syria,164,New Jersey,2007
+Yemen,8,New Jersey,2007
+Egypt,D,New Mexico,2007
+Iran,24,New Mexico,2007
+Iraq,12,New Mexico,2007
+Libya,-,New Mexico,2007
+Mali,D,New Mexico,2007
+Somalia,D,New Mexico,2007
+Sudan,D,New Mexico,2007
+Syria,D,New Mexico,2007
+Yemen,5,New Mexico,2007
+Egypt,1456,New York,2007
+Iran,359,New York,2007
+Iraq,64,New York,2007
+Libya,15,New York,2007
+Mali,130,New York,2007
+Somalia,155,New York,2007
+Sudan,201,New York,2007
+Syria,205,New York,2007
+Yemen,908,New York,2007
+Egypt,165,North Carolina,2007
+Iran,104,North Carolina,2007
+Iraq,26,North Carolina,2007
+Libya,4,North Carolina,2007
+Mali,12,North Carolina,2007
+Somalia,69,North Carolina,2007
+Sudan,156,North Carolina,2007
+Syria,17,North Carolina,2007
+Yemen,35,North Carolina,2007
+Egypt,6,North Dakota,2007
+Iran,D,North Dakota,2007
+Iraq,D,North Dakota,2007
+Libya,-,North Dakota,2007
+Mali,-,North Dakota,2007
+Somalia,23,North Dakota,2007
+Sudan,27,North Dakota,2007
+Syria,-,North Dakota,2007
+Yemen,-,North Dakota,2007
+Egypt,196,Ohio,2007
+Iran,115,Ohio,2007
+Iraq,50,Ohio,2007
+Libya,12,Ohio,2007
+Mali,9,Ohio,2007
+Somalia,701,Ohio,2007
+Sudan,59,Ohio,2007
+Syria,78,Ohio,2007
+Yemen,4,Ohio,2007
+Egypt,23,Oklahoma,2007
+Iran,56,Oklahoma,2007
+Iraq,17,Oklahoma,2007
+Libya,-,Oklahoma,2007
+Mali,-,Oklahoma,2007
+Somalia,4,Oklahoma,2007
+Sudan,D,Oklahoma,2007
+Syria,18,Oklahoma,2007
+Yemen,-,Oklahoma,2007
+Egypt,48,Oregon,2007
+Iran,80,Oregon,2007
+Iraq,21,Oregon,2007
+Libya,4,Oregon,2007
+Mali,3,Oregon,2007
+Somalia,104,Oregon,2007
+Sudan,5,Oregon,2007
+Syria,12,Oregon,2007
+Yemen,D,Oregon,2007
+Egypt,387,Pennsylvania,2007
+Iran,125,Pennsylvania,2007
+Iraq,39,Pennsylvania,2007
+Libya,7,Pennsylvania,2007
+Mali,70,Pennsylvania,2007
+Somalia,42,Pennsylvania,2007
+Sudan,117,Pennsylvania,2007
+Syria,155,Pennsylvania,2007
+Yemen,8,Pennsylvania,2007
+Egypt,11,Rhode Island,2007
+Iran,7,Rhode Island,2007
+Iraq,8,Rhode Island,2007
+Libya,-,Rhode Island,2007
+Mali,4,Rhode Island,2007
+Somalia,8,Rhode Island,2007
+Sudan,-,Rhode Island,2007
+Syria,15,Rhode Island,2007
+Yemen,3,Rhode Island,2007
+Egypt,69,South Carolina,2007
+Iran,20,South Carolina,2007
+Iraq,19,South Carolina,2007
+Libya,-,South Carolina,2007
+Mali,D,South Carolina,2007
+Somalia,8,South Carolina,2007
+Sudan,9,South Carolina,2007
+Syria,9,South Carolina,2007
+Yemen,5,South Carolina,2007
+Egypt,10,South Dakota,2007
+Iran,-,South Dakota,2007
+Iraq,6,South Dakota,2007
+Libya,-,South Dakota,2007
+Mali,-,South Dakota,2007
+Somalia,22,South Dakota,2007
+Sudan,36,South Dakota,2007
+Syria,3,South Dakota,2007
+Yemen,8,South Dakota,2007
+Egypt,681,Tennessee,2007
+Iran,122,Tennessee,2007
+Iraq,88,Tennessee,2007
+Libya,D,Tennessee,2007
+Mali,4,Tennessee,2007
+Somalia,246,Tennessee,2007
+Sudan,96,Tennessee,2007
+Syria,17,Tennessee,2007
+Yemen,39,Tennessee,2007
+Egypt,290,Texas,2007
+Iran,818,Texas,2007
+Iraq,129,Texas,2007
+Libya,8,Texas,2007
+Mali,10,Texas,2007
+Somalia,220,Texas,2007
+Sudan,226,Texas,2007
+Syria,77,Texas,2007
+Yemen,31,Texas,2007
+Egypt,4,Utah,2007
+Iran,94,Utah,2007
+Iraq,9,Utah,2007
+Libya,-,Utah,2007
+Mali,D,Utah,2007
+Somalia,88,Utah,2007
+Sudan,19,Utah,2007
+Syria,6,Utah,2007
+Yemen,3,Utah,2007
+Egypt,D,Vermont,2007
+Iran,3,Vermont,2007
+Iraq,-,Vermont,2007
+Libya,D,Vermont,2007
+Mali,D,Vermont,2007
+Somalia,67,Vermont,2007
+Sudan,10,Vermont,2007
+Syria,-,Vermont,2007
+Yemen,-,Vermont,2007
+Egypt,493,Virginia,2007
+Iran,521,Virginia,2007
+Iraq,153,Virginia,2007
+Libya,11,Virginia,2007
+Mali,9,Virginia,2007
+Somalia,216,Virginia,2007
+Sudan,324,Virginia,2007
+Syria,61,Virginia,2007
+Yemen,32,Virginia,2007
+Egypt,107,Washington,2007
+Iran,262,Washington,2007
+Iraq,54,Washington,2007
+Libya,6,Washington,2007
+Mali,6,Washington,2007
+Somalia,450,Washington,2007
+Sudan,67,Washington,2007
+Syria,26,Washington,2007
+Yemen,25,Washington,2007
+Egypt,7,West Virginia,2007
+Iran,21,West Virginia,2007
+Iraq,4,West Virginia,2007
+Libya,3,West Virginia,2007
+Mali,-,West Virginia,2007
+Somalia,D,West Virginia,2007
+Sudan,-,West Virginia,2007
+Syria,9,West Virginia,2007
+Yemen,-,West Virginia,2007
+Egypt,25,Wisconsin,2007
+Iran,34,Wisconsin,2007
+Iraq,7,Wisconsin,2007
+Libya,-,Wisconsin,2007
+Mali,3,Wisconsin,2007
+Somalia,66,Wisconsin,2007
+Sudan,7,Wisconsin,2007
+Syria,13,Wisconsin,2007
+Yemen,4,Wisconsin,2007
+Egypt,-,Wyoming,2007
+Iran,4,Wyoming,2007
+Iraq,D,Wyoming,2007
+Libya,-,Wyoming,2007
+Mali,-,Wyoming,2007
+Somalia,-,Wyoming,2007
+Sudan,-,Wyoming,2007
+Syria,-,Wyoming,2007
+Yemen,-,Wyoming,2007

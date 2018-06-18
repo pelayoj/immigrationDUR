@@ -1,0 +1,521 @@
+﻿Country,Immigrant,State,Year
+Egypt,34,Alabama,2015
+Iran,45,Alabama,2015
+Iraq,30,Alabama,2015
+Libya,3,Alabama,2015
+Mali,D,Alabama,2015
+Somalia,D,Alabama,2015
+South Sudan,D,Alabama,2015
+Sudan,21,Alabama,2015
+Syria,6,Alabama,2015
+Yemen,42,Alabama,2015
+Egypt,4,Alaska,2015
+Iran,3,Alaska,2015
+Iraq,3,Alaska,2015
+Libya,3,Alaska,2015
+Mali,-,Alaska,2015
+Somalia,28,Alaska,2015
+South Sudan,-,Alaska,2015
+Sudan,37,Alaska,2015
+Syria,-,Alaska,2015
+Yemen,-,Alaska,2015
+Egypt,76,Arizona,2015
+Iran,219,Arizona,2015
+Iraq,1065,Arizona,2015
+Libya,25,Arizona,2015
+Mali,D,Arizona,2015
+Somalia,127,Arizona,2015
+South Sudan,3,Arizona,2015
+Sudan,125,Arizona,2015
+Syria,103,Arizona,2015
+Yemen,6,Arizona,2015
+Egypt,7,Arkansas,2015
+Iran,15,Arkansas,2015
+Iraq,19,Arkansas,2015
+Libya,D,Arkansas,2015
+Mali,-,Arkansas,2015
+Somalia,D,Arkansas,2015
+South Sudan,D,Arkansas,2015
+Sudan,-,Arkansas,2015
+Syria,-,Arkansas,2015
+Yemen,15,Arkansas,2015
+Egypt,2353,California,2015
+Iran,6472,California,2015
+Iraq,3709,California,2015
+Libya,66,California,2015
+Mali,4,California,2015
+Somalia,93,California,2015
+South Sudan,7,California,2015
+Sudan,157,California,2015
+Syria,1077,California,2015
+Yemen,456,California,2015
+Egypt,28,Colorado,2015
+Iran,127,Colorado,2015
+Iraq,419,Colorado,2015
+Libya,38,Colorado,2015
+Mali,13,Colorado,2015
+Somalia,221,Colorado,2015
+South Sudan,D,Colorado,2015
+Sudan,97,Colorado,2015
+Syria,16,Colorado,2015
+Yemen,5,Colorado,2015
+Egypt,94,Connecticut,2015
+Iran,57,Connecticut,2015
+Iraq,111,Connecticut,2015
+Libya,10,Connecticut,2015
+Mali,D,Connecticut,2015
+Somalia,7,Connecticut,2015
+South Sudan,-,Connecticut,2015
+Sudan,48,Connecticut,2015
+Syria,56,Connecticut,2015
+Yemen,17,Connecticut,2015
+Egypt,44,Delaware,2015
+Iran,10,Delaware,2015
+Iraq,-,Delaware,2015
+Libya,D,Delaware,2015
+Mali,-,Delaware,2015
+Somalia,-,Delaware,2015
+South Sudan,-,Delaware,2015
+Sudan,4,Delaware,2015
+Syria,4,Delaware,2015
+Yemen,10,Delaware,2015
+Egypt,20,District of Columbia,2015
+Iran,27,District of Columbia,2015
+Iraq,5,District of Columbia,2015
+Libya,-,District of Columbia,2015
+Mali,4,District of Columbia,2015
+Somalia,D,District of Columbia,2015
+South Sudan,D,District of Columbia,2015
+Sudan,15,District of Columbia,2015
+Syria,9,District of Columbia,2015
+Yemen,-,District of Columbia,2015
+Egypt,798,Florida,2015
+Iran,328,Florida,2015
+Iraq,457,Florida,2015
+Libya,25,Florida,2015
+Mali,D,Florida,2015
+Somalia,6,Florida,2015
+South Sudan,D,Florida,2015
+Sudan,92,Florida,2015
+Syria,201,Florida,2015
+Yemen,12,Florida,2015
+Egypt,100,Georgia,2015
+Iran,300,Georgia,2015
+Iraq,298,Georgia,2015
+Libya,31,Georgia,2015
+Mali,16,Georgia,2015
+Somalia,104,Georgia,2015
+South Sudan,5,Georgia,2015
+Sudan,92,Georgia,2015
+Syria,47,Georgia,2015
+Yemen,13,Georgia,2015
+Egypt,7,Hawaii,2015
+Iran,6,Hawaii,2015
+Iraq,-,Hawaii,2015
+Libya,D,Hawaii,2015
+Mali,-,Hawaii,2015
+Somalia,-,Hawaii,2015
+South Sudan,-,Hawaii,2015
+Sudan,-,Hawaii,2015
+Syria,D,Hawaii,2015
+Yemen,-,Hawaii,2015
+Egypt,4,Idaho,2015
+Iran,32,Idaho,2015
+Iraq,179,Idaho,2015
+Libya,16,Idaho,2015
+Mali,-,Idaho,2015
+Somalia,38,Idaho,2015
+South Sudan,-,Idaho,2015
+Sudan,54,Idaho,2015
+Syria,14,Idaho,2015
+Yemen,-,Idaho,2015
+Egypt,230,Illinois,2015
+Iran,323,Illinois,2015
+Iraq,1126,Illinois,2015
+Libya,16,Illinois,2015
+Mali,20,Illinois,2015
+Somalia,65,Illinois,2015
+South Sudan,5,Illinois,2015
+Sudan,145,Illinois,2015
+Syria,336,Illinois,2015
+Yemen,115,Illinois,2015
+Egypt,77,Indiana,2015
+Iran,52,Indiana,2015
+Iraq,69,Indiana,2015
+Libya,16,Indiana,2015
+Mali,10,Indiana,2015
+Somalia,17,Indiana,2015
+South Sudan,D,Indiana,2015
+Sudan,39,Indiana,2015
+Syria,41,Indiana,2015
+Yemen,63,Indiana,2015
+Egypt,33,Iowa,2015
+Iran,14,Iowa,2015
+Iraq,71,Iowa,2015
+Libya,7,Iowa,2015
+Mali,3,Iowa,2015
+Somalia,67,Iowa,2015
+South Sudan,9,Iowa,2015
+Sudan,117,Iowa,2015
+Syria,12,Iowa,2015
+Yemen,-,Iowa,2015
+Egypt,18,Kansas,2015
+Iran,41,Kansas,2015
+Iraq,48,Kansas,2015
+Libya,6,Kansas,2015
+Mali,-,Kansas,2015
+Somalia,231,Kansas,2015
+South Sudan,D,Kansas,2015
+Sudan,52,Kansas,2015
+Syria,10,Kansas,2015
+Yemen,D,Kansas,2015
+Egypt,27,Kentucky,2015
+Iran,49,Kentucky,2015
+Iraq,321,Kentucky,2015
+Libya,4,Kentucky,2015
+Mali,-,Kentucky,2015
+Somalia,240,Kentucky,2015
+South Sudan,3,Kentucky,2015
+Sudan,59,Kentucky,2015
+Syria,34,Kentucky,2015
+Yemen,5,Kentucky,2015
+Egypt,37,Louisiana,2015
+Iran,40,Louisiana,2015
+Iraq,34,Louisiana,2015
+Libya,6,Louisiana,2015
+Mali,3,Louisiana,2015
+Somalia,D,Louisiana,2015
+South Sudan,-,Louisiana,2015
+Sudan,10,Louisiana,2015
+Syria,14,Louisiana,2015
+Yemen,58,Louisiana,2015
+Egypt,3,Maine,2015
+Iran,7,Maine,2015
+Iraq,210,Maine,2015
+Libya,D,Maine,2015
+Mali,-,Maine,2015
+Somalia,106,Maine,2015
+South Sudan,D,Maine,2015
+Sudan,31,Maine,2015
+Syria,3,Maine,2015
+Yemen,-,Maine,2015
+Egypt,142,Maryland,2015
+Iran,435,Maryland,2015
+Iraq,205,Maryland,2015
+Libya,D,Maryland,2015
+Mali,76,Maryland,2015
+Somalia,16,Maryland,2015
+South Sudan,D,Maryland,2015
+Sudan,126,Maryland,2015
+Syria,49,Maryland,2015
+Yemen,13,Maryland,2015
+Egypt,359,Massachusetts,2015
+Iran,254,Massachusetts,2015
+Iraq,637,Massachusetts,2015
+Libya,24,Massachusetts,2015
+Mali,D,Massachusetts,2015
+Somalia,95,Massachusetts,2015
+South Sudan,9,Massachusetts,2015
+Sudan,67,Massachusetts,2015
+Syria,100,Massachusetts,2015
+Yemen,12,Massachusetts,2015
+Egypt,123,Michigan,2015
+Iran,143,Michigan,2015
+Iraq,3511,Michigan,2015
+Libya,29,Michigan,2015
+Mali,7,Michigan,2015
+Somalia,60,Michigan,2015
+South Sudan,4,Michigan,2015
+Sudan,128,Michigan,2015
+Syria,253,Michigan,2015
+Yemen,860,Michigan,2015
+Egypt,113,Minnesota,2015
+Iran,57,Minnesota,2015
+Iraq,234,Minnesota,2015
+Libya,9,Minnesota,2015
+Mali,3,Minnesota,2015
+Somalia,2171,Minnesota,2015
+South Sudan,6,Minnesota,2015
+Sudan,55,Minnesota,2015
+Syria,36,Minnesota,2015
+Yemen,10,Minnesota,2015
+Egypt,8,Mississippi,2015
+Iran,4,Mississippi,2015
+Iraq,4,Mississippi,2015
+Libya,D,Mississippi,2015
+Mali,-,Mississippi,2015
+Somalia,-,Mississippi,2015
+South Sudan,D,Mississippi,2015
+Sudan,6,Mississippi,2015
+Syria,5,Mississippi,2015
+Yemen,77,Mississippi,2015
+Egypt,32,Missouri,2015
+Iran,59,Missouri,2015
+Iraq,226,Missouri,2015
+Libya,24,Missouri,2015
+Mali,D,Missouri,2015
+Somalia,143,Missouri,2015
+South Sudan,D,Missouri,2015
+Sudan,73,Missouri,2015
+Syria,24,Missouri,2015
+Yemen,10,Missouri,2015
+Egypt,D,Montana,2015
+Iran,-,Montana,2015
+Iraq,5,Montana,2015
+Libya,-,Montana,2015
+Mali,-,Montana,2015
+Somalia,-,Montana,2015
+South Sudan,-,Montana,2015
+Sudan,-,Montana,2015
+Syria,-,Montana,2015
+Yemen,D,Montana,2015
+Egypt,22,Nebraska,2015
+Iran,29,Nebraska,2015
+Iraq,255,Nebraska,2015
+Libya,20,Nebraska,2015
+Mali,-,Nebraska,2015
+Somalia,361,Nebraska,2015
+South Sudan,11,Nebraska,2015
+Sudan,112,Nebraska,2015
+Syria,10,Nebraska,2015
+Yemen,D,Nebraska,2015
+Egypt,33,Nevada,2015
+Iran,146,Nevada,2015
+Iraq,120,Nevada,2015
+Libya,5,Nevada,2015
+Mali,-,Nevada,2015
+Somalia,11,Nevada,2015
+South Sudan,-,Nevada,2015
+Sudan,19,Nevada,2015
+Syria,14,Nevada,2015
+Yemen,D,Nevada,2015
+Egypt,31,New Hampshire,2015
+Iran,12,New Hampshire,2015
+Iraq,39,New Hampshire,2015
+Libya,D,New Hampshire,2015
+Mali,-,New Hampshire,2015
+Somalia,4,New Hampshire,2015
+South Sudan,D,New Hampshire,2015
+Sudan,21,New Hampshire,2015
+Syria,3,New Hampshire,2015
+Yemen,-,New Hampshire,2015
+Egypt,2111,New Jersey,2015
+Iran,136,New Jersey,2015
+Iraq,98,New Jersey,2015
+Libya,14,New Jersey,2015
+Mali,9,New Jersey,2015
+Somalia,3,New Jersey,2015
+South Sudan,-,New Jersey,2015
+Sudan,70,New Jersey,2015
+Syria,229,New Jersey,2015
+Yemen,20,New Jersey,2015
+Egypt,5,New Mexico,2015
+Iran,16,New Mexico,2015
+Iraq,53,New Mexico,2015
+Libya,-,New Mexico,2015
+Mali,-,New Mexico,2015
+Somalia,3,New Mexico,2015
+South Sudan,-,New Mexico,2015
+Sudan,-,New Mexico,2015
+Syria,8,New Mexico,2015
+Yemen,D,New Mexico,2015
+Egypt,1747,New York,2015
+Iran,410,New York,2015
+Iraq,740,New York,2015
+Libya,35,New York,2015
+Mali,261,New York,2015
+Somalia,235,New York,2015
+South Sudan,3,New York,2015
+Sudan,299,New York,2015
+Syria,203,New York,2015
+Yemen,1025,New York,2015
+Egypt,210,North Carolina,2015
+Iran,145,North Carolina,2015
+Iraq,278,North Carolina,2015
+Libya,27,North Carolina,2015
+Mali,7,North Carolina,2015
+Somalia,39,North Carolina,2015
+South Sudan,3,North Carolina,2015
+Sudan,146,North Carolina,2015
+Syria,51,North Carolina,2015
+Yemen,106,North Carolina,2015
+Egypt,-,North Dakota,2015
+Iran,6,North Dakota,2015
+Iraq,81,North Dakota,2015
+Libya,D,North Dakota,2015
+Mali,-,North Dakota,2015
+Somalia,160,North Dakota,2015
+South Sudan,3,North Dakota,2015
+Sudan,4,North Dakota,2015
+Syria,5,North Dakota,2015
+Yemen,-,North Dakota,2015
+Egypt,230,Ohio,2015
+Iran,133,Ohio,2015
+Iraq,489,Ohio,2015
+Libya,69,Ohio,2015
+Mali,19,Ohio,2015
+Somalia,580,Ohio,2015
+South Sudan,-,Ohio,2015
+Sudan,114,Ohio,2015
+Syria,145,Ohio,2015
+Yemen,14,Ohio,2015
+Egypt,21,Oklahoma,2015
+Iran,88,Oklahoma,2015
+Iraq,62,Oklahoma,2015
+Libya,3,Oklahoma,2015
+Mali,-,Oklahoma,2015
+Somalia,D,Oklahoma,2015
+South Sudan,D,Oklahoma,2015
+Sudan,4,Oklahoma,2015
+Syria,24,Oklahoma,2015
+Yemen,-,Oklahoma,2015
+Egypt,69,Oregon,2015
+Iran,106,Oregon,2015
+Iraq,325,Oregon,2015
+Libya,17,Oregon,2015
+Mali,D,Oregon,2015
+Somalia,101,Oregon,2015
+South Sudan,-,Oregon,2015
+Sudan,7,Oregon,2015
+Syria,18,Oregon,2015
+Yemen,20,Oregon,2015
+Egypt,501,Pennsylvania,2015
+Iran,96,Pennsylvania,2015
+Iraq,429,Pennsylvania,2015
+Libya,11,Pennsylvania,2015
+Mali,59,Pennsylvania,2015
+Somalia,87,Pennsylvania,2015
+South Sudan,4,Pennsylvania,2015
+Sudan,152,Pennsylvania,2015
+Syria,175,Pennsylvania,2015
+Yemen,13,Pennsylvania,2015
+Egypt,3,Puerto Rico,2015
+Iran,-,Puerto Rico,2015
+Iraq,-,Puerto Rico,2015
+Libya,-,Puerto Rico,2015
+Mali,-,Puerto Rico,2015
+Somalia,-,Puerto Rico,2015
+South Sudan,-,Puerto Rico,2015
+Sudan,-,Puerto Rico,2015
+Syria,-,Puerto Rico,2015
+Yemen,-,Puerto Rico,2015
+Egypt,21,Rhode Island,2015
+Iran,12,Rhode Island,2015
+Iraq,28,Rhode Island,2015
+Libya,-,Rhode Island,2015
+Mali,4,Rhode Island,2015
+Somalia,3,Rhode Island,2015
+South Sudan,-,Rhode Island,2015
+Sudan,11,Rhode Island,2015
+Syria,26,Rhode Island,2015
+Yemen,-,Rhode Island,2015
+Egypt,72,South Carolina,2015
+Iran,42,South Carolina,2015
+Iraq,19,South Carolina,2015
+Libya,D,South Carolina,2015
+Mali,-,South Carolina,2015
+Somalia,D,South Carolina,2015
+South Sudan,-,South Carolina,2015
+Sudan,8,South Carolina,2015
+Syria,6,South Carolina,2015
+Yemen,17,South Carolina,2015
+Egypt,3,South Dakota,2015
+Iran,D,South Dakota,2015
+Iraq,28,South Dakota,2015
+Libya,D,South Dakota,2015
+Mali,-,South Dakota,2015
+Somalia,52,South Dakota,2015
+South Sudan,7,South Dakota,2015
+Sudan,19,South Dakota,2015
+Syria,D,South Dakota,2015
+Yemen,D,South Dakota,2015
+Egypt,682,Tennessee,2015
+Iran,112,Tennessee,2015
+Iraq,450,Tennessee,2015
+Libya,4,Tennessee,2015
+Mali,3,Tennessee,2015
+Somalia,167,Tennessee,2015
+South Sudan,8,Tennessee,2015
+Sudan,81,Tennessee,2015
+Syria,31,Tennessee,2015
+Yemen,56,Tennessee,2015
+Egypt,674,Texas,2015
+Iran,1396,Texas,2015
+Iraq,2643,Texas,2015
+Libya,67,Texas,2015
+Mali,27,Texas,2015
+Somalia,327,Texas,2015
+South Sudan,10,Texas,2015
+Sudan,349,Texas,2015
+Syria,243,Texas,2015
+Yemen,24,Texas,2015
+Egypt,10,Utah,2015
+Iran,91,Utah,2015
+Iraq,322,Utah,2015
+Libya,25,Utah,2015
+Mali,7,Utah,2015
+Somalia,126,Utah,2015
+South Sudan,D,Utah,2015
+Sudan,89,Utah,2015
+Syria,9,Utah,2015
+Yemen,5,Utah,2015
+Egypt,8,Vermont,2015
+Iran,D,Vermont,2015
+Iraq,28,Vermont,2015
+Libya,4,Vermont,2015
+Mali,-,Vermont,2015
+Somalia,25,Vermont,2015
+South Sudan,-,Vermont,2015
+Sudan,10,Vermont,2015
+Syria,D,Vermont,2015
+Yemen,-,Vermont,2015
+Egypt,654,Virginia,2015
+Iran,581,Virginia,2015
+Iraq,706,Virginia,2015
+Libya,14,Virginia,2015
+Mali,7,Virginia,2015
+Somalia,51,Virginia,2015
+South Sudan,D,Virginia,2015
+Sudan,278,Virginia,2015
+Syria,110,Virginia,2015
+Yemen,50,Virginia,2015
+Egypt,162,Washington,2015
+Iran,355,Washington,2015
+Iraq,737,Washington,2015
+Libya,28,Washington,2015
+Mali,11,Washington,2015
+Somalia,453,Washington,2015
+South Sudan,5,Washington,2015
+Sudan,95,Washington,2015
+Syria,33,Washington,2015
+Yemen,34,Washington,2015
+Egypt,17,West Virginia,2015
+Iran,18,West Virginia,2015
+Iraq,4,West Virginia,2015
+Libya,D,West Virginia,2015
+Mali,-,West Virginia,2015
+Somalia,D,West Virginia,2015
+South Sudan,-,West Virginia,2015
+Sudan,D,West Virginia,2015
+Syria,16,West Virginia,2015
+Yemen,D,West Virginia,2015
+Egypt,24,Wisconsin,2015
+Iran,48,Wisconsin,2015
+Iraq,177,Wisconsin,2015
+Libya,18,Wisconsin,2015
+Mali,3,Wisconsin,2015
+Somalia,163,Wisconsin,2015
+South Sudan,D,Wisconsin,2015
+Sudan,38,Wisconsin,2015
+Syria,24,Wisconsin,2015
+Yemen,D,Wisconsin,2015
+Egypt,D,Wyoming,2015
+Iran,D,Wyoming,2015
+Iraq,-,Wyoming,2015
+Libya,-,Wyoming,2015
+Mali,-,Wyoming,2015
+Somalia,-,Wyoming,2015
+South Sudan,-,Wyoming,2015
+Sudan,D,Wyoming,2015
+Syria,D,Wyoming,2015
+Yemen,-,Wyoming,2015

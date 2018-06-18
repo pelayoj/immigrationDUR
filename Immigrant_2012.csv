@@ -1,0 +1,521 @@
+﻿Country,Immigrant,State,Year
+Egypt,24,Alabama,2012
+Iran,26,Alabama,2012
+Iraq,56,Alabama,2012
+Libya,-,Alabama,2012
+Mali,-,Alabama,2012
+Somalia,3,Alabama,2012
+South Sudan,-,Alabama,2012
+Sudan,23,Alabama,2012
+Syria,15,Alabama,2012
+Yemen,25,Alabama,2012
+Egypt,D,Alaska,2012
+Iran,4,Alaska,2012
+Iraq,9,Alaska,2012
+Libya,-,Alaska,2012
+Mali,D,Alaska,2012
+Somalia,10,Alaska,2012
+South Sudan,-,Alaska,2012
+Sudan,4,Alaska,2012
+Syria,D,Alaska,2012
+Yemen,-,Alaska,2012
+Egypt,48,Arizona,2012
+Iran,223,Arizona,2012
+Iraq,929,Arizona,2012
+Libya,D,Arizona,2012
+Mali,4,Arizona,2012
+Somalia,105,Arizona,2012
+South Sudan,-,Arizona,2012
+Sudan,59,Arizona,2012
+Syria,64,Arizona,2012
+Yemen,10,Arizona,2012
+Egypt,4,Arkansas,2012
+Iran,13,Arkansas,2012
+Iraq,14,Arkansas,2012
+Libya,-,Arkansas,2012
+Mali,D,Arkansas,2012
+Somalia,-,Arkansas,2012
+South Sudan,D,Arkansas,2012
+Sudan,-,Arkansas,2012
+Syria,8,Arkansas,2012
+Yemen,7,Arkansas,2012
+Egypt,1328,California,2012
+Iran,6591,California,2012
+Iraq,3926,California,2012
+Libya,47,California,2012
+Mali,12,California,2012
+Somalia,150,California,2012
+South Sudan,D,California,2012
+Sudan,121,California,2012
+Syria,813,California,2012
+Yemen,359,California,2012
+Egypt,24,Colorado,2012
+Iran,105,Colorado,2012
+Iraq,301,Colorado,2012
+Libya,18,Colorado,2012
+Mali,31,Colorado,2012
+Somalia,280,Colorado,2012
+South Sudan,-,Colorado,2012
+Sudan,89,Colorado,2012
+Syria,23,Colorado,2012
+Yemen,21,Colorado,2012
+Egypt,106,Connecticut,2012
+Iran,62,Connecticut,2012
+Iraq,131,Connecticut,2012
+Libya,9,Connecticut,2012
+Mali,D,Connecticut,2012
+Somalia,10,Connecticut,2012
+South Sudan,-,Connecticut,2012
+Sudan,21,Connecticut,2012
+Syria,21,Connecticut,2012
+Yemen,17,Connecticut,2012
+Egypt,37,Delaware,2012
+Iran,D,Delaware,2012
+Iraq,6,Delaware,2012
+Libya,7,Delaware,2012
+Mali,-,Delaware,2012
+Somalia,-,Delaware,2012
+South Sudan,-,Delaware,2012
+Sudan,D,Delaware,2012
+Syria,3,Delaware,2012
+Yemen,10,Delaware,2012
+Egypt,15,District of Columbia,2012
+Iran,40,District of Columbia,2012
+Iraq,21,District of Columbia,2012
+Libya,D,District of Columbia,2012
+Mali,D,District of Columbia,2012
+Somalia,D,District of Columbia,2012
+South Sudan,-,District of Columbia,2012
+Sudan,11,District of Columbia,2012
+Syria,4,District of Columbia,2012
+Yemen,D,District of Columbia,2012
+Egypt,373,Florida,2012
+Iran,360,Florida,2012
+Iraq,402,Florida,2012
+Libya,15,Florida,2012
+Mali,4,Florida,2012
+Somalia,4,Florida,2012
+South Sudan,-,Florida,2012
+Sudan,57,Florida,2012
+Syria,197,Florida,2012
+Yemen,6,Florida,2012
+Egypt,109,Georgia,2012
+Iran,311,Georgia,2012
+Iraq,322,Georgia,2012
+Libya,5,Georgia,2012
+Mali,22,Georgia,2012
+Somalia,70,Georgia,2012
+South Sudan,-,Georgia,2012
+Sudan,62,Georgia,2012
+Syria,35,Georgia,2012
+Yemen,14,Georgia,2012
+Egypt,10,Hawaii,2012
+Iran,8,Hawaii,2012
+Iraq,D,Hawaii,2012
+Libya,-,Hawaii,2012
+Mali,D,Hawaii,2012
+Somalia,D,Hawaii,2012
+South Sudan,-,Hawaii,2012
+Sudan,-,Hawaii,2012
+Syria,-,Hawaii,2012
+Yemen,-,Hawaii,2012
+Egypt,-,Idaho,2012
+Iran,25,Idaho,2012
+Iraq,129,Idaho,2012
+Libya,-,Idaho,2012
+Mali,-,Idaho,2012
+Somalia,13,Idaho,2012
+South Sudan,-,Idaho,2012
+Sudan,4,Idaho,2012
+Syria,3,Idaho,2012
+Yemen,-,Idaho,2012
+Egypt,224,Illinois,2012
+Iran,268,Illinois,2012
+Iraq,1180,Illinois,2012
+Libya,9,Illinois,2012
+Mali,8,Illinois,2012
+Somalia,62,Illinois,2012
+South Sudan,D,Illinois,2012
+Sudan,96,Illinois,2012
+Syria,298,Illinois,2012
+Yemen,77,Illinois,2012
+Egypt,65,Indiana,2012
+Iran,51,Indiana,2012
+Iraq,132,Indiana,2012
+Libya,4,Indiana,2012
+Mali,7,Indiana,2012
+Somalia,19,Indiana,2012
+South Sudan,-,Indiana,2012
+Sudan,38,Indiana,2012
+Syria,17,Indiana,2012
+Yemen,15,Indiana,2012
+Egypt,17,Iowa,2012
+Iran,23,Iowa,2012
+Iraq,104,Iowa,2012
+Libya,D,Iowa,2012
+Mali,4,Iowa,2012
+Somalia,67,Iowa,2012
+South Sudan,D,Iowa,2012
+Sudan,87,Iowa,2012
+Syria,5,Iowa,2012
+Yemen,4,Iowa,2012
+Egypt,20,Kansas,2012
+Iran,42,Kansas,2012
+Iraq,51,Kansas,2012
+Libya,D,Kansas,2012
+Mali,D,Kansas,2012
+Somalia,94,Kansas,2012
+South Sudan,-,Kansas,2012
+Sudan,5,Kansas,2012
+Syria,19,Kansas,2012
+Yemen,D,Kansas,2012
+Egypt,25,Kentucky,2012
+Iran,54,Kentucky,2012
+Iraq,349,Kentucky,2012
+Libya,D,Kentucky,2012
+Mali,5,Kentucky,2012
+Somalia,109,Kentucky,2012
+South Sudan,-,Kentucky,2012
+Sudan,15,Kentucky,2012
+Syria,18,Kentucky,2012
+Yemen,5,Kentucky,2012
+Egypt,48,Louisiana,2012
+Iran,40,Louisiana,2012
+Iraq,80,Louisiana,2012
+Libya,3,Louisiana,2012
+Mali,4,Louisiana,2012
+Somalia,5,Louisiana,2012
+South Sudan,-,Louisiana,2012
+Sudan,D,Louisiana,2012
+Syria,8,Louisiana,2012
+Yemen,37,Louisiana,2012
+Egypt,3,Maine,2012
+Iran,7,Maine,2012
+Iraq,146,Maine,2012
+Libya,-,Maine,2012
+Mali,D,Maine,2012
+Somalia,167,Maine,2012
+South Sudan,-,Maine,2012
+Sudan,27,Maine,2012
+Syria,6,Maine,2012
+Yemen,5,Maine,2012
+Egypt,149,Maryland,2012
+Iran,451,Maryland,2012
+Iraq,233,Maryland,2012
+Libya,6,Maryland,2012
+Mali,37,Maryland,2012
+Somalia,10,Maryland,2012
+South Sudan,D,Maryland,2012
+Sudan,75,Maryland,2012
+Syria,24,Maryland,2012
+Yemen,12,Maryland,2012
+Egypt,293,Massachusetts,2012
+Iran,231,Massachusetts,2012
+Iraq,624,Massachusetts,2012
+Libya,6,Massachusetts,2012
+Mali,5,Massachusetts,2012
+Somalia,160,Massachusetts,2012
+South Sudan,-,Massachusetts,2012
+Sudan,43,Massachusetts,2012
+Syria,80,Massachusetts,2012
+Yemen,4,Massachusetts,2012
+Egypt,137,Michigan,2012
+Iran,123,Michigan,2012
+Iraq,3007,Michigan,2012
+Libya,10,Michigan,2012
+Mali,10,Michigan,2012
+Somalia,45,Michigan,2012
+South Sudan,-,Michigan,2012
+Sudan,61,Michigan,2012
+Syria,219,Michigan,2012
+Yemen,496,Michigan,2012
+Egypt,87,Minnesota,2012
+Iran,56,Minnesota,2012
+Iraq,240,Minnesota,2012
+Libya,7,Minnesota,2012
+Mali,-,Minnesota,2012
+Somalia,1421,Minnesota,2012
+South Sudan,D,Minnesota,2012
+Sudan,63,Minnesota,2012
+Syria,23,Minnesota,2012
+Yemen,45,Minnesota,2012
+Egypt,11,Mississippi,2012
+Iran,14,Mississippi,2012
+Iraq,7,Mississippi,2012
+Libya,D,Mississippi,2012
+Mali,-,Mississippi,2012
+Somalia,-,Mississippi,2012
+South Sudan,-,Mississippi,2012
+Sudan,9,Mississippi,2012
+Syria,5,Mississippi,2012
+Yemen,35,Mississippi,2012
+Egypt,38,Missouri,2012
+Iran,69,Missouri,2012
+Iraq,300,Missouri,2012
+Libya,7,Missouri,2012
+Mali,D,Missouri,2012
+Somalia,180,Missouri,2012
+South Sudan,D,Missouri,2012
+Sudan,52,Missouri,2012
+Syria,27,Missouri,2012
+Yemen,6,Missouri,2012
+Egypt,D,Montana,2012
+Iran,D,Montana,2012
+Iraq,-,Montana,2012
+Libya,-,Montana,2012
+Mali,-,Montana,2012
+Somalia,-,Montana,2012
+South Sudan,D,Montana,2012
+Sudan,-,Montana,2012
+Syria,-,Montana,2012
+Yemen,-,Montana,2012
+Egypt,10,Nebraska,2012
+Iran,30,Nebraska,2012
+Iraq,232,Nebraska,2012
+Libya,D,Nebraska,2012
+Mali,D,Nebraska,2012
+Somalia,210,Nebraska,2012
+South Sudan,D,Nebraska,2012
+Sudan,144,Nebraska,2012
+Syria,D,Nebraska,2012
+Yemen,-,Nebraska,2012
+Egypt,23,Nevada,2012
+Iran,138,Nevada,2012
+Iraq,91,Nevada,2012
+Libya,-,Nevada,2012
+Mali,-,Nevada,2012
+Somalia,5,Nevada,2012
+South Sudan,-,Nevada,2012
+Sudan,6,Nevada,2012
+Syria,14,Nevada,2012
+Yemen,D,Nevada,2012
+Egypt,19,New Hampshire,2012
+Iran,17,New Hampshire,2012
+Iraq,94,New Hampshire,2012
+Libya,D,New Hampshire,2012
+Mali,-,New Hampshire,2012
+Somalia,D,New Hampshire,2012
+South Sudan,D,New Hampshire,2012
+Sudan,25,New Hampshire,2012
+Syria,10,New Hampshire,2012
+Yemen,-,New Hampshire,2012
+Egypt,1571,New Jersey,2012
+Iran,188,New Jersey,2012
+Iraq,146,New Jersey,2012
+Libya,11,New Jersey,2012
+Mali,16,New Jersey,2012
+Somalia,D,New Jersey,2012
+South Sudan,-,New Jersey,2012
+Sudan,44,New Jersey,2012
+Syria,191,New Jersey,2012
+Yemen,18,New Jersey,2012
+Egypt,4,New Mexico,2012
+Iran,24,New Mexico,2012
+Iraq,45,New Mexico,2012
+Libya,-,New Mexico,2012
+Mali,-,New Mexico,2012
+Somalia,D,New Mexico,2012
+South Sudan,-,New Mexico,2012
+Sudan,D,New Mexico,2012
+Syria,6,New Mexico,2012
+Yemen,-,New Mexico,2012
+Egypt,1727,New York,2012
+Iran,387,New York,2012
+Iraq,707,New York,2012
+Libya,16,New York,2012
+Mali,322,New York,2012
+Somalia,177,New York,2012
+South Sudan,D,New York,2012
+Sudan,234,New York,2012
+Syria,157,New York,2012
+Yemen,1132,New York,2012
+Egypt,180,North Carolina,2012
+Iran,121,North Carolina,2012
+Iraq,316,North Carolina,2012
+Libya,9,North Carolina,2012
+Mali,17,North Carolina,2012
+Somalia,36,North Carolina,2012
+South Sudan,-,North Carolina,2012
+Sudan,117,North Carolina,2012
+Syria,42,North Carolina,2012
+Yemen,70,North Carolina,2012
+Egypt,D,North Dakota,2012
+Iran,6,North Dakota,2012
+Iraq,70,North Dakota,2012
+Libya,-,North Dakota,2012
+Mali,-,North Dakota,2012
+Somalia,60,North Dakota,2012
+South Sudan,-,North Dakota,2012
+Sudan,21,North Dakota,2012
+Syria,D,North Dakota,2012
+Yemen,-,North Dakota,2012
+Egypt,153,Ohio,2012
+Iran,106,Ohio,2012
+Iraq,413,Ohio,2012
+Libya,13,Ohio,2012
+Mali,25,Ohio,2012
+Somalia,464,Ohio,2012
+South Sudan,-,Ohio,2012
+Sudan,45,Ohio,2012
+Syria,83,Ohio,2012
+Yemen,17,Ohio,2012
+Egypt,13,Oklahoma,2012
+Iran,89,Oklahoma,2012
+Iraq,59,Oklahoma,2012
+Libya,D,Oklahoma,2012
+Mali,-,Oklahoma,2012
+Somalia,-,Oklahoma,2012
+South Sudan,-,Oklahoma,2012
+Sudan,9,Oklahoma,2012
+Syria,23,Oklahoma,2012
+Yemen,D,Oklahoma,2012
+Egypt,44,Oregon,2012
+Iran,103,Oregon,2012
+Iraq,212,Oregon,2012
+Libya,6,Oregon,2012
+Mali,D,Oregon,2012
+Somalia,135,Oregon,2012
+South Sudan,-,Oregon,2012
+Sudan,4,Oregon,2012
+Syria,26,Oregon,2012
+Yemen,27,Oregon,2012
+Egypt,408,Pennsylvania,2012
+Iran,153,Pennsylvania,2012
+Iraq,432,Pennsylvania,2012
+Libya,15,Pennsylvania,2012
+Mali,104,Pennsylvania,2012
+Somalia,49,Pennsylvania,2012
+South Sudan,D,Pennsylvania,2012
+Sudan,120,Pennsylvania,2012
+Syria,151,Pennsylvania,2012
+Yemen,8,Pennsylvania,2012
+Egypt,D,Puerto Rico,2012
+Iran,D,Puerto Rico,2012
+Iraq,-,Puerto Rico,2012
+Libya,-,Puerto Rico,2012
+Mali,-,Puerto Rico,2012
+Somalia,-,Puerto Rico,2012
+South Sudan,-,Puerto Rico,2012
+Sudan,-,Puerto Rico,2012
+Syria,-,Puerto Rico,2012
+Yemen,-,Puerto Rico,2012
+Egypt,10,Rhode Island,2012
+Iran,18,Rhode Island,2012
+Iraq,24,Rhode Island,2012
+Libya,-,Rhode Island,2012
+Mali,8,Rhode Island,2012
+Somalia,-,Rhode Island,2012
+South Sudan,-,Rhode Island,2012
+Sudan,D,Rhode Island,2012
+Syria,34,Rhode Island,2012
+Yemen,-,Rhode Island,2012
+Egypt,37,South Carolina,2012
+Iran,28,South Carolina,2012
+Iraq,41,South Carolina,2012
+Libya,4,South Carolina,2012
+Mali,D,South Carolina,2012
+Somalia,D,South Carolina,2012
+South Sudan,-,South Carolina,2012
+Sudan,D,South Carolina,2012
+Syria,5,South Carolina,2012
+Yemen,7,South Carolina,2012
+Egypt,8,South Dakota,2012
+Iran,6,South Dakota,2012
+Iraq,34,South Dakota,2012
+Libya,-,South Dakota,2012
+Mali,-,South Dakota,2012
+Somalia,20,South Dakota,2012
+South Sudan,-,South Dakota,2012
+Sudan,53,South Dakota,2012
+Syria,-,South Dakota,2012
+Yemen,D,South Dakota,2012
+Egypt,521,Tennessee,2012
+Iran,94,Tennessee,2012
+Iraq,608,Tennessee,2012
+Libya,D,Tennessee,2012
+Mali,6,Tennessee,2012
+Somalia,112,Tennessee,2012
+South Sudan,-,Tennessee,2012
+Sudan,41,Tennessee,2012
+Syria,22,Tennessee,2012
+Yemen,33,Tennessee,2012
+Egypt,380,Texas,2012
+Iran,1160,Texas,2012
+Iraq,2278,Texas,2012
+Libya,36,Texas,2012
+Mali,33,Texas,2012
+Somalia,268,Texas,2012
+South Sudan,D,Texas,2012
+Sudan,188,Texas,2012
+Syria,160,Texas,2012
+Yemen,27,Texas,2012
+Egypt,9,Utah,2012
+Iran,75,Utah,2012
+Iraq,158,Utah,2012
+Libya,-,Utah,2012
+Mali,D,Utah,2012
+Somalia,71,Utah,2012
+South Sudan,D,Utah,2012
+Sudan,34,Utah,2012
+Syria,9,Utah,2012
+Yemen,D,Utah,2012
+Egypt,5,Vermont,2012
+Iran,-,Vermont,2012
+Iraq,3,Vermont,2012
+Libya,-,Vermont,2012
+Mali,-,Vermont,2012
+Somalia,27,Vermont,2012
+South Sudan,-,Vermont,2012
+Sudan,D,Vermont,2012
+Syria,D,Vermont,2012
+Yemen,D,Vermont,2012
+Egypt,509,Virginia,2012
+Iran,567,Virginia,2012
+Iraq,927,Virginia,2012
+Libya,17,Virginia,2012
+Mali,10,Virginia,2012
+Somalia,65,Virginia,2012
+South Sudan,-,Virginia,2012
+Sudan,281,Virginia,2012
+Syria,85,Virginia,2012
+Yemen,34,Virginia,2012
+Egypt,123,Washington,2012
+Iran,361,Washington,2012
+Iraq,595,Washington,2012
+Libya,14,Washington,2012
+Mali,20,Washington,2012
+Somalia,412,Washington,2012
+South Sudan,D,Washington,2012
+Sudan,47,Washington,2012
+Syria,32,Washington,2012
+Yemen,22,Washington,2012
+Egypt,4,West Virginia,2012
+Iran,16,West Virginia,2012
+Iraq,21,West Virginia,2012
+Libya,D,West Virginia,2012
+Mali,D,West Virginia,2012
+Somalia,-,West Virginia,2012
+South Sudan,-,West Virginia,2012
+Sudan,D,West Virginia,2012
+Syria,5,West Virginia,2012
+Yemen,D,West Virginia,2012
+Egypt,27,Wisconsin,2012
+Iran,23,Wisconsin,2012
+Iraq,159,Wisconsin,2012
+Libya,3,Wisconsin,2012
+Mali,3,Wisconsin,2012
+Somalia,94,Wisconsin,2012
+South Sudan,-,Wisconsin,2012
+Sudan,25,Wisconsin,2012
+Syria,18,Wisconsin,2012
+Yemen,-,Wisconsin,2012
+Egypt,-,Wyoming,2012
+Iran,4,Wyoming,2012
+Iraq,D,Wyoming,2012
+Libya,-,Wyoming,2012
+Mali,-,Wyoming,2012
+Somalia,4,Wyoming,2012
+South Sudan,-,Wyoming,2012
+Sudan,-,Wyoming,2012
+Syria,-,Wyoming,2012
+Yemen,4,Wyoming,2012

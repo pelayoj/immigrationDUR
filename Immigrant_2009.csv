@@ -1,0 +1,469 @@
+﻿Country,Immigrant,State,Year
+Egypt,26,Alabama,2009
+Iran,45,Alabama,2009
+Iraq,44,Alabama,2009
+Libya,D,Alabama,2009
+Mali,5,Alabama,2009
+Somalia,D,Alabama,2009
+Sudan,13,Alabama,2009
+Syria,4,Alabama,2009
+Yemen,24,Alabama,2009
+Egypt,3,Alaska,2009
+Iran,3,Alaska,2009
+Iraq,3,Alaska,2009
+Libya,-,Alaska,2009
+Mali,-,Alaska,2009
+Somalia,4,Alaska,2009
+Sudan,9,Alaska,2009
+Syria,-,Alaska,2009
+Yemen,-,Alaska,2009
+Egypt,60,Arizona,2009
+Iran,279,Arizona,2009
+Iraq,751,Arizona,2009
+Libya,12,Arizona,2009
+Mali,8,Arizona,2009
+Somalia,509,Arizona,2009
+Sudan,167,Arizona,2009
+Syria,47,Arizona,2009
+Yemen,12,Arizona,2009
+Egypt,8,Arkansas,2009
+Iran,14,Arkansas,2009
+Iraq,15,Arkansas,2009
+Libya,D,Arkansas,2009
+Mali,-,Arkansas,2009
+Somalia,-,Arkansas,2009
+Sudan,D,Arkansas,2009
+Syria,5,Arkansas,2009
+Yemen,8,Arkansas,2009
+Egypt,1244,California,2009
+Iran,11227,California,2009
+Iraq,2768,California,2009
+Libya,51,California,2009
+Mali,17,California,2009
+Somalia,518,California,2009
+Sudan,171,California,2009
+Syria,646,California,2009
+Yemen,542,California,2009
+Egypt,36,Colorado,2009
+Iran,124,Colorado,2009
+Iraq,150,Colorado,2009
+Libya,8,Colorado,2009
+Mali,16,Colorado,2009
+Somalia,475,Colorado,2009
+Sudan,88,Colorado,2009
+Syria,18,Colorado,2009
+Yemen,D,Colorado,2009
+Egypt,89,Connecticut,2009
+Iran,80,Connecticut,2009
+Iraq,71,Connecticut,2009
+Libya,D,Connecticut,2009
+Mali,5,Connecticut,2009
+Somalia,24,Connecticut,2009
+Sudan,33,Connecticut,2009
+Syria,19,Connecticut,2009
+Yemen,25,Connecticut,2009
+Egypt,50,Delaware,2009
+Iran,11,Delaware,2009
+Iraq,-,Delaware,2009
+Libya,-,Delaware,2009
+Mali,-,Delaware,2009
+Somalia,-,Delaware,2009
+Sudan,-,Delaware,2009
+Syria,6,Delaware,2009
+Yemen,15,Delaware,2009
+Egypt,16,District of Columbia,2009
+Iran,23,District of Columbia,2009
+Iraq,29,District of Columbia,2009
+Libya,-,District of Columbia,2009
+Mali,10,District of Columbia,2009
+Somalia,5,District of Columbia,2009
+Sudan,8,District of Columbia,2009
+Syria,-,District of Columbia,2009
+Yemen,-,District of Columbia,2009
+Egypt,379,Florida,2009
+Iran,310,Florida,2009
+Iraq,175,Florida,2009
+Libya,13,Florida,2009
+Mali,9,Florida,2009
+Somalia,7,Florida,2009
+Sudan,107,Florida,2009
+Syria,132,Florida,2009
+Yemen,16,Florida,2009
+Egypt,99,Georgia,2009
+Iran,333,Georgia,2009
+Iraq,217,Georgia,2009
+Libya,9,Georgia,2009
+Mali,25,Georgia,2009
+Somalia,231,Georgia,2009
+Sudan,88,Georgia,2009
+Syria,28,Georgia,2009
+Yemen,6,Georgia,2009
+Egypt,4,Hawaii,2009
+Iran,10,Hawaii,2009
+Iraq,-,Hawaii,2009
+Libya,D,Hawaii,2009
+Mali,-,Hawaii,2009
+Somalia,D,Hawaii,2009
+Sudan,-,Hawaii,2009
+Syria,D,Hawaii,2009
+Yemen,-,Hawaii,2009
+Egypt,5,Idaho,2009
+Iran,63,Idaho,2009
+Iraq,116,Idaho,2009
+Libya,D,Idaho,2009
+Mali,-,Idaho,2009
+Somalia,44,Idaho,2009
+Sudan,8,Idaho,2009
+Syria,D,Idaho,2009
+Yemen,-,Idaho,2009
+Egypt,263,Illinois,2009
+Iran,322,Illinois,2009
+Iraq,760,Illinois,2009
+Libya,7,Illinois,2009
+Mali,9,Illinois,2009
+Somalia,196,Illinois,2009
+Sudan,92,Illinois,2009
+Syria,246,Illinois,2009
+Yemen,102,Illinois,2009
+Egypt,65,Indiana,2009
+Iran,49,Indiana,2009
+Iraq,24,Indiana,2009
+Libya,D,Indiana,2009
+Mali,18,Indiana,2009
+Somalia,62,Indiana,2009
+Sudan,26,Indiana,2009
+Syria,41,Indiana,2009
+Yemen,32,Indiana,2009
+Egypt,26,Iowa,2009
+Iran,21,Iowa,2009
+Iraq,54,Iowa,2009
+Libya,-,Iowa,2009
+Mali,6,Iowa,2009
+Somalia,85,Iowa,2009
+Sudan,198,Iowa,2009
+Syria,5,Iowa,2009
+Yemen,D,Iowa,2009
+Egypt,17,Kansas,2009
+Iran,70,Kansas,2009
+Iraq,69,Kansas,2009
+Libya,3,Kansas,2009
+Mali,-,Kansas,2009
+Somalia,176,Kansas,2009
+Sudan,20,Kansas,2009
+Syria,18,Kansas,2009
+Yemen,-,Kansas,2009
+Egypt,35,Kentucky,2009
+Iran,51,Kentucky,2009
+Iraq,133,Kentucky,2009
+Libya,3,Kentucky,2009
+Mali,D,Kentucky,2009
+Somalia,271,Kentucky,2009
+Sudan,54,Kentucky,2009
+Syria,11,Kentucky,2009
+Yemen,5,Kentucky,2009
+Egypt,26,Louisiana,2009
+Iran,38,Louisiana,2009
+Iraq,31,Louisiana,2009
+Libya,8,Louisiana,2009
+Mali,D,Louisiana,2009
+Somalia,3,Louisiana,2009
+Sudan,4,Louisiana,2009
+Syria,5,Louisiana,2009
+Yemen,19,Louisiana,2009
+Egypt,23,Maine,2009
+Iran,10,Maine,2009
+Iraq,23,Maine,2009
+Libya,-,Maine,2009
+Mali,-,Maine,2009
+Somalia,422,Maine,2009
+Sudan,66,Maine,2009
+Syria,D,Maine,2009
+Yemen,-,Maine,2009
+Egypt,129,Maryland,2009
+Iran,531,Maryland,2009
+Iraq,127,Maryland,2009
+Libya,7,Maryland,2009
+Mali,35,Maryland,2009
+Somalia,41,Maryland,2009
+Sudan,97,Maryland,2009
+Syria,27,Maryland,2009
+Yemen,7,Maryland,2009
+Egypt,254,Massachusetts,2009
+Iran,208,Massachusetts,2009
+Iraq,139,Massachusetts,2009
+Libya,6,Massachusetts,2009
+Mali,5,Massachusetts,2009
+Somalia,264,Massachusetts,2009
+Sudan,60,Massachusetts,2009
+Syria,59,Massachusetts,2009
+Yemen,5,Massachusetts,2009
+Egypt,137,Michigan,2009
+Iran,105,Michigan,2009
+Iraq,2691,Michigan,2009
+Libya,11,Michigan,2009
+Mali,7,Michigan,2009
+Somalia,121,Michigan,2009
+Sudan,76,Michigan,2009
+Syria,134,Michigan,2009
+Yemen,805,Michigan,2009
+Egypt,100,Minnesota,2009
+Iran,99,Minnesota,2009
+Iraq,68,Minnesota,2009
+Libya,D,Minnesota,2009
+Mali,4,Minnesota,2009
+Somalia,4173,Minnesota,2009
+Sudan,154,Minnesota,2009
+Syria,23,Minnesota,2009
+Yemen,29,Minnesota,2009
+Egypt,15,Mississippi,2009
+Iran,14,Mississippi,2009
+Iraq,5,Mississippi,2009
+Libya,-,Mississippi,2009
+Mali,-,Mississippi,2009
+Somalia,-,Mississippi,2009
+Sudan,D,Mississippi,2009
+Syria,3,Mississippi,2009
+Yemen,20,Mississippi,2009
+Egypt,36,Missouri,2009
+Iran,69,Missouri,2009
+Iraq,192,Missouri,2009
+Libya,13,Missouri,2009
+Mali,-,Missouri,2009
+Somalia,269,Missouri,2009
+Sudan,60,Missouri,2009
+Syria,16,Missouri,2009
+Yemen,4,Missouri,2009
+Egypt,6,Montana,2009
+Iran,D,Montana,2009
+Iraq,5,Montana,2009
+Libya,-,Montana,2009
+Mali,-,Montana,2009
+Somalia,-,Montana,2009
+Sudan,D,Montana,2009
+Syria,-,Montana,2009
+Yemen,-,Montana,2009
+Egypt,25,Nebraska,2009
+Iran,13,Nebraska,2009
+Iraq,86,Nebraska,2009
+Libya,3,Nebraska,2009
+Mali,-,Nebraska,2009
+Somalia,420,Nebraska,2009
+Sudan,249,Nebraska,2009
+Syria,10,Nebraska,2009
+Yemen,-,Nebraska,2009
+Egypt,38,Nevada,2009
+Iran,171,Nevada,2009
+Iraq,38,Nevada,2009
+Libya,3,Nevada,2009
+Mali,D,Nevada,2009
+Somalia,15,Nevada,2009
+Sudan,23,Nevada,2009
+Syria,12,Nevada,2009
+Yemen,D,Nevada,2009
+Egypt,24,New Hampshire,2009
+Iran,21,New Hampshire,2009
+Iraq,38,New Hampshire,2009
+Libya,-,New Hampshire,2009
+Mali,D,New Hampshire,2009
+Somalia,43,New Hampshire,2009
+Sudan,51,New Hampshire,2009
+Syria,5,New Hampshire,2009
+Yemen,-,New Hampshire,2009
+Egypt,1587,New Jersey,2009
+Iran,198,New Jersey,2009
+Iraq,91,New Jersey,2009
+Libya,8,New Jersey,2009
+Mali,9,New Jersey,2009
+Somalia,3,New Jersey,2009
+Sudan,63,New Jersey,2009
+Syria,139,New Jersey,2009
+Yemen,13,New Jersey,2009
+Egypt,12,New Mexico,2009
+Iran,42,New Mexico,2009
+Iraq,50,New Mexico,2009
+Libya,-,New Mexico,2009
+Mali,-,New Mexico,2009
+Somalia,-,New Mexico,2009
+Sudan,-,New Mexico,2009
+Syria,13,New Mexico,2009
+Yemen,D,New Mexico,2009
+Egypt,1463,New York,2009
+Iran,495,New York,2009
+Iraq,289,New York,2009
+Libya,32,New York,2009
+Mali,234,New York,2009
+Somalia,236,New York,2009
+Sudan,198,New York,2009
+Syria,159,New York,2009
+Yemen,1163,New York,2009
+Egypt,153,North Carolina,2009
+Iran,164,North Carolina,2009
+Iraq,177,North Carolina,2009
+Libya,7,North Carolina,2009
+Mali,14,North Carolina,2009
+Somalia,74,North Carolina,2009
+Sudan,123,North Carolina,2009
+Syria,36,North Carolina,2009
+Yemen,97,North Carolina,2009
+Egypt,4,North Dakota,2009
+Iran,D,North Dakota,2009
+Iraq,46,North Dakota,2009
+Libya,-,North Dakota,2009
+Mali,-,North Dakota,2009
+Somalia,112,North Dakota,2009
+Sudan,27,North Dakota,2009
+Syria,D,North Dakota,2009
+Yemen,-,North Dakota,2009
+Egypt,182,Ohio,2009
+Iran,133,Ohio,2009
+Iraq,153,Ohio,2009
+Libya,11,Ohio,2009
+Mali,25,Ohio,2009
+Somalia,1470,Ohio,2009
+Sudan,72,Ohio,2009
+Syria,107,Ohio,2009
+Yemen,29,Ohio,2009
+Egypt,13,Oklahoma,2009
+Iran,80,Oklahoma,2009
+Iraq,56,Oklahoma,2009
+Libya,D,Oklahoma,2009
+Mali,3,Oklahoma,2009
+Somalia,7,Oklahoma,2009
+Sudan,6,Oklahoma,2009
+Syria,23,Oklahoma,2009
+Yemen,D,Oklahoma,2009
+Egypt,72,Oregon,2009
+Iran,101,Oregon,2009
+Iraq,50,Oregon,2009
+Libya,4,Oregon,2009
+Mali,D,Oregon,2009
+Somalia,266,Oregon,2009
+Sudan,12,Oregon,2009
+Syria,19,Oregon,2009
+Yemen,6,Oregon,2009
+Egypt,323,Pennsylvania,2009
+Iran,120,Pennsylvania,2009
+Iraq,231,Pennsylvania,2009
+Libya,9,Pennsylvania,2009
+Mali,62,Pennsylvania,2009
+Somalia,83,Pennsylvania,2009
+Sudan,106,Pennsylvania,2009
+Syria,141,Pennsylvania,2009
+Yemen,9,Pennsylvania,2009
+Egypt,4,Puerto Rico,2009
+Iran,D,Puerto Rico,2009
+Iraq,D,Puerto Rico,2009
+Libya,-,Puerto Rico,2009
+Mali,-,Puerto Rico,2009
+Somalia,-,Puerto Rico,2009
+Sudan,-,Puerto Rico,2009
+Syria,D,Puerto Rico,2009
+Yemen,-,Puerto Rico,2009
+Egypt,12,Rhode Island,2009
+Iran,11,Rhode Island,2009
+Iraq,19,Rhode Island,2009
+Libya,-,Rhode Island,2009
+Mali,4,Rhode Island,2009
+Somalia,-,Rhode Island,2009
+Sudan,D,Rhode Island,2009
+Syria,13,Rhode Island,2009
+Yemen,-,Rhode Island,2009
+Egypt,50,South Carolina,2009
+Iran,22,South Carolina,2009
+Iraq,54,South Carolina,2009
+Libya,D,South Carolina,2009
+Mali,D,South Carolina,2009
+Somalia,3,South Carolina,2009
+Sudan,D,South Carolina,2009
+Syria,10,South Carolina,2009
+Yemen,D,South Carolina,2009
+Egypt,15,South Dakota,2009
+Iran,3,South Dakota,2009
+Iraq,23,South Dakota,2009
+Libya,D,South Dakota,2009
+Mali,-,South Dakota,2009
+Somalia,55,South Dakota,2009
+Sudan,54,South Dakota,2009
+Syria,D,South Dakota,2009
+Yemen,D,South Dakota,2009
+Egypt,667,Tennessee,2009
+Iran,152,Tennessee,2009
+Iraq,232,Tennessee,2009
+Libya,4,Tennessee,2009
+Mali,4,Tennessee,2009
+Somalia,364,Tennessee,2009
+Sudan,170,Tennessee,2009
+Syria,21,Tennessee,2009
+Yemen,35,Tennessee,2009
+Egypt,369,Texas,2009
+Iran,1481,Texas,2009
+Iraq,813,Texas,2009
+Libya,23,Texas,2009
+Mali,10,Texas,2009
+Somalia,512,Texas,2009
+Sudan,331,Texas,2009
+Syria,103,Texas,2009
+Yemen,16,Texas,2009
+Egypt,17,Utah,2009
+Iran,149,Utah,2009
+Iraq,112,Utah,2009
+Libya,D,Utah,2009
+Mali,D,Utah,2009
+Somalia,157,Utah,2009
+Sudan,81,Utah,2009
+Syria,6,Utah,2009
+Yemen,4,Utah,2009
+Egypt,8,Vermont,2009
+Iran,D,Vermont,2009
+Iraq,30,Vermont,2009
+Libya,-,Vermont,2009
+Mali,-,Vermont,2009
+Somalia,60,Vermont,2009
+Sudan,6,Vermont,2009
+Syria,D,Vermont,2009
+Yemen,-,Vermont,2009
+Egypt,484,Virginia,2009
+Iran,658,Virginia,2009
+Iraq,559,Virginia,2009
+Libya,7,Virginia,2009
+Mali,11,Virginia,2009
+Somalia,170,Virginia,2009
+Sudan,278,Virginia,2009
+Syria,59,Virginia,2009
+Yemen,31,Virginia,2009
+Egypt,114,Washington,2009
+Iran,371,Washington,2009
+Iraq,244,Washington,2009
+Libya,14,Washington,2009
+Mali,4,Washington,2009
+Somalia,1236,Washington,2009
+Sudan,91,Washington,2009
+Syria,33,Washington,2009
+Yemen,35,Washington,2009
+Egypt,18,West Virginia,2009
+Iran,17,West Virginia,2009
+Iraq,8,West Virginia,2009
+Libya,D,West Virginia,2009
+Mali,-,West Virginia,2009
+Somalia,D,West Virginia,2009
+Sudan,-,West Virginia,2009
+Syria,22,West Virginia,2009
+Yemen,D,West Virginia,2009
+Egypt,35,Wisconsin,2009
+Iran,30,Wisconsin,2009
+Iraq,45,Wisconsin,2009
+Libya,D,Wisconsin,2009
+Mali,5,Wisconsin,2009
+Somalia,199,Wisconsin,2009
+Sudan,29,Wisconsin,2009
+Syria,7,Wisconsin,2009
+Yemen,D,Wisconsin,2009
+Egypt,D,Wyoming,2009
+Iran,5,Wyoming,2009
+Iraq,3,Wyoming,2009
+Libya,-,Wyoming,2009
+Mali,-,Wyoming,2009
+Somalia,-,Wyoming,2009
+Sudan,D,Wyoming,2009
+Syria,-,Wyoming,2009
+Yemen,5,Wyoming,2009

@@ -1,0 +1,521 @@
+﻿Country,Immigrant,State,Year
+Egypt,23,Alabama,2013
+Iran,23,Alabama,2013
+Iraq,19,Alabama,2013
+Libya,-,Alabama,2013
+Mali,D,Alabama,2013
+Somalia,D,Alabama,2013
+South Sudan,D,Alabama,2013
+Sudan,6,Alabama,2013
+Syria,D,Alabama,2013
+Yemen,13,Alabama,2013
+Egypt,D,Alaska,2013
+Iran,D,Alaska,2013
+Iraq,5,Alaska,2013
+Libya,-,Alaska,2013
+Mali,-,Alaska,2013
+Somalia,7,Alaska,2013
+South Sudan,D,Alaska,2013
+Sudan,9,Alaska,2013
+Syria,-,Alaska,2013
+Yemen,-,Alaska,2013
+Egypt,44,Arizona,2013
+Iran,226,Arizona,2013
+Iraq,426,Arizona,2013
+Libya,4,Arizona,2013
+Mali,6,Arizona,2013
+Somalia,202,Arizona,2013
+South Sudan,3,Arizona,2013
+Sudan,79,Arizona,2013
+Syria,36,Arizona,2013
+Yemen,D,Arizona,2013
+Egypt,12,Arkansas,2013
+Iran,10,Arkansas,2013
+Iraq,3,Arkansas,2013
+Libya,D,Arkansas,2013
+Mali,-,Arkansas,2013
+Somalia,-,Arkansas,2013
+South Sudan,-,Arkansas,2013
+Sudan,D,Arkansas,2013
+Syria,6,Arkansas,2013
+Yemen,D,Arkansas,2013
+Egypt,1101,California,2013
+Iran,6848,California,2013
+Iraq,1764,California,2013
+Libya,49,California,2013
+Mali,5,California,2013
+Somalia,267,California,2013
+South Sudan,D,California,2013
+Sudan,117,California,2013
+Syria,579,California,2013
+Yemen,225,California,2013
+Egypt,12,Colorado,2013
+Iran,83,Colorado,2013
+Iraq,54,Colorado,2013
+Libya,3,Colorado,2013
+Mali,4,Colorado,2013
+Somalia,157,Colorado,2013
+South Sudan,-,Colorado,2013
+Sudan,45,Colorado,2013
+Syria,8,Colorado,2013
+Yemen,D,Colorado,2013
+Egypt,40,Connecticut,2013
+Iran,46,Connecticut,2013
+Iraq,35,Connecticut,2013
+Libya,D,Connecticut,2013
+Mali,D,Connecticut,2013
+Somalia,12,Connecticut,2013
+South Sudan,D,Connecticut,2013
+Sudan,21,Connecticut,2013
+Syria,32,Connecticut,2013
+Yemen,20,Connecticut,2013
+Egypt,15,Delaware,2013
+Iran,7,Delaware,2013
+Iraq,-,Delaware,2013
+Libya,-,Delaware,2013
+Mali,-,Delaware,2013
+Somalia,D,Delaware,2013
+South Sudan,-,Delaware,2013
+Sudan,3,Delaware,2013
+Syria,D,Delaware,2013
+Yemen,4,Delaware,2013
+Egypt,7,District of Columbia,2013
+Iran,21,District of Columbia,2013
+Iraq,13,District of Columbia,2013
+Libya,D,District of Columbia,2013
+Mali,3,District of Columbia,2013
+Somalia,D,District of Columbia,2013
+South Sudan,D,District of Columbia,2013
+Sudan,6,District of Columbia,2013
+Syria,6,District of Columbia,2013
+Yemen,-,District of Columbia,2013
+Egypt,339,Florida,2013
+Iran,247,Florida,2013
+Iraq,127,Florida,2013
+Libya,8,Florida,2013
+Mali,4,Florida,2013
+Somalia,6,Florida,2013
+South Sudan,3,Florida,2013
+Sudan,38,Florida,2013
+Syria,145,Florida,2013
+Yemen,4,Florida,2013
+Egypt,86,Georgia,2013
+Iran,268,Georgia,2013
+Iraq,113,Georgia,2013
+Libya,7,Georgia,2013
+Mali,18,Georgia,2013
+Somalia,123,Georgia,2013
+South Sudan,D,Georgia,2013
+Sudan,42,Georgia,2013
+Syria,22,Georgia,2013
+Yemen,7,Georgia,2013
+Egypt,3,Hawaii,2013
+Iran,6,Hawaii,2013
+Iraq,3,Hawaii,2013
+Libya,D,Hawaii,2013
+Mali,-,Hawaii,2013
+Somalia,-,Hawaii,2013
+South Sudan,-,Hawaii,2013
+Sudan,-,Hawaii,2013
+Syria,-,Hawaii,2013
+Yemen,-,Hawaii,2013
+Egypt,9,Idaho,2013
+Iran,19,Idaho,2013
+Iraq,64,Idaho,2013
+Libya,-,Idaho,2013
+Mali,-,Idaho,2013
+Somalia,11,Idaho,2013
+South Sudan,-,Idaho,2013
+Sudan,D,Idaho,2013
+Syria,-,Idaho,2013
+Yemen,-,Idaho,2013
+Egypt,136,Illinois,2013
+Iran,190,Illinois,2013
+Iraq,446,Illinois,2013
+Libya,9,Illinois,2013
+Mali,3,Illinois,2013
+Somalia,106,Illinois,2013
+South Sudan,D,Illinois,2013
+Sudan,74,Illinois,2013
+Syria,206,Illinois,2013
+Yemen,61,Illinois,2013
+Egypt,29,Indiana,2013
+Iran,41,Indiana,2013
+Iraq,23,Indiana,2013
+Libya,3,Indiana,2013
+Mali,7,Indiana,2013
+Somalia,32,Indiana,2013
+South Sudan,-,Indiana,2013
+Sudan,12,Indiana,2013
+Syria,20,Indiana,2013
+Yemen,13,Indiana,2013
+Egypt,6,Iowa,2013
+Iran,15,Iowa,2013
+Iraq,33,Iowa,2013
+Libya,D,Iowa,2013
+Mali,-,Iowa,2013
+Somalia,65,Iowa,2013
+South Sudan,12,Iowa,2013
+Sudan,99,Iowa,2013
+Syria,9,Iowa,2013
+Yemen,-,Iowa,2013
+Egypt,16,Kansas,2013
+Iran,26,Kansas,2013
+Iraq,42,Kansas,2013
+Libya,D,Kansas,2013
+Mali,D,Kansas,2013
+Somalia,63,Kansas,2013
+South Sudan,D,Kansas,2013
+Sudan,4,Kansas,2013
+Syria,6,Kansas,2013
+Yemen,-,Kansas,2013
+Egypt,21,Kentucky,2013
+Iran,24,Kentucky,2013
+Iraq,84,Kentucky,2013
+Libya,D,Kentucky,2013
+Mali,-,Kentucky,2013
+Somalia,171,Kentucky,2013
+South Sudan,D,Kentucky,2013
+Sudan,27,Kentucky,2013
+Syria,13,Kentucky,2013
+Yemen,-,Kentucky,2013
+Egypt,15,Louisiana,2013
+Iran,24,Louisiana,2013
+Iraq,18,Louisiana,2013
+Libya,3,Louisiana,2013
+Mali,-,Louisiana,2013
+Somalia,3,Louisiana,2013
+South Sudan,-,Louisiana,2013
+Sudan,3,Louisiana,2013
+Syria,10,Louisiana,2013
+Yemen,11,Louisiana,2013
+Egypt,D,Maine,2013
+Iran,15,Maine,2013
+Iraq,66,Maine,2013
+Libya,-,Maine,2013
+Mali,3,Maine,2013
+Somalia,174,Maine,2013
+South Sudan,D,Maine,2013
+Sudan,42,Maine,2013
+Syria,-,Maine,2013
+Yemen,-,Maine,2013
+Egypt,93,Maryland,2013
+Iran,329,Maryland,2013
+Iraq,55,Maryland,2013
+Libya,D,Maryland,2013
+Mali,39,Maryland,2013
+Somalia,20,Maryland,2013
+South Sudan,D,Maryland,2013
+Sudan,56,Maryland,2013
+Syria,25,Maryland,2013
+Yemen,5,Maryland,2013
+Egypt,183,Massachusetts,2013
+Iran,130,Massachusetts,2013
+Iraq,89,Massachusetts,2013
+Libya,5,Massachusetts,2013
+Mali,4,Massachusetts,2013
+Somalia,116,Massachusetts,2013
+South Sudan,4,Massachusetts,2013
+Sudan,24,Massachusetts,2013
+Syria,68,Massachusetts,2013
+Yemen,3,Massachusetts,2013
+Egypt,125,Michigan,2013
+Iran,80,Michigan,2013
+Iraq,2115,Michigan,2013
+Libya,10,Michigan,2013
+Mali,6,Michigan,2013
+Somalia,66,Michigan,2013
+South Sudan,-,Michigan,2013
+Sudan,49,Michigan,2013
+Syria,139,Michigan,2013
+Yemen,439,Michigan,2013
+Egypt,67,Minnesota,2013
+Iran,45,Minnesota,2013
+Iraq,66,Minnesota,2013
+Libya,D,Minnesota,2013
+Mali,D,Minnesota,2013
+Somalia,2123,Minnesota,2013
+South Sudan,5,Minnesota,2013
+Sudan,100,Minnesota,2013
+Syria,27,Minnesota,2013
+Yemen,10,Minnesota,2013
+Egypt,6,Mississippi,2013
+Iran,6,Mississippi,2013
+Iraq,-,Mississippi,2013
+Libya,-,Mississippi,2013
+Mali,-,Mississippi,2013
+Somalia,D,Mississippi,2013
+South Sudan,D,Mississippi,2013
+Sudan,4,Mississippi,2013
+Syria,D,Mississippi,2013
+Yemen,16,Mississippi,2013
+Egypt,20,Missouri,2013
+Iran,56,Missouri,2013
+Iraq,111,Missouri,2013
+Libya,5,Missouri,2013
+Mali,-,Missouri,2013
+Somalia,180,Missouri,2013
+South Sudan,D,Missouri,2013
+Sudan,33,Missouri,2013
+Syria,22,Missouri,2013
+Yemen,3,Missouri,2013
+Egypt,D,Montana,2013
+Iran,D,Montana,2013
+Iraq,6,Montana,2013
+Libya,-,Montana,2013
+Mali,-,Montana,2013
+Somalia,D,Montana,2013
+South Sudan,-,Montana,2013
+Sudan,-,Montana,2013
+Syria,-,Montana,2013
+Yemen,-,Montana,2013
+Egypt,6,Nebraska,2013
+Iran,27,Nebraska,2013
+Iraq,78,Nebraska,2013
+Libya,D,Nebraska,2013
+Mali,-,Nebraska,2013
+Somalia,215,Nebraska,2013
+South Sudan,47,Nebraska,2013
+Sudan,124,Nebraska,2013
+Syria,7,Nebraska,2013
+Yemen,-,Nebraska,2013
+Egypt,21,Nevada,2013
+Iran,111,Nevada,2013
+Iraq,29,Nevada,2013
+Libya,-,Nevada,2013
+Mali,D,Nevada,2013
+Somalia,20,Nevada,2013
+South Sudan,D,Nevada,2013
+Sudan,7,Nevada,2013
+Syria,12,Nevada,2013
+Yemen,3,Nevada,2013
+Egypt,10,New Hampshire,2013
+Iran,9,New Hampshire,2013
+Iraq,29,New Hampshire,2013
+Libya,-,New Hampshire,2013
+Mali,D,New Hampshire,2013
+Somalia,13,New Hampshire,2013
+South Sudan,7,New Hampshire,2013
+Sudan,14,New Hampshire,2013
+Syria,3,New Hampshire,2013
+Yemen,-,New Hampshire,2013
+Egypt,1107,New Jersey,2013
+Iran,134,New Jersey,2013
+Iraq,66,New Jersey,2013
+Libya,4,New Jersey,2013
+Mali,8,New Jersey,2013
+Somalia,4,New Jersey,2013
+South Sudan,-,New Jersey,2013
+Sudan,30,New Jersey,2013
+Syria,141,New Jersey,2013
+Yemen,6,New Jersey,2013
+Egypt,D,New Mexico,2013
+Iran,19,New Mexico,2013
+Iraq,20,New Mexico,2013
+Libya,-,New Mexico,2013
+Mali,-,New Mexico,2013
+Somalia,-,New Mexico,2013
+South Sudan,-,New Mexico,2013
+Sudan,D,New Mexico,2013
+Syria,9,New Mexico,2013
+Yemen,D,New Mexico,2013
+Egypt,920,New York,2013
+Iran,344,New York,2013
+Iraq,159,New York,2013
+Libya,16,New York,2013
+Mali,108,New York,2013
+Somalia,162,New York,2013
+South Sudan,4,New York,2013
+Sudan,128,New York,2013
+Syria,184,New York,2013
+Yemen,385,New York,2013
+Egypt,119,North Carolina,2013
+Iran,94,North Carolina,2013
+Iraq,64,North Carolina,2013
+Libya,D,North Carolina,2013
+Mali,7,North Carolina,2013
+Somalia,37,North Carolina,2013
+South Sudan,D,North Carolina,2013
+Sudan,80,North Carolina,2013
+Syria,18,North Carolina,2013
+Yemen,39,North Carolina,2013
+Egypt,5,North Dakota,2013
+Iran,D,North Dakota,2013
+Iraq,28,North Dakota,2013
+Libya,-,North Dakota,2013
+Mali,-,North Dakota,2013
+Somalia,92,North Dakota,2013
+South Sudan,D,North Dakota,2013
+Sudan,19,North Dakota,2013
+Syria,-,North Dakota,2013
+Yemen,-,North Dakota,2013
+Egypt,139,Ohio,2013
+Iran,113,Ohio,2013
+Iraq,120,Ohio,2013
+Libya,9,Ohio,2013
+Mali,7,Ohio,2013
+Somalia,1010,Ohio,2013
+South Sudan,4,Ohio,2013
+Sudan,47,Ohio,2013
+Syria,82,Ohio,2013
+Yemen,5,Ohio,2013
+Egypt,12,Oklahoma,2013
+Iran,69,Oklahoma,2013
+Iraq,38,Oklahoma,2013
+Libya,-,Oklahoma,2013
+Mali,-,Oklahoma,2013
+Somalia,-,Oklahoma,2013
+South Sudan,D,Oklahoma,2013
+Sudan,8,Oklahoma,2013
+Syria,16,Oklahoma,2013
+Yemen,-,Oklahoma,2013
+Egypt,37,Oregon,2013
+Iran,61,Oregon,2013
+Iraq,30,Oregon,2013
+Libya,D,Oregon,2013
+Mali,D,Oregon,2013
+Somalia,94,Oregon,2013
+South Sudan,-,Oregon,2013
+Sudan,6,Oregon,2013
+Syria,12,Oregon,2013
+Yemen,-,Oregon,2013
+Egypt,233,Pennsylvania,2013
+Iran,94,Pennsylvania,2013
+Iraq,134,Pennsylvania,2013
+Libya,9,Pennsylvania,2013
+Mali,51,Pennsylvania,2013
+Somalia,55,Pennsylvania,2013
+South Sudan,D,Pennsylvania,2013
+Sudan,51,Pennsylvania,2013
+Syria,91,Pennsylvania,2013
+Yemen,8,Pennsylvania,2013
+Egypt,D,Puerto Rico,2013
+Iran,D,Puerto Rico,2013
+Iraq,-,Puerto Rico,2013
+Libya,-,Puerto Rico,2013
+Mali,-,Puerto Rico,2013
+Somalia,-,Puerto Rico,2013
+South Sudan,-,Puerto Rico,2013
+Sudan,-,Puerto Rico,2013
+Syria,-,Puerto Rico,2013
+Yemen,-,Puerto Rico,2013
+Egypt,5,Rhode Island,2013
+Iran,6,Rhode Island,2013
+Iraq,12,Rhode Island,2013
+Libya,-,Rhode Island,2013
+Mali,4,Rhode Island,2013
+Somalia,D,Rhode Island,2013
+South Sudan,-,Rhode Island,2013
+Sudan,-,Rhode Island,2013
+Syria,10,Rhode Island,2013
+Yemen,3,Rhode Island,2013
+Egypt,49,South Carolina,2013
+Iran,34,South Carolina,2013
+Iraq,31,South Carolina,2013
+Libya,D,South Carolina,2013
+Mali,5,South Carolina,2013
+Somalia,D,South Carolina,2013
+South Sudan,-,South Carolina,2013
+Sudan,5,South Carolina,2013
+Syria,4,South Carolina,2013
+Yemen,D,South Carolina,2013
+Egypt,-,South Dakota,2013
+Iran,D,South Dakota,2013
+Iraq,6,South Dakota,2013
+Libya,-,South Dakota,2013
+Mali,-,South Dakota,2013
+Somalia,24,South Dakota,2013
+South Sudan,-,South Dakota,2013
+Sudan,24,South Dakota,2013
+Syria,-,South Dakota,2013
+Yemen,-,South Dakota,2013
+Egypt,395,Tennessee,2013
+Iran,91,Tennessee,2013
+Iraq,137,Tennessee,2013
+Libya,D,Tennessee,2013
+Mali,5,Tennessee,2013
+Somalia,132,Tennessee,2013
+South Sudan,5,Tennessee,2013
+Sudan,48,Tennessee,2013
+Syria,16,Tennessee,2013
+Yemen,19,Tennessee,2013
+Egypt,249,Texas,2013
+Iran,784,Texas,2013
+Iraq,427,Texas,2013
+Libya,21,Texas,2013
+Mali,12,Texas,2013
+Somalia,226,Texas,2013
+South Sudan,12,Texas,2013
+Sudan,153,Texas,2013
+Syria,114,Texas,2013
+Yemen,8,Texas,2013
+Egypt,4,Utah,2013
+Iran,65,Utah,2013
+Iraq,50,Utah,2013
+Libya,-,Utah,2013
+Mali,D,Utah,2013
+Somalia,43,Utah,2013
+South Sudan,D,Utah,2013
+Sudan,33,Utah,2013
+Syria,5,Utah,2013
+Yemen,-,Utah,2013
+Egypt,D,Vermont,2013
+Iran,D,Vermont,2013
+Iraq,13,Vermont,2013
+Libya,-,Vermont,2013
+Mali,-,Vermont,2013
+Somalia,46,Vermont,2013
+South Sudan,-,Vermont,2013
+Sudan,D,Vermont,2013
+Syria,3,Vermont,2013
+Yemen,D,Vermont,2013
+Egypt,337,Virginia,2013
+Iran,463,Virginia,2013
+Iraq,335,Virginia,2013
+Libya,8,Virginia,2013
+Mali,4,Virginia,2013
+Somalia,147,Virginia,2013
+South Sudan,D,Virginia,2013
+Sudan,178,Virginia,2013
+Syria,49,Virginia,2013
+Yemen,26,Virginia,2013
+Egypt,91,Washington,2013
+Iran,245,Washington,2013
+Iraq,131,Washington,2013
+Libya,7,Washington,2013
+Mali,4,Washington,2013
+Somalia,552,Washington,2013
+South Sudan,4,Washington,2013
+Sudan,50,Washington,2013
+Syria,17,Washington,2013
+Yemen,6,Washington,2013
+Egypt,12,West Virginia,2013
+Iran,8,West Virginia,2013
+Iraq,D,West Virginia,2013
+Libya,D,West Virginia,2013
+Mali,-,West Virginia,2013
+Somalia,D,West Virginia,2013
+South Sudan,-,West Virginia,2013
+Sudan,-,West Virginia,2013
+Syria,4,West Virginia,2013
+Yemen,-,West Virginia,2013
+Egypt,19,Wisconsin,2013
+Iran,35,Wisconsin,2013
+Iraq,36,Wisconsin,2013
+Libya,D,Wisconsin,2013
+Mali,3,Wisconsin,2013
+Somalia,80,Wisconsin,2013
+South Sudan,-,Wisconsin,2013
+Sudan,10,Wisconsin,2013
+Syria,12,Wisconsin,2013
+Yemen,-,Wisconsin,2013
+Egypt,-,Wyoming,2013
+Iran,D,Wyoming,2013
+Iraq,D,Wyoming,2013
+Libya,-,Wyoming,2013
+Mali,-,Wyoming,2013
+Somalia,3,Wyoming,2013
+South Sudan,-,Wyoming,2013
+Sudan,-,Wyoming,2013
+Syria,D,Wyoming,2013
+Yemen,-,Wyoming,2013
