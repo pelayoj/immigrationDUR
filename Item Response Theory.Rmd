@@ -16,8 +16,8 @@ library(ipumsr)
 library(labelled)
 library(ggplot2)
 
-usa_ddi <- read_ipums_ddi("usa_00008.xml")
-usa_data <- read_ipums_micro(usa_ddi, verbose = FALSE) #dataset
+usa_ddi <- read_ipums_ddi("usa_00008.xml") 
+usa_data <- read_ipums_micro(usa_ddi, verbose = FALSE) #Immigrant dataset
 
 #relabelling variables
 usa_data <- usa_data %>%
@@ -66,15 +66,13 @@ usa_data <- usa_data %>% mutate(Employment = ifelse(EMPLOYMENT == "Employed", 1,
 
 # Indicator for whether one is an immigrant
 BP = 0
-
-#final dataset 
 usa_data <- cbind(usa_data,BP)
 ```
                  
 ```{r}
 
 usa_ddi1 <- read_ipums_ddi("usa_00013.xml")
-usadata <- read_ipums_micro(usa_ddi1, verbose = FALSE)
+usadata <- read_ipums_micro(usa_ddi1, verbose = FALSE) #Nonimmigrant dataset
 usadata <-usadata %>% filter(AGE > 25)
 usadata <- na.omit(usadata)
 
@@ -100,14 +98,21 @@ usadata <- usadata %>% mutate(YRGROUP = ifelse(YRSINUSA <= 5,"0-5",
                               Health = ifelse(HCOVPRIV1 == "With private health insurance coverage", 1, 0),
                               Foodstamp = ifelse(FOODSTMP=="No",1,0),
                               White = ifelse(RACE==1,1,0),
-                              Citizenx = ifelse(CITIZEN == ' Not a citizen', 0, 1))
+                              Citizen = ifelse(CITIZEN == ' Not a citizen', 0, 1),
+                              AGEGROUP = ifelse(AGE >=25 & AGE <= 30,"25-30",
+                                    ifelse(AGE >=31 & AGE <= 40, "31-40",
+                                   ifelse(AGE >=41 & AGE <= 50, "41-50",
+                                    ifelse(AGE >=51 & AGE <= 60,"51-60", 
+                                    ifelse(AGE >=61,">60","N/A"))))))
 
 ##### Non-Immigrants
 set.seed(57)
 samp <- data.table(usadata)
-nonimm<-samp[sample(nrow(samp), 10000)]
+nonimm<-samp[sample(nrow(samp), 10000)] #Sample Nonimmigrant dataset
 BP =1 
 nonimm<- cbind(nonimm,BP)
+
+#Final dataset
 data_com<-rbind(usa_data,nonimm, fill=TRUE)
 ```
 
