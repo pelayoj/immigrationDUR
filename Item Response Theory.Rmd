@@ -127,7 +127,8 @@ data_com.subset <- data.frame(Emp= rep(data_com$Employment, data_com$PERWT),
                 Hlth = rep(data_com$Health, data_com$PERWT),
                 Years = rep(data_com$YRGROUP,data_com$PERWT),
                 Indicator = rep(data_com$BP, data_com$PERWT),
-                Country= rep(data_com$BPLD, data_com$PERWT))
+                Country= rep(data_com$BPLD, data_com$PERWT),
+                Age = rep(data_com$AGEGROUP, data_com$PERWT))
 library(ltm)
 library(msm)
 ADmodel <- ltm(data_com.subset[,1:5]~z1, IRT.param = T)
@@ -138,17 +139,114 @@ plot(ADmodel, type="IIC",main = "Item Information Curve")
 
 ```{r}
 par(mfrow=c(2,2))
-data_com.subset1 <- data_com.subset %>% filter(Indicator=="1")
-AD <- ltm(data_com.subset1[,1:5]~z1, IRT.param = T)
-plot(AD, main = "Nonimmigrant first 5 years Success Score ", type="ICC")
-plot(AD, type="IIC",main = "Nonimmigrant Item Information Curve")
 
+#Immigrant response curve
 data_com.subset2 <- data_com.subset %>% filter(Indicator=="0")
 AD1 <- ltm(data_com.subset2[,1:5]~z1, IRT.param = T)
 plot(AD1, main = "Immigrant Success Score", type="ICC")
 plot(AD1, type="IIC",main = "Immigrant Item Information Curve")
 
- 
+#Non Immigrant item response curve
+data_com.subset1 <- data_com.subset %>% filter(Indicator=="1")
+AD <- ltm(data_com.subset1[,1:5]~z1, IRT.param = T)
+plot(AD, main = "Nonimmigrant Success Score ", type="ICC")
+plot(AD, type="IIC",main = "Nonimmigrant Item Information Curve")
+```
+
+```{r}
+#Item response curve by age group 25 -30
+
+par(mfrow = c(2,2))
+#Immigrant response curve
+data_com.subset2a <- data_com.subset %>% filter(Indicator=="0", Age =="25-30")
+AD2a <- ltm(data_com.subset2a[,1:5]~z1, IRT.param = T)
+plot(AD2a, main = "Immigrant 25 -30 years Success Score", type="ICC")
+plot(AD2a, type="IIC",main = "Immigrant Item Information Curve")
+
+#Non Immigrant response curve
+data_com.subset1a <- data_com.subset %>% filter(Indicator=="1", Age =="25-30")
+AD1a <- ltm(data_com.subset1a[,1:5]~z1, IRT.param = T)
+plot(AD1a, main = "Nonimmigrant 25-30 years Success Score ", type="ICC")
+plot(AD1a, type="IIC",main = "Nonimmigrant Item Information Curve")
+```
+
+```{r}
+#Item response curve by age group 31-40
+
+par(mfrow = c(2,2))
+#Immigrant response curve
+data_com.subset2b <- data_com.subset %>% filter(Indicator=="0", Age =="31-40")
+AD2b <- ltm(data_com.subset2b[,1:5]~z1, IRT.param = T)
+plot(AD2b, main = "Immigrant 31-40 years Success Score", type="ICC")
+plot(AD2b, type="IIC",main = "Immigrant Item Information Curve")
+
+#Non Immigrant response curve
+data_com.subset1b <- data_com.subset %>% filter(Indicator=="1", Age =="31-40")
+AD1b <- ltm(data_com.subset1b[,1:5]~z1, IRT.param = T)
+plot(AD1b, main = "Nonimmigrant 31-40 years Success Score ", type="ICC")
+plot(AD1b, type="IIC",main = "Nonimmigrant Item Information Curve")
+```
+
+```{r}
+#Item response curve by age group 41-50
+
+par(mfrow = c(2,2))
+#Immigrant response curve
+data_com.subset2c <- data_com.subset %>% filter(Indicator=="0", Age =="41-50")
+AD2c <- ltm(data_com.subset2c[,1:5]~z1, IRT.param = T)
+plot(AD2c, main = "Immigrant 41-50 years Success Score", type="ICC")
+plot(AD2c, type="IIC",main = "Immigrant Item Information Curve")
+
+#Non Immigrant response curve
+data_com.subset1c <- data_com.subset %>% filter(Indicator=="1", Age =="41-50")
+AD1c <- ltm(data_com.subset1c[,1:5]~z1, IRT.param = T)
+plot(AD1c, main = "Nonimmigrant 41-50 years Success Score ", type="ICC")
+plot(AD1c, type="IIC",main = "Nonimmigrant Item Information Curve")
+```
+
+```{r}
+#Item response curve by age group 51-60
+
+par(mfrow = c(2,2))
+#Immigrant response curve
+data_com.subset2d <- data_com.subset %>% filter(Indicator=="0", Age =="51-60")
+AD2d <- ltm(data_com.subset2d[,1:5]~z1, IRT.param = T)
+plot(AD2d, main = "Immigrant 51-60 years Success Score", type="ICC")
+plot(AD2d, type="IIC",main = "Immigrant Item Information Curve")
+
+#Non Immigrant response curve
+data_com.subset1d <- data_com.subset %>% filter(Indicator=="1", Age =="51-60")
+AD1d <- ltm(data_com.subset1d[,1:5]~z1, IRT.param = T)
+plot(AD1d, main = "Nonimmigrant 51-60 years Success Score ", type="ICC")
+plot(AD1d, type="IIC",main = "Nonimmigrant Item Information Curve")
+```
+
+```{r}
+#Item response curve by age group above 60
+
+par(mfrow = c(2,2))
+#Immigrant response curve
+data_com.subset2e <- data_com.subset %>% filter(Indicator=="0", Age ==">60")
+AD2e <- ltm(data_com.subset2e[,1:5]~z1, IRT.param = T)
+plot(AD2e, main = "Immigrant above 60 years Success Score", type="ICC")
+plot(AD2e, type="IIC",main = "Immigrant Item Information Curve")
+
+#Non Immigrant response curve
+data_com.subset1e <- data_com.subset %>% filter(Indicator=="1", Age ==">60")
+AD1e <- ltm(data_com.subset1e[,1:5]~z1, IRT.param = T)
+plot(AD1e, main = "Nonimmigrant above 60 years Success Score ", type="ICC")
+plot(AD1e, type="IIC",main = "Nonimmigrant Item Information Curve")
+```
+
+
+```{r}
+data_com.subset2 <- data_com.subset %>% filter(Indicator=="0")
+AD1 <- ltm(data_com.subset2[,1:5]~z1, IRT.param = T)
+plot(AD1, main = "Immigrant Success Score", type="ICC")
+plot(AD1, type="IIC",main = "Immigrant Item Information Curve")
+```
+
+```{r}
 # We need this to interpret the IRT.
 df.admod<- as.data.frame(coef(ADmodel))  #general
 df.ad_non <- as.data.frame(coef(AD)) #nonimmigrant
