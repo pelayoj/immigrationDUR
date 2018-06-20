@@ -319,75 +319,7 @@ summary(mod2)
 anova(mod1, mod2)
 anova(mod1, mod3) #use mod1
 
-
-
 ```
 
 
 
-```{r}
-#### Success score over 15 years
-
-success.time<- data_com.subset %>% filter(Years==">15", Indicator =="0")
-modelt<- ltm(success.time[,1:5]~z1, IRT.param = T)
-success.time1<- data_com.subset %>% filter(Years==">15", Indicator =="1")
-modelt1<- ltm(success.time1[,1:5]~z1, IRT.param = T)
-
-par(mfrow =c(2,2))
-
-plot(modelt, main = "Immigrant Success Score for over 15 years", type="ICC")
-plot(modelt1, main = "Nonimmigrant Success Score for over 15 years", type="ICC")
-plot(modelt, type="IIC",main = "Immigrant Item Information Curve for over 15 years")
-plot(modelt1, type="IIC",main = "Nonimmigrant Item Information Curve for over 15 years")
-```
-
-
-```{r}
-#IRT for each of the 8 countries
-
-#Yemen
-par(mfrow = c(2,2))
-usYemen  <-data_com.subset %>% filter(Country == "Yemen")
-modela <- ltm(usYemen[,1:5]~z1, IRT.param = T)
-summary(modela)
-plot(modela, main = "Success Score for Yemenis", type="ICC")
-plot(modela, type="IIC",main = "Yemen Item Information Curve")
-
-#Iran
-usIran<- data_com.subset %>% filter(Country == "Iran")
-modelb <- ltm(usIran~z1, IRT.param = T)
-plot(modelb, main = "Success Score for Iran", type="ICC")
-plot(modelb, type="IIC",main = "Iran Item Information Curve")
-
-#Iraq
-usIraq<-data_com.subset %>% filter(Country == "Iraq")
-ADmodel4 <- ltm(usIraq~z1, IRT.param = T)
-summary(ADmodel4)
-plot(ADmodel4, main = "Success Score for Iraq", type="ICC")
-plot(ADmodel4, type="IIC",main = "Iraq Item Information Curve")
-
-#Somalia
-usSomalia<- data_com.subset %>% filter(Country== "Somalia")
-ADmodel5 <- ltm(usSomalia~z1, IRT.param = T)
-plot(ADmodel5, main = "Success Score for Somalia", type="ICC")
-plot(ADmodel5, type="IIC",main = "Somalia Item Information Curve")
-
-#Syria
-usSyria <-data_com.subset %>% filter(Country == "Syria")
-ADmodel6 <- ltm(usSyria~z1, IRT.param = T)
-plot(ADmodel6, main = "Success Score for Syria", type="ICC")
-plot(ADmodel6, type="IIC",main = "Syria Item Information Curve")
-
-#Libya
-usLibya<-data_com.subset %>% filter(Country  == "Libya")
-ADmodel7 <- ltm(usLibya~z1, IRT.param = T)
-plot(ADmodel7, main = "Success Score for Libya", type="ICC")
-plot(ADmodel7, type="IIC",main = "Libya Item Information Curve")
-
-#Sudan
-usSudan<- data_com.subset %>% filter(Country  == "Sudan")
-ADmodel8 <- ltm(usSudan~z1, IRT.param = T)
-plot(ADmodel8, main = "Success Score for Sudan", type="ICC")
-plot(ADmodel8, type="IIC",main = "Sudan Item Information Curve")
-
-```
