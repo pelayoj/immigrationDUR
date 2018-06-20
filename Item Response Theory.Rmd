@@ -131,10 +131,11 @@ data_com.subset <- data.frame(Emp= rep(data_com$Employment, data_com$PERWT),
                 Age = rep(data_com$AGEGROUP, data_com$PERWT))
 library(ltm)
 library(msm)
+
 ADmodel <- ltm(data_com.subset[,1:5]~z1, IRT.param = T)
 plot(ADmodel, main = "Success Score", type="ICC")
 plot(ADmodel, type="IIC",main = "Item Information Curve")
-
+ADmodel
 ```
 
 ```{r}
