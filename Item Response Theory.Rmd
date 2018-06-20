@@ -240,13 +240,6 @@ plot(AD1e, type="IIC",main = "Nonimmigrant Item Information Curve")
 
 
 ```{r}
-data_com.subset2 <- data_com.subset %>% filter(Indicator=="0")
-AD1 <- ltm(data_com.subset2[,1:5]~z1, IRT.param = T)
-plot(AD1, main = "Immigrant Success Score", type="ICC")
-plot(AD1, type="IIC",main = "Immigrant Item Information Curve")
-```
-
-```{r}
 # We need this to interpret the IRT.
 df.admod<- as.data.frame(coef(ADmodel))  #general
 df.ad_non <- as.data.frame(coef(AD)) #nonimmigrant
