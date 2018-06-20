@@ -6,6 +6,7 @@ output: html_document
 IRT
 ```{r}
 library(readr)
+library(lattice)
 library(mosaic)
 library(car)
 library(dplyr)
@@ -44,6 +45,12 @@ usa_data <- usa_data %>% mutate(YRGROUP = ifelse(YRSINUSA <= 5,"0-5",
 usa_data <- usa_data %>% filter(YRIMMIG >1995,AGE >= 25, 
                                 BPLD !="Egypt/United Arab Rep.", 
                                 BPLD !="Iraq", BPLD !="Sudan")
+###new variable, age group
+usa_data <- usa_data %>% mutate(AGEGROUP = ifelse(AGE >=25 & AGE <= 30,"25-30",
+                                    ifelse(AGE >=31 & AGE <= 40, "31-40",
+                                   ifelse(AGE >=41 & AGE <= 50, "41-50",
+                                    ifelse(AGE >=51 & AGE <= 60,"51-60", 
+                                    ifelse(AGE >=61,">60","N/A"))))))
 
 ###Indicator variables 
 usa_data <- usa_data %>% mutate(Employment = ifelse(EMPLOYMENT == "Employed", 1,0), 
@@ -55,6 +62,7 @@ usa_data <- usa_data %>% mutate(Employment = ifelse(EMPLOYMENT == "Employed", 1,
                               Foodstamp = ifelse(FOODSTMP=="No",1,0),
                               White = ifelse(RACE==1,1,0),
                               Citizen = ifelse(CITIZEN == ' Not a citizen', 0, 1))
+
 
 # Indicator for whether one is an immigrant
 BP = 0
