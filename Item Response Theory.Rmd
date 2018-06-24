@@ -239,6 +239,15 @@ plot(AD1e, main = "Nonimmigrant above 60 years Success Score ", type="ICC")
 plot(AD1e, type="IIC",main = "Nonimmigrant Item Information Curve")
 ```
 
+```{r}
+# z-score extraction
+extract <-factor.scores(ADmodel)$score.dat
+extract1 <-merge(data_com.subset,extract)
+
+ggplot(extract1, aes(as.factor(Age),se.z1,fill=as.factor(Indicator)))+ 
+  geom_boxplot(alpha=0.7)
+
+```
 
 ```{r}
 # We need this to interpret the IRT.
