@@ -119,8 +119,8 @@ data_com<-rbind(usa_data,nonimm, fill=TRUE)
 ######### IRT ########
 #### Immigrants
 data_com.subset <- data.frame(Emp= rep(data_com$Employment, data_com$PERWT),
-                 Pov = rep(data_com$Poverty, data_com$PERWT),
-                 Fs = rep(data_com$Foodstamp, data_com$PERWT),
+                              Pov = rep(data_com$Poverty, data_com$PERWT),
+                              Fs = rep(data_com$Foodstamp, data_com$PERWT),
                 Home = rep(data_com$Ownhome,data_com$PERWT),
                 Hlth = rep(data_com$Health, data_com$PERWT),
                 Years = rep(data_com$YRGROUP,data_com$PERWT),
@@ -130,7 +130,7 @@ data_com.subset <- data.frame(Emp= rep(data_com$Employment, data_com$PERWT),
 library(ltm)
 library(msm)
 
-ADmodel <- ltm(data_com.subset[,1:5]~z1, IRT.param = T)
+ADmodel <- ltm(data_com.subset[,1:4]~z1, IRT.param = T)
 plot(ADmodel, main = "Success Score", type="ICC")
 plot(ADmodel, type="IIC",main = "Item Information Curve")
 ADmodel
