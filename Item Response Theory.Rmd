@@ -9,12 +9,10 @@ library(readr)
 library(lattice)
 library(mosaic)
 library(car)
-library(dplyr)
+library(tidyverse)
 library(data.table)
-library(plyr)
 library(ipumsr)
 library(labelled)
-library(ggplot2)
 
 usa_ddi <- read_ipums_ddi("usa_00008.xml") 
 usa_data <- read_ipums_micro(usa_ddi, verbose = FALSE) #Immigrant dataset
@@ -246,7 +244,6 @@ extract1 <-merge(data_com.subset,extract)
 
 ggplot(extract1, aes(as.factor(Age),se.z1,fill=as.factor(Indicator)))+ 
   geom_boxplot(alpha=0.7)
-
 ```
 
 ```{r}
