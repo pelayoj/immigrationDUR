@@ -130,10 +130,11 @@ data_com.subset <- data.frame(Emp= rep(data_com$Employment, data_com$PERWT),
 library(ltm)
 library(msm)
 
-ADmodel <- ltm(data_com.subset[,1:4]~z1, IRT.param = T)
+ADmodel <- ltm(data_com.subset[,1:5]~z1, IRT.param = T)
 plot(ADmodel, main = "Success Score", type="ICC")
 plot(ADmodel, type="IIC",main = "Item Information Curve")
 ADmodel
+head(data_com.subset)
 ```
 
 ```{r}
@@ -144,12 +145,15 @@ data_com.subset2 <- data_com.subset %>% filter(Indicator=="0")
 AD1 <- ltm(data_com.subset2[,1:5]~z1, IRT.param = T)
 plot(AD1, main = "Immigrant Success Score", type="ICC")
 plot(AD1, type="IIC",main = "Immigrant Item Information Curve")
+AD1
 summary(AD1)
 #Non Immigrant item response curve
 data_com.subset1 <- data_com.subset %>% filter(Indicator=="1")
 AD <- ltm(data_com.subset1[,1:5]~z1, IRT.param = T)
 plot(AD, main = "Nonimmigrant Success Score ", type="ICC")
 plot(AD, type="IIC",main = "Nonimmigrant Item Information Curve")
+
+AD
 summary(AD)
 ```
 
